@@ -1,5 +1,3 @@
-
-
 /* General layout */
 
 * {
@@ -17,13 +15,21 @@ body {
     margin: 0px auto;
 }
 
+#header {
+    clear: both;
+}
+#header p {
+    text-align: center;
+}
+
 /* General typography  */
 
 h1 {
     text-align:center;
-    padding: 5px;
+    padding: 10px;
     color: #f6320b;
-    font-size: 3em;
+    font-size: 2em;
+    clear: both;
 }
 h2,h3,h4,h5,h6 {
     text-align:center;
@@ -44,7 +50,7 @@ a:hover {
 input {
     border: 1px solid black;
     border-radius: 3px;
-    padding: 5px;
+    padding: 2px;
 }
 input.submit {
     cursor: pointer;
@@ -53,7 +59,7 @@ input.submit {
 /* Buttons / Controls */
 
 div#controls {
-    position: fixed;
+    //position: fixed;
     top: 0px;
     z-index: 9;
     max-width: 860px;
@@ -65,6 +71,7 @@ div.buttonFoo {
     text-align: center;
     background-color:#f6320b;
     cursor: pointer;
+    height: 50px;
     border: 1px solid #cccccc;
     margin: 10px 3px;
     float: left;
@@ -81,19 +88,24 @@ div.buttonFoo a {
     font-weight: bold;
     text-decoration: none;
 }
+div.buttonFooText {
+    float: right;
+    margin-left: 3px;
+}
 
 /* Color widget */
 
 div.colorWidget {
     background-image:url('images/spectrum.png');
-    border: 0px;
-    margin: 5px;
+    border: 1px solid #cccccc;
+    margin: 10px 3px;
+    border-radius: 5px;
 }
 div.colorWidget input {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0px;
     font-weight: bold;
-    display: block;   
+    display: block;
+    width: 150px;
     text-align: center;
     cursor: pointer;
     border: 1px solid #434A3A;
@@ -120,8 +132,20 @@ div.toggleDiv img {
     padding: 5px;
     margin: 5px;
 }
+div#chooseKitty h3 {
+    font-size: 2em;
+}
 div#chooseKitty img {
     width: 100px;
+}
+#kittyLeft {
+    width:45%;
+    float:left;
+}
+#kittyRight {
+    width:50%;
+    float:left;
+    border-left:3px dashed blue;
 }
 div#chooseBackgroundImage {
     background-image:url('sinus.png');
@@ -196,110 +220,62 @@ p.description {
     background-color: #ffffff;
 }
 
-/* Panels, bubbles, kitties, yellow selector bar */
+/* Comic panels */
 
-div.panel {
-    width: 400px;
-    height: 300px;
-    background-color: #ffffff;
-    border: 5px solid #9FA189;
-    margin: 10px;
+div.backgroundArt {
+    width:400px;
+    height:300px;
+    border: 1px solid #424242;
+    z-index: 1;
     float: left;
-    cursor: pointer;
-    position:relative;
+    margin: 10px;
+    position: relative;
 }
-/* ??????????????????????????????????????????????????????????? */
-div.bubbleDiv {
-    width: 400px;
-    height: 300px;
+div.backgroundArt img {
+    z-index: 2;
+}
+.leftBubbleImage {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index:2;
+    top: 5px;
+    left: 5px;
+}
+.rightBubbleImage {
+    position: absolute;
+    top: 5px;
+    left: 210px;
 }
 
-div.bubbleDiv img {
-    position: relative;
-    top: 8px;
-    left: 6px;
+.textarea1 {
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-div.bubbleDiv img.rightBubble {
-    left: 23px;
+.textarea2 {
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    left: 220px;
 }
-/* ??????????????????????????????????????????????????????????? */
 .kitty1 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    top: 200px;
+    left: 50px;
 }
 .kitty2 {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    top: 200px;
+    left: 250px;
 }
-div.selector {
-    width:400px;
-    height:9px;
-    background-color: yellow;
-    opacity: 0.5;
-    position: relative;
-    z-index: 5;
-    border-radius: 35px;
-}
-div.selected div.selector {
-    opacity: 0.9;
-}
-.backgroundArt {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width:400px;
-    height: 300px;
-    z-index: 1;
-}
-textarea {
-    height: 30px;
-width: 160px;
-    position: relative;
-    top: 10px;
-    left: 7px;
-    font-family: "Lucida Console", Monaco, monospace;
-    padding: 10px;
-    font-size: 13pt;
-    font-weight: normal;
-    line-height: 1em;
-    letter-spacing:-1.5px;
-    overflow: hidden;
-    border-radius: 20px;
-    visibility: visible;
-    color: #000000;
-    background-color: #cccccc;
-    opacity: 0.8;
-}
-textarea.textarea2 {
-    left: 200px;
 
+/* Metadata */
+
+div#imagesMetadata {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    clear: both;
 }
-.textareaDiv {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 3;
-    width: 200px;
-}
-.textareaDiv2 {
-    position: absolute;
-    top: 0px;
-    left: 200px;
-    z-index: 3;
-    width: 200px;
-}
-.kittyDiv {
-    position: absolute;
-    top: 5px;
-    left: 0px;
-    z-index: 4;
-}
+
 
 /* Canvas */
 
@@ -315,9 +291,4 @@ textarea.textarea2 {
 .extraSpace {
     padding: 5px 30px;
 }
-
-
-
-
-
 

@@ -217,9 +217,6 @@ function setBubbleImageMax(imgObj, lr, bubbleMode) {
     var url = getBubbleUrl(lr, 9, bubbleMode);
     imgObj.setAttribute("src", url);
 }
-
-
-
 function setTextareaHeight(tObj, height) {
     tObj.style.height = "" + height + "px";
 }
@@ -229,92 +226,56 @@ function setTextareaValue(tObj, text) {
     setTextareaHeight(tObj, h);
 }
 
-
-
-
-
-
-
-
-
 function displayPanel(theComic, pObj, pNum) {
     var container = document.getElementById("comicPanels");
 
-    // Rectangle for panel
+    // Background art
     var panelDiv = document.createElement("div");
-    panelDiv.setAttribute("class", "panel");
+    panelDiv.setAttribute("onclick","panelClickFoo('panel" + pNum + "')");
     panelDiv.setAttribute("id", "panel"+pNum);
+    panelDiv.setAttribute("class","backgroundArt");
+    setBgColor(panelDiv, theComic.bgColor);
+    setBgImage(panelDiv, theComic.bgArt);
 
-
-
-    // If a background image is selected, we need a div behind
-    var backgroundArt = document.createElement("div");
-    backgroundArt.setAttribute("class","backgroundArt");
-    setBgColor(backgroundArt, theComic.bgColor);
-    setBgImage(backgroundArt, theComic.bgArt);
-    panelDiv.appendChild(backgroundArt);
-
-
-
-    // Images of 2 speech bubbles
-    var bubbleDiv = document.createElement("div");
-    bubbleDiv.setAttribute("class","bubbleDiv");
-    bubbleDiv.setAttribute("id","bubbleDiv" + pNum);
-
-
-
+    // Speech bubble images
     var lBubble = document.createElement("img");
+    lBubble.setAttribute("class", "leftBubbleImage");
     lBubble.setAttribute("id", "leftBubble"+pNum);
     setBubbleImageUrl(lBubble, 0, pObj.ltext, 0);
-
-    bubbleDiv.appendChild(lBubble);
-
+    panelDiv.appendChild(lBubble);
     var rBubble = document.createElement("img");
+    rBubble.setAttribute("class", "rightBubbleImage");
     rBubble.setAttribute("id", "rightBubble"+pNum);
     setBubbleImageUrl(rBubble, 1, pObj.rtext, 0)
-    bubbleDiv.appendChild(rBubble);
-    panelDiv.appendChild(bubbleDiv);
+    panelDiv.appendChild(rBubble);
 
-    // Textareas for speech bubbles
-    var textarea1Div = document.createElement("div");
-    textarea1Div.setAttribute("class", "textareaDiv");      
+    // Textareas for speech bubbles      
     var textarea1 = document.createElement("textarea");
     textarea1.setAttribute("class", "textarea1");
     textarea1.setAttribute("id", "textarea1Panel"+pNum);
     textarea1.setAttribute("onBlur", "textareaBlur(" + pNum + ", 0)");
     textarea1.setAttribute("onClick", "textareaClick(" + pNum + ", 0)");
     setTextareaValue(textarea1, pObj.ltext);
-    textarea1Div.appendChild(textarea1);
-    panelDiv.appendChild(textarea1Div);
-
-    var textarea2Div = document.createElement("div");
-    textarea2Div.setAttribute("class", "textareaDiv");      
+    panelDiv.appendChild(textarea1);
+   
     var textarea2 = document.createElement("textarea");
     textarea2.setAttribute("class", "textarea2");
     textarea2.setAttribute("id", "textarea2Panel"+pNum);
     textarea2.setAttribute("onBlur", "textareaBlur(" + pNum + ", 1)");
     textarea2.setAttribute("onClick", "textareaClick(" + pNum + ", 1)");
     setTextareaValue(textarea2, pObj.rtext);
-    textarea2Div.appendChild(textarea2);
-    panelDiv.appendChild(textarea2Div);
+    panelDiv.appendChild(textarea2);
 
     // Kitties
-    var kittyDiv = document.createElement("div");
-    kittyDiv.setAttribute("class","kittyDiv");
     var kitty1 = document.createElement("img");
     kitty1.setAttribute("class", "kitty1");
     kitty1.setAttribute("src", theComic.leftKittyUrl);
-    kitty1.style.top = "" + kitty1Y + "px";
-    kitty1.style.left = "" + kitty1X + "px";
-    kittyDiv.appendChild(kitty1);
+    panelDiv.appendChild(kitty1);
 
     var kitty2 = document.createElement("img");
     kitty2.setAttribute("class", "kitty2");
     kitty2.setAttribute("src", theComic.rightKittyUrl);
-    kitty2.style.top = "" + kitty2Y + "px";
-    kitty2.style.left = "" + kitty2X + "px";
-    kittyDiv.appendChild(kitty2);
-    panelDiv.appendChild(kittyDiv);
+    panelDiv.appendChild(kitty2);
 
     container.appendChild(panelDiv);
     //updateMetadata();   // Only needed first time

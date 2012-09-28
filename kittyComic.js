@@ -35,7 +35,6 @@ function Panel(selected, lBubbleMode, rBubbleMode) {
     this.rBubbleHasFocus = 0;
     this.ltext = dltext;
     this.rtext = drtext;
-
     this.leftBubble = function() {
         var b = new Bubble("", this.lBubbleMode, 0, this.lBubbleHasFocus);
         return b;
