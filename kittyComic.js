@@ -76,7 +76,7 @@ function KittyComic() {
         else { this.panelsArray[index].rtext = text; }
     }
     this.setHighlight = function(num) {
-        this.highlit = num;
+        this.highlit = parseInt(num);
     }
     this.setBgColor = function(hexColor) {
         this.bgColor = hexColor;

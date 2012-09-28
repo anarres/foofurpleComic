@@ -35,7 +35,6 @@ function Panel(selected, lBubbleMode, rBubbleMode) {
     this.rBubbleHasFocus = 0;
     this.ltext = dltext;
     this.rtext = drtext;
-
     this.leftBubble = function() {
         var b = new Bubble("", this.lBubbleMode, 0, this.lBubbleHasFocus);
         return b;
@@ -77,7 +76,9 @@ function KittyComic() {
         else { this.panelsArray[index].rtext = text; }
     }
     this.setHighlight = function(num) {
-        this.highlit = num;
+        alert('foo');
+        this.highlit = parseInt(num);
+        alert(this.highlit);
     }
     this.setBgColor = function(hexColor) {
         this.bgColor = hexColor;

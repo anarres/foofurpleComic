@@ -234,6 +234,13 @@ function displayPanel(theComic, pObj, pNum) {
     panelDiv.setAttribute("onclick","panelClickFoo('panel" + pNum + "')");
     panelDiv.setAttribute("id", "panel"+pNum);
     panelDiv.setAttribute("class","backgroundArt");
+
+    // Highlight selected panel
+    if (parseInt(pNum) == theComic.highlit) {
+        panelDiv.style.borderTop = "10px solid #ffc405";
+    }
+
+
     setBgColor(panelDiv, theComic.bgColor);
     setBgImage(panelDiv, theComic.bgArt);
 
@@ -288,6 +295,7 @@ function refreshDisplay(theComic) {
     // Clear the old stuf
     document.getElementById("comicPanels").innerHTML = "";
 
+    // Display the panels
     var pArray = theComic.panelsArray;
     for (var i=0; i<pArray.length; i++) {
         displayPanel(theComic, pArray[i], i+1);

@@ -154,37 +154,24 @@ function deletePanel() {
     theComic.delPanel();
     refreshDisplay(theComic);
 }
-/*
-function select(num) {
-    theComic.setHighlight(num);
-    refreshDisplay(theComic);
-}
-*/
-
 
 function panelClickFoo(panelID) {
-
 
     // Remove class highlit from all panels
     var divsArray = getElementsByClassName(document, 'backgroundArt');
 
     for (var i=0; i<divsArray.length; i++) {
-        divsArray[i].style.border = "3px solid #bbbbbb";
+        divsArray[i].style.borderTop = "10px solid #bbbbbb";
     }
-
-
     var myDiv = document.getElementById(panelID);
-    myDiv.style.border = "3px solid yellow";
-    
+    myDiv.style.borderTop = "10px solid #ffc405";
+
+    alert(panelID.slice(5));
+
+    //theComic.setHighlight(
 }
 
-
-
-
-
-
 function textareaClick(pNum, leftOrRight) {
-    alert('you clicked a textarea!');
     var lr = parseInt(leftOrRight);
     var index = parseInt(pNum) - 1;
 
@@ -262,10 +249,8 @@ function changePanelBGColor() {
     </div> <!--#kittyRight-->
 </div> <!--#chooseKitty-->
 
-<div id="chooseBackgroundImage" class="toggleDiv" tabindex="2" onBlur="document.getElementById('chooseBackgroundImage').style.visibility='hidden'">
-    
+<div id="chooseBackgroundImage" class="toggleDiv" tabindex="2" onBlur="document.getElementById('chooseBackgroundImage').style.visibility='hidden'">    
 </div> <!--#chooseBackgroundImage-->
-
 
 <div id="controls">
 
@@ -344,7 +329,7 @@ function changePanelBGColor() {
 
     <div class="buttonFoo" onclick="downloadImage()">
         <a>
-            <img src="images/save.png" style="width:30px;height:auto" />
+            <img src="images/save.png" style="width:28px;height:auto" />
             <div class='buttonFooText'>
                 Save
             </div>
@@ -358,20 +343,20 @@ function changePanelBGColor() {
 
 </div><!--#controls-->
 
-    <div id="header">
-        <h1>Foofurple comics!</h1>
-        <p>
-            Make your own webcomic using amazing Creative Commons and Public Domain images. <a href="about.html">About</a>
-        </p>    
-        <div style="clear:both;"></div>
-    </div> <!--#header-->
+<div id="header">
+    <h1>Foofurple comics!</h1>
+    <p>
+        Make your own webcomic using amazing Creative Commons and Public Domain images. <a href="about.html">About</a>
+    </p>    
+    <div style="clear:both;"></div>
+</div> <!--#header-->
 
-    <div id="comicPanels"></div>
+<div id="comicPanels"></div>
 
-    <div id="imagesMetadata" class="infoDiv">
-        <h3>Images:</h3>
-        <p id="metadata">.</p>
-    </div> <!--#imagesMetadata-->
+<div id="imagesMetadata" class="infoDiv">
+    <h3>Images:</h3>
+    <p id="metadata">.</p>
+</div> <!--#imagesMetadata-->
 
 </body>
 </html>

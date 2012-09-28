@@ -229,13 +229,10 @@ function setTextareaValue(tObj, text) {
 function displayPanel(theComic, pObj, pNum) {
     var container = document.getElementById("comicPanels");
 
-    // Rectangle for panel
+    // Background art
     var panelDiv = document.createElement("div");
-    panelDiv.setAttribute("class", "panel");
     panelDiv.setAttribute("onclick","panelClickFoo('panel" + pNum + "')");
     panelDiv.setAttribute("id", "panel"+pNum);
-
-    // Background art
     panelDiv.setAttribute("class","backgroundArt");
     setBgColor(panelDiv, theComic.bgColor);
     setBgImage(panelDiv, theComic.bgArt);

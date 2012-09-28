@@ -74,6 +74,7 @@ div.buttonFoo {
     height: 50px;
     border: 1px solid #cccccc;
     margin: 10px 3px;
+    margin-bottom: 0px;
     float: left;
     border-radius: 5px;
 }
@@ -102,7 +103,7 @@ div.colorWidget {
     border-radius: 5px;
 }
 div.colorWidget input {
-    padding: 0px;
+    padding: 10px 0px;
     font-weight: bold;
     display: block;
     width: 150px;
@@ -225,7 +226,8 @@ p.description {
 div.backgroundArt {
     width:400px;
     height:300px;
-    border: 1px solid #424242;
+    border: 2px solid #bbbbbb;
+    border-top: "10px solid #bbbbbb";
     z-index: 1;
     float: left;
     margin: 10px;
