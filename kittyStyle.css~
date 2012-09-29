@@ -227,11 +227,12 @@ div.backgroundArt {
     width:400px;
     height:300px;
     border: 2px solid #bbbbbb;
-    border-top: "10px solid #bbbbbb";
+    border-top: 10px solid #bbbbbb;
     z-index: 1;
     float: left;
     margin: 10px;
     position: relative;
+    border-radius: 3px;
 }
 div.backgroundArt img {
     z-index: 2;

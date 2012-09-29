@@ -313,6 +313,46 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
+            "url":"images/backgroundArt/simple-border.png",
+            "title": "Simple border",
+            "description": "",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/concave-border.png",
+            "title": "Concave border",
+            "description": "",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/celtic-vine-border.png",
+            "title": "Celtic vine border",
+            "description": "",
+            "artist":"unknown",
+            "artist_website":"",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/orleans_express_border.png",
+            "title": "Orleans express border",
+            "description": "",
+            "artist":"unknown",
+            "artist_website":"",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
             "url":"images/backgroundArt/abstract-rainbow-explosion.png",
             "title": "Rainbow explosion",
             "description": "colourful abstract background",

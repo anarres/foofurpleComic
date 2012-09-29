@@ -64,15 +64,24 @@ function selectBackgroundArt(url) {
 
     // Un-highlight previously selected image
     var imgArray = getElementsByClassName(document, 'backgroundChooser');
+
+
+
     for ( var i=0; i<imgArray.length; i++ ) {
         (imgArray[i]).style.backgroundImage="url('clear.png')";
     }
+
+    alert(url + " foo!");
+
     // Hightlight newly selected image
     if (url !== "") {
         document.getElementById(url).style.backgroundImage="url('yellow.png')";
     }
     // Get all divs of class backgroundArt and give them this bg image
     var divs = getElementsByClassName(document, "backgroundArt");
+
+    alert(url + " foo!");
+
     for (var j=0; j<divs.length; j++) {
         var myObj = divs[j];
         var myCSS = "url('" + url + "')";
@@ -166,9 +175,7 @@ function panelClickFoo(panelID) {
     var myDiv = document.getElementById(panelID);
     myDiv.style.borderTop = "10px solid #ffc405";
 
-    alert(panelID.slice(5));
-
-    //theComic.setHighlight(
+    theComic.setHighlight(panelID.slice(5));
 }
 
 function textareaClick(pNum, leftOrRight) {
@@ -229,6 +236,76 @@ function changePanelBGColor() {
     }
     // Save the new value to the models
     theComic.setBgColor(document.getElementById("jscolor").value);
+}
+
+function newWebImage() {
+    var url = document.getElementById('newImageUrl').value;
+    if (document.getElementById('newBgUrl').checked) {
+        var myObj = {"url":url,
+            "title": "?",
+            "description": "",
+            "artist":"?",
+            "artist_website":"",
+            "license":"?",
+            "license_short":"?",
+            "license_url":""
+            }
+        // Add to the metadata
+        images88[0]["bg"].push(myObj);
+
+        // Reload bg images
+        loadBgImages();
+
+        // Set new image
+        selectBackgroundArt(url);
+    }
+    else {
+        var myObj = {
+            "left":
+                { 
+                "url":url,
+                "title": "",
+                "description": "",
+                "artist":"",
+                "artist_website":"",
+                "license":"",
+                "license_short":"",
+                "license_url":""
+                },
+            "right":
+                { 
+                "url":url,
+                "title": "",
+                "description": "",
+                "artist":"",
+                "artist_website":"",
+                "license":"",
+                "license_short":"",
+                "license_url":""
+                }
+            };
+        // Add to the metadata
+        images88[1]["characters"].push(myObj);
+
+        // Reload character images
+        loadCharacters();
+
+        // Set new image
+        selectKitty(1, url);
+        selectKitty(2, url);
+    }
+    document.getElementById("addNewImage").style.visibility = 'hidden';
+}
+
+function addNewImage() {
+
+    //alert('foo');
+    // hide the selectBackgroundImage() div
+    //document.getElementById("chooseBackgroundImage").style.visibility = 'hidden';
+    //document.getElementById("chooseKitty").style.visibility = 'hidden';
+
+    // show the add new image div
+    document.getElementById('addNewImage').style.visibility = "visible";
 }
 
 </script>
@@ -313,7 +390,7 @@ function changePanelBGColor() {
         <a>
             <img src="images/background_icon.png" style="width:50px;height:auto;" />
             <div class='buttonFooText'>
-                Background image
+                Backgrounds
             </div>
         </a>
     </div>
@@ -350,6 +427,32 @@ function changePanelBGColor() {
     </p>    
     <div style="clear:both;"></div>
 </div> <!--#header-->
+
+
+<div id="addNewImage" class="infoDiv invisPosFixed extraSpace">
+
+    <div class="close"
+        onclick="document.getElementById('addNewImage').style.visibility='hidden'">
+        <img src="images/close_icon.png" alt="close">
+    </div> <!--.close--><br>
+
+    <h3>From the web:</h3><br>
+
+    <input type="radio" name="foo" id="newBgUrl" /><strong>Background image (400px by 300px):</strong><br><br>
+    <input type="radio" name="foo" id="newKittyUrl" /><strong>Character image (100px by 100px):</strong><br><br>
+    <input type="text" id="newImageUrl" value="http://..." /><br><br>
+    <input type="submit" value="Add web image" onclick="newWebImage()" class="submit" /><br><br><br>
+
+    <h3>From your computer:</h3><br>
+
+    <input type="radio" name="foob" /><strong>Background image (400px by 300px):</strong><br><br>
+    <input type="radio" name="foob" /><strong>Character image (100px by 100px):</strong><br><br>
+    <input type="file" id="newBgImageFile"><br><br>
+    <input type="submit" value="Add image" onclick="newImage(2)" class="submit" /><br><br><br>
+
+</div> <!--#addNewImage-->
+
+
 
 <div id="comicPanels"></div>
 

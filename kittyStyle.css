@@ -232,6 +232,7 @@ div.backgroundArt {
     float: left;
     margin: 10px;
     position: relative;
+    border-radius: 2px;
 }
 div.backgroundArt img {
     z-index: 2;

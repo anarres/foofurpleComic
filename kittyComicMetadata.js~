@@ -313,6 +313,36 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
+            "url":"images/backgroundArt/simple-border.png",
+            "title": "Simple border",
+            "description": "",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/concave-border.png",
+            "title": "Concave border",
+            "description": "",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/orleans_express_border.png",
+            "title": "Orleans express border",
+            "description": "",
+            "artist":"unknown",
+            "artist_website":"",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
             "url":"images/backgroundArt/abstract-rainbow-explosion.png",
             "title": "Rainbow explosion",
             "description": "colourful abstract background",
@@ -1415,3 +1445,45 @@ var images88 = [
         ]
     }
 ];
+
+
+
+function getBgDataObj(url) {
+    for (var i=0; i<images88[0].bg.length; i++) {
+        if (images88[0].bg[i].url === url) {
+            return images88[0].bg[i];
+        }
+    }
+}
+function getLeftDataObj(url) {
+    for (var i=0; i< images88[1].characters.length; i++) {
+        if (images88[1].characters[i].left.url === url) {
+            return images88[1].characters[i].left;  
+        }
+    }
+}
+function getRightDataObj(url) {
+    for (var i=0; i< images88[1].characters.length; i++ ) {    
+        if ( images88[1].characters[i].right.url === url ) {
+            return images88[1].characters[i].right;
+        }
+    }
+}
+function getBgMetadata(url) {
+    if ( url === "" ) {
+        return "";
+    }
+    else {
+        var d = getBgDataObj(url);
+        return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
+    }
+}
+function getLeftMetadata(url) {
+    var d = getLeftDataObj(url);
+    return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
+}
+
+function getRightMetadata(url) {
+    var d = getRightDataObj(url);
+    return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
+}
