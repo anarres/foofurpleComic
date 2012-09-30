@@ -65,22 +65,15 @@ function selectBackgroundArt(url) {
     // Un-highlight previously selected image
     var imgArray = getElementsByClassName(document, 'backgroundChooser');
 
-
-
     for ( var i=0; i<imgArray.length; i++ ) {
         (imgArray[i]).style.backgroundImage="url('clear.png')";
     }
-
-    alert(url + " foo!");
-
     // Hightlight newly selected image
     if (url !== "") {
         document.getElementById(url).style.backgroundImage="url('yellow.png')";
     }
     // Get all divs of class backgroundArt and give them this bg image
     var divs = getElementsByClassName(document, "backgroundArt");
-
-    alert(url + " foo!");
 
     for (var j=0; j<divs.length; j++) {
         var myObj = divs[j];
@@ -238,8 +231,11 @@ function changePanelBGColor() {
     theComic.setBgColor(document.getElementById("jscolor").value);
 }
 
-function newWebImage() {
+function newWebImage(n) {
     var url = document.getElementById('newImageUrl').value;
+    if (n == 2) {
+        url = document.getElementById('newImageFileLocation').value;
+    }
     if (document.getElementById('newBgUrl').checked) {
         var myObj = {"url":url,
             "title": "?",
@@ -306,6 +302,54 @@ function addNewImage() {
 
     // show the add new image div
     document.getElementById('addNewImage').style.visibility = "visible";
+}
+
+function bmCycle(bm) {
+    if (bm==0) {
+        return 1;
+    }
+    else if (bm==1) {
+        return 2;
+    }
+    else {
+        return 0;
+    }
+}
+
+function toggleBubble(n) {
+
+    var pNum = parseInt(theComic.highlit);
+    var pObj = theComic.panelsArray[pNum-1];
+
+    if (n==1) {
+        var bm = pObj.lBubbleMode;
+        var newMode = bmCycle(bm);
+        var text = pObj.ltext;
+
+        // Model
+        pObj.lBubbleMode = newMode;
+
+        // Display
+        var myId = "leftBubble" + theComic.highlit;
+        imgObj = document.getElementById(myId);
+        setBubbleImageUrl(imgObj, 0, text, newMode);
+    }
+    else {
+        var bm = pObj.rBubbleMode;
+        alert('bm: ' + bm);
+        var newMode = bmCycle(bm);
+        alert('newMode: ' + newMode);
+        var text = pObj.rtext;
+
+        // Model
+        pObj.rBubbleMode = newMode;
+
+
+        // Display
+        var myId = "rightBubble" + theComic.highlit;
+        imgObj = document.getElementById(myId);
+        setBubbleImageUrl(imgObj, 1, text, newMode);
+    }
 }
 
 </script>
@@ -436,23 +480,28 @@ function addNewImage() {
         <img src="images/close_icon.png" alt="close">
     </div> <!--.close--><br>
 
-    <h3>From the web:</h3><br>
+    <h3>Add your own image:</h3><br>
 
-    <input type="radio" name="foo" id="newBgUrl" /><strong>Background image (400px by 300px):</strong><br><br>
-    <input type="radio" name="foo" id="newKittyUrl" /><strong>Character image (100px by 100px):</strong><br><br>
-    <input type="text" id="newImageUrl" value="http://..." /><br><br>
-    <input type="submit" value="Add web image" onclick="newWebImage()" class="submit" /><br><br><br>
+    <strong>Image address: </strong>
+    <input type="text" id="newImageUrl" value="" style="width:500px;" /> 
+    (can be a web address like http://example.com/cute_kitten.png, or a path to a file on your computer like /home/alfredina/images/cute_kitten.png)
 
+    <br><br>
+
+    <input type="radio" name="foo" id="newBgUrl" />Background image (400px by 300px):<br><br>
+    <input type="radio" name="foo" id="newKittyUrl" />Character image (100px by 100px):<br><br>
+
+    <input type="submit" value="Add image" onclick="newWebImage(1)" class="submit" /><br><br><br>
+
+<!--
     <h3>From your computer:</h3><br>
-
     <input type="radio" name="foob" /><strong>Background image (400px by 300px):</strong><br><br>
     <input type="radio" name="foob" /><strong>Character image (100px by 100px):</strong><br><br>
-    <input type="file" id="newBgImageFile"><br><br>
-    <input type="submit" value="Add image" onclick="newImage(2)" class="submit" /><br><br><br>
+    <input type="file" id="newImageFileLocation"><br><br>
+    <input type="submit" value="Add image" onclick="newWebImage(2)" class="submit" /><br><br><br>
+-->
 
 </div> <!--#addNewImage-->
-
-
 
 <div id="comicPanels"></div>
 

@@ -160,43 +160,52 @@ function getTextareaHeight(text) {
 }
 
 function getBubbleUrl(lr, numLines, bubbleMode) {
-    lr = parseInt(lr);
-    n = parseInt(numLines);
-    if (n < 2) { 
-        if (lr == 0) { return "images/bubbles/leftBubble1.png"; }
-        else { return "images/bubbles/rightBubble1.png"; }
+
+    if (bubbleMode==1) {
+        return "images/bubbles/cloud.png";
     }
-    else if (n == 2) { 
-        if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
-        else { return "images/bubbles/rightBubble3.png"; }
+    else if (bubbleMode==2) {
+        return "images/bubbles/clear.png";
     }
-    else if (n == 3) { 
-        if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
-        else { return "images/bubbles/rightBubble3.png"; }
-    }
-    else if (n == 4) { 
-        if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
-        else { return "images/bubbles/rightBubble7.png"; }
-    }
-    else if (n == 5) { 
-        if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
-        else { return "images/bubbles/rightBubble7.png"; }
-    }
-    else if (n == 6) { 
-        if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
-        else { return "images/bubbles/rightBubble7.png"; }
-    }
-    else if (n == 7) { 
-        if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
-        else { return "images/bubbles/rightBubble7.png"; }
-    }
-    else if (n == 8) { 
-        if (lr == 0) { return "images/bubbles/leftBubble9.png"; }
-        else { return "images/bubbles/rightBubble9.png"; }
-    }
-    else { 
-        if (lr == 0) { return "images/bubbles/leftBubble9.png"; }
-        else { return "images/bubbles/rightBubble9.png"; }
+    else {
+        lr = parseInt(lr);
+        n = parseInt(numLines);
+        if (n < 2) { 
+            if (lr == 0) { return "images/bubbles/leftBubble1.png"; }
+            else { return "images/bubbles/rightBubble1.png"; }
+        }
+        else if (n == 2) { 
+            if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
+            else { return "images/bubbles/rightBubble3.png"; }
+        }
+        else if (n == 3) { 
+            if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
+            else { return "images/bubbles/rightBubble3.png"; }
+        }
+        else if (n == 4) { 
+            if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
+            else { return "images/bubbles/rightBubble7.png"; }
+        }
+        else if (n == 5) { 
+            if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
+            else { return "images/bubbles/rightBubble7.png"; }
+        }
+        else if (n == 6) { 
+            if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
+            else { return "images/bubbles/rightBubble7.png"; }
+        }
+        else if (n == 7) { 
+            if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
+            else { return "images/bubbles/rightBubble7.png"; }
+        }
+        else if (n == 8) { 
+            if (lr == 0) { return "images/bubbles/leftBubble9.png"; }
+            else { return "images/bubbles/rightBubble9.png"; }
+        }
+        else { 
+            if (lr == 0) { return "images/bubbles/leftBubble9.png"; }
+            else { return "images/bubbles/rightBubble9.png"; }
+        }
     }
 }
 
@@ -208,6 +217,10 @@ function setBgImage(divObj, url) {
 }
 
 function setBubbleImageUrl(imgObj, lr, text, bubbleMode) {
+
+// CONFUSION BETWEEN LR AND BUBBLEMODE
+
+
     var numLines = getNumLines(text);
     var url = getBubbleUrl(lr, numLines, bubbleMode);
     imgObj.setAttribute("src", url);
@@ -239,7 +252,6 @@ function displayPanel(theComic, pObj, pNum) {
     if (parseInt(pNum) == theComic.highlit) {
         panelDiv.style.borderTop = "10px solid #ffc405";
     }
-
 
     setBgColor(panelDiv, theComic.bgColor);
     setBgImage(panelDiv, theComic.bgArt);

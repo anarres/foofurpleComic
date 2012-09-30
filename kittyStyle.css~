@@ -232,7 +232,7 @@ div.backgroundArt {
     float: left;
     margin: 10px;
     position: relative;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 div.backgroundArt img {
     z-index: 2;
@@ -253,6 +253,7 @@ div.backgroundArt img {
     position: absolute;
     top: 10px;
     left: 10px;
+    background-color: transparent;
 }
 .textarea2 {
     z-index: 3;
