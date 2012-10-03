@@ -217,9 +217,12 @@ function setBgImage(divObj, url) {
 }
 
 function setBubbleImageUrl(imgObj, lr, text, bubbleMode) {
+
+// CONFUSION BETWEEN LR AND BUBBLEMODE
+
+
     var numLines = getNumLines(text);
     var url = getBubbleUrl(lr, numLines, bubbleMode);
-    alert(bubbleMode);
     imgObj.setAttribute("src", url);
 }
 

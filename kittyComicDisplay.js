@@ -3,8 +3,6 @@ var charsPerLine = 17;
 /* Function getElementsByClassName(node,classname) by Dustin Diaz, found here: 
 http://stackoverflow.com/questions/1933602/
 how-to-getelementbyclass-instead-of-getelementbyid-with-javascript*/
-
-
 function getElementsByClassName(node, classname) {
   if (node.getElementsByClassName) { // use native implementation if available
     return node.getElementsByClassName(classname);
