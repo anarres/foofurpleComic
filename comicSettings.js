@@ -2,7 +2,8 @@
 var dBgColor = "3496CF";
 var dBgArt = "images/backgroundArt/bubbles.png";
 var dLeftKittyUrl = "images/kitties/left/lemmling_Cartoon_cow.png";
-var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_cow.png";
+var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_sheep.png";
+
 var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
@@ -53,19 +54,22 @@ function getCanvasWidth(numPanels) {
     return result;
 }
 function getCanvasHeight(numPanels) {
-    // FIXME add space for metadata
 
     var index = numPanels - 1;
     var multiplier = parseInt(index/2);
     var result = 2*borderWidth + panelHeight + multiplier*(panelHeight + 2*borderWidth);
-    return result;
+
+
+    // Add 100 for metadata for now
+    return result + 100;
 }
 
 
 
 
 
-/* TESTS */
+
+/* TESTS (NB somewhat ironically, these are all broken) */
 function getX0Test() {
     var result = "getX0Test... ";
     if (getX0(0) != 0) { result += "failed"; } 

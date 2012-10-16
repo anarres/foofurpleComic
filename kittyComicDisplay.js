@@ -119,6 +119,37 @@ function fooLinesArray(text) {
 }
 
 
+/*
+Ideally this would replace fooLinesArray()
+*/
+
+// Returns an array of substrings, one per line
+function generalLinesArray(text, maxLineLength, maxNumLines) {
+    var stringArray = [];                     // stringArray will hold substrings, one per line
+    var chunks = text.split(/\n\r?/g);        // Split input text by newline characters
+    while (1===1) {
+
+        if( (stringArray.length >= maxNumLines) || (chunks.length <= 0) ) { break; }
+
+        var chunk = chunks.shift();
+        if ( chunk.length <= maxLineLength ) {      // If it is short enuf, add it as a line - deal with chunk
+            stringArray.push(chunk);
+        }
+        else {                                     // Deal with longer chunk
+            var myNewArray = dealWithLongChunk(chunk, maxLineLength);
+            for( var i=0; i<myNewArray.length; i++ ) {
+                stringArray.push(myNewArray[i]);
+                if (stringArray.length >= maxNumLines) { break; }
+            }
+        }
+    }
+    return stringArray;
+}
+
+
+
+
+
 function getNumLines(text) {
     var lines = fooLinesArray(text);
     return lines.length;

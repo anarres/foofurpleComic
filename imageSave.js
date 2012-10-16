@@ -24,6 +24,30 @@ function panelToCanvas() {
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
 
+
+
+    // Write metadata to bottom of canvas
+    var mData = "This comic is a mash-up made at foofurple.com using images: ";
+    mData += getPrintBgMetadata(theComic.bgArt);
+    mData += getPrintLeftMetadata(theComic.leftKittyUrl);
+    mData += getPrintRightMetadata(theComic.rightKittyUrl);
+    alert(mData);
+
+    var mArray = generalLinesArray(mData, 120, 5);
+    alert(mArray);
+    var mTop = cHeight - 80; // Fudge
+
+    // Text style
+    ctx.fillStyle = "#ffffff";
+    ctx.font = "10pt Trebuchet MS, Helvetica, sans-serif";
+
+    for (var m=0; m<mArray.length; m++) {
+        var x = 10;
+        var y = mTop + m*printLineHeight;
+        ctx.fillText(mArray[m], x, y);
+    }
+    
+    // For each panel
     for (var i=0; i<numPanels; i++) {
 
         // Get panel coordinates
@@ -87,7 +111,6 @@ function panelToCanvas() {
             var y = y0 + printTop + rx * printLineHeight;
             ctx.fillText(rTextArray[rx], x, y);
         }
-
     }
 }
 
@@ -96,6 +119,6 @@ function downloadImage() {
     var canvas = document.getElementById("myCanvas");
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
-    document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + getDescription() + "</p>";
+    /*document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + getDescription() + "</p>";*/
     document.getElementById('downloadDiv').style.visibility = "visible";
 }

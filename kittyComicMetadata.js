@@ -1479,6 +1479,7 @@ function getRightDataObj(url) {
         }
     }
 }
+
 function getBgMetadata(url) {
     if ( url === "" ) {
         return "";
@@ -1488,6 +1489,7 @@ function getBgMetadata(url) {
         return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
     }
 }
+
 function getLeftMetadata(url) {
     var d = getLeftDataObj(url);
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
@@ -1497,3 +1499,27 @@ function getRightMetadata(url) {
     var d = getRightDataObj(url);
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
 }
+
+
+
+function getPrintBgMetadata(url) {
+    if ( url === "" ) {
+        return "";
+    }
+    else {
+        var d = getBgDataObj(url);
+        return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+    }
+}
+function getPrintLeftMetadata(url) {
+    var d = getLeftDataObj(url);
+     return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+}
+function getPrintRightMetadata(url) {
+    var d = getRightDataObj(url);
+     return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+}
+
+
+
+
