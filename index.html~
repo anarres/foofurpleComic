@@ -8,10 +8,12 @@
 <link rel="icon" type="image/png" href="kittyIcon.png">
 <link rel="stylesheet" type="text/css" href="kittyStyle.css">
 
+<script type="text/javascript" src="comicSettings.js"></script>
 <script type="text/javascript" src="kittyComicMetadata.js"></script>
 <script type="text/javascript" src="utils/stringUtils.js"></script>
 <script type="text/javascript" src="kittyComic.js"></script>
 <script type="text/javascript" src="kittyComicDisplay.js"></script>
+<script type="text/javascript" src="imageSave.js"></script>
 <script type="text/javascript" src="utils/jscolor/jscolor.js"></script>
 
 <script>
@@ -204,6 +206,9 @@ function textareaBlur(pNum, leftOrRight) {
     var text = document.getElementById(myId).value;
 
     // Write the text to the model
+    alert(index);
+    alert(lr);
+    alert(text);
     theComic.setText(index, lr, text);
 
     // Display bubble image
@@ -336,9 +341,7 @@ function toggleBubble(n) {
     }
     else {
         var bm = pObj.rBubbleMode;
-        alert('bm: ' + bm);
         var newMode = bmCycle(bm);
-        alert('newMode: ' + newMode);
         var text = pObj.rtext;
 
         // Model
@@ -351,6 +354,8 @@ function toggleBubble(n) {
         setBubbleImageUrl(imgObj, 1, text, newMode);
     }
 }
+
+
 
 </script>
 
@@ -450,7 +455,7 @@ function toggleBubble(n) {
 
     <div class="buttonFoo" onclick="downloadImage()">
         <a>
-            <img src="images/save.png" style="width:28px;height:auto" />
+            <img src="images/folder.png" style="width:28px;height:auto" />
             <div class='buttonFooText'>
                 Save
             </div>
@@ -509,6 +514,23 @@ function toggleBubble(n) {
     <h3>Images:</h3>
     <p id="metadata">.</p>
 </div> <!--#imagesMetadata-->
+
+<div id="downloadDiv" class="infoDiv invisPosFixed">
+    <img src="close_icon.png" alt="close" class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
+    <p>
+        <a style="font-size:1.2em;padding:10px;" id="downloadLink">
+            <img src="save.png" alt="save">
+            Right-click here to download your image
+        </a>
+    </p>
+    <p>You may get a filename that ends in ".png.part", and in this case you'll need to rename it so it just ends in ".png", otherwise your computer might not know how to display the image.</p>
+    <p>This works in recent versions of Firefox and Chrome, and doesn't work in Internet Explorer 8. If you right-click and nothing happens - sorry, it looks like this doesn't work in your browser.<p>
+    <div id="downloadInfo"></div>
+</div> <!--#downloadDiv-->
+
+
+<canvas id="myCanvas" style="border:2px solid blue;">
+</canvas>
 
 </body>
 </html>

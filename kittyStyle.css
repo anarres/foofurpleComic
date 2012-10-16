@@ -288,10 +288,10 @@ div#imagesMetadata {
     margin:0px;
     padding:0px;
     border:0px;
-    visibility: hidden;
-    position:absolute;
-    top:-400px;
-    left:1200px;
+    //visibility: hidden;
+    //position:absolute;
+    //top:-400px;
+    //left:1200px;
 }
 .extraSpace {
     padding: 5px 30px;

@@ -260,6 +260,7 @@ div.backgroundArt img {
     position: absolute;
     top: 10px;
     left: 220px;
+    background-color: transparent;
 }
 .kitty1 {
     position: absolute;
@@ -286,11 +287,12 @@ div#imagesMetadata {
 #myCanvas {
     margin:0px;
     padding:0px;
-    border:0px;
-    visibility: hidden;
-    position:absolute;
-    top:-400px;
-    left:1200px;
+    border: 2px solid blue;
+    //border:0px;
+    //visibility: hidden;
+    //position:absolute;
+    //top:-400px;
+    //left:1200px;
 }
 .extraSpace {
     padding: 5px 30px;
