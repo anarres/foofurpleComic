@@ -159,6 +159,14 @@ function getTextareaHeight(text) {
 
 function getBubbleUrl(lr, numLines, bubbleMode) {
 
+    if (bubbleMode==2) {
+            return "images/bubbles/clear.png";
+    }
+
+
+    lr = parseInt(lr);
+    n = parseInt(numLines);
+
     if (bubbleMode==1) {
         return "images/bubbles/cloud.png";
     }
@@ -215,10 +223,6 @@ function setBgImage(divObj, url) {
 }
 
 function setBubbleImageUrl(imgObj, lr, text, bubbleMode) {
-
-// CONFUSION BETWEEN LR AND BUBBLEMODE
-
-
     var numLines = getNumLines(text);
     var url = getBubbleUrl(lr, numLines, bubbleMode);
     imgObj.setAttribute("src", url);
@@ -310,4 +314,8 @@ function refreshDisplay(theComic) {
     for (var i=0; i<pArray.length; i++) {
         displayPanel(theComic, pArray[i], i+1);
     }
+
+
+    // Make sure jscolor widget is displaying the riight color
+    //document.getElementById('jscolor').value = theComic.bgColor;
 }

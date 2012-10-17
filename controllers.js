@@ -160,12 +160,14 @@ function textareaClick(pNum, leftOrRight) {
 
     // Display - bubble image
     var imgID = "leftBubble" + pNum;
-    if (leftOrRight == 1) {
+    var bMode = theComic.panelsArray[index].lBubbleMode;
+    if (lr == 1) {
         imgID = "rightBubble" + pNum;
+        bMode = theComic.panelsArray[index].rBubbleMode;
     }
     var imgObj = document.getElementById(imgID);
     var panelObj = theComic.panelsArray[index];
-    setBubbleImageMax(imgObj, lr, 0);
+    setBubbleImageMax(imgObj, lr, bMode);
 }
 
 function textareaBlur(pNum, leftOrRight) {
@@ -182,11 +184,13 @@ function textareaBlur(pNum, leftOrRight) {
 
     // Display bubble image
     var imgID = "leftBubble" + pNum;
+    var bMode = theComic.panelsArray[index].lBubbleMode;
     if (lr == 1) {
         imgID = "rightBubble" + pNum;
+        bMode = theComic.panelsArray[index].rBubbleMode;
     }
     var imgObj = document.getElementById(imgID);
-    setBubbleImageUrl(imgObj, lr, text, 0);
+    setBubbleImageUrl(imgObj, lr, text, bMode); // 0 is a fudge
 
     // Display - textarea
     var foo = lr + 1;
@@ -323,8 +327,46 @@ function toggleBubble(n) {
     }
 }
 
+
+// FIXME put this somewhere else
+// randomInt(0,10) would give numbers from 0 to 9.
+function randomInt(lowestInt, highestInt) {
+    lowestInt = parseInt(lowestInt);
+    highestInt = parseInt(highestInt);
+    var randomFraction = Math.random();
+    var multiplier = highestInt - lowestInt;
+    var output = Math.floor(randomFraction*multiplier) + lowestInt;
+    return output;
+}
+
+function randomDefaultImages(theComic) {
+
+    var fooArray = [ 
+
+    {'bgColor':'','bgArt':'images/backgroundArt/spacey-scene.png','left':'images/kitties/left/purple_alien2.png', 'right':'images/kitties/right/purple_alien.png'},
+
+    {'bgColor':'','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
+
+    {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
+
+    {'bgColor':'cbcf99','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/left/shiny-octopus.png', 'right':'images/kitties/right/shiny-octopus2.png'},
+
+    {'bgColor':'d9d6ab','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
+
+    {'bgColor':'21171c','bgArt':'images/backgroundArt/starry_night_transparent.png','left':'images/kitties/left/rg1024_cartoon_figure7.png', 'right':'images/kitties/right/rg1024_cartoon_figure8.png'}
+
+    ];
+
+    var x = randomInt(0, fooArray.length);
+    theComic.bgColor = fooArray[x]['bgColor'];
+    theComic.bgArt = fooArray[x]['bgArt'];
+    theComic.leftKittyUrl = fooArray[x]['left'];
+    theComic.rightKittyUrl = fooArray[x]['right'];
+}
+
 function getStarted() {
     theComic = new KittyComic();
+    randomDefaultImages(theComic);
     theComic.createPanel();
     theComic.createPanel();
     refreshDisplay(theComic);

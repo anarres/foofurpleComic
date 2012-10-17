@@ -159,11 +159,50 @@ function getTextareaHeight(text) {
 
 function getBubbleUrl(lr, numLines, bubbleMode) {
 
-    if (bubbleMode==1) {
-        return "images/bubbles/cloud.png";
+    if (bubbleMode==2) {
+            return "images/bubbles/clear.png";
     }
-    else if (bubbleMode==2) {
-        return "images/bubbles/clear.png";
+
+    lr = parseInt(lr);
+    n = parseInt(numLines);
+
+    if (bubbleMode==1) {
+        if (n < 2) { 
+            if (lr == 0) { return "images/bubbles/leftCloud1.png"; }
+            else { return "images/bubbles/rightCloud1.png"; }
+        }
+        else if (n == 2) { 
+            if (lr == 0) { return "images/bubbles/leftCloud2.png"; }
+            else { return "images/bubbles/rightCloud2.png"; }
+        }
+        else if (n == 3) { 
+            if (lr == 0) { return "images/bubbles/leftCloud3.png"; }
+            else { return "images/bubbles/rightCloud3.png"; }
+        }
+        else if (n == 4) { 
+            if (lr == 0) { return "images/bubbles/leftCloud4.png"; }
+            else { return "images/bubbles/rightCloud4.png"; }
+        }
+        else if (n == 5) { 
+            if (lr == 0) { return "images/bubbles/leftCloud5.png"; }
+            else { return "images/bubbles/rightCloud5.png"; }
+        }
+        else if (n == 6) { 
+            if (lr == 0) { return "images/bubbles/leftCloud6.png"; }
+            else { return "images/bubbles/rightCloud6.png"; }
+        }
+        else if (n == 7) { 
+            if (lr == 0) { return "images/bubbles/leftCloud7.png"; }
+            else { return "images/bubbles/rightCloud7.png"; }
+        }
+        else if (n == 8) { 
+            if (lr == 0) { return "images/bubbles/leftCloud8.png"; }
+            else { return "images/bubbles/rightCloud8.png"; }
+        }
+        else { 
+            if (lr == 0) { return "images/bubbles/leftCloud9.png"; }
+            else { return "images/bubbles/rightCloud9.png"; }
+        }
     }
     else {
         lr = parseInt(lr);
@@ -306,4 +345,8 @@ function refreshDisplay(theComic) {
     for (var i=0; i<pArray.length; i++) {
         displayPanel(theComic, pArray[i], i+1);
     }
+
+
+    // Make sure jscolor widget is displaying the riight color
+    //document.getElementById('jscolor').value = theComic.bgColor;
 }

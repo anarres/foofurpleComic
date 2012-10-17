@@ -393,11 +393,20 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-
             { 
-            "url":"images/backgroundArt/derby-yellow2.png",
-            "title": "Derby yellow 2",
-            "description": "bright yellow background",
+            "url":"images/backgroundArt/curved-matrix.png",
+            "title": "Curved matrix",
+            "description": "An abstract grey background with curved glowing lines",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/spacey-scene.png",
+            "title": "Spacey scene",
+            "description": "Computer generated scene with some hills on a foggy day",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
             "license":"Public domain",
@@ -728,6 +737,136 @@ var images88 = [
                 "artist_website":"",
                 "license":"Public domain",
                 "license_short":"CC BY 3.0",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/rg1024_cartoon_figure.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/rg1024_cartoon_figure.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
+
+
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/rg1024_cartoon_figure4.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/rg1024_cartoon_figure4.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/rg1024_cartoon_figure6.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/rg1024_cartoon_figure6.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/rg1024_cartoon_figure7.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/rg1024_cartoon_figure7.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/rg1024_cartoon_figure8.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/rg1024_cartoon_figure8.png",
+                "title": "Cute cartoon figure",
+                "description": "cute cartoon figure",
+                "artist":"rg1024",
+                "artist_website":"openclipart.org/user-detail/rg1024",
+                "license":"Public domain",
+                "license_short":"Public domain",
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
@@ -1455,8 +1594,6 @@ var images88 = [
         ]
     }
 ];
-
-
 
 function getBgDataObj(url) {
     for (var i=0; i<images88[0].bg.length; i++) {
