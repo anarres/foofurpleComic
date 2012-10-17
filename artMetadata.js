@@ -1456,8 +1456,6 @@ var images88 = [
     }
 ];
 
-
-
 function getBgDataObj(url) {
     for (var i=0; i<images88[0].bg.length; i++) {
         if (images88[0].bg[i].url === url) {
@@ -1501,8 +1499,6 @@ function getRightMetadata(url) {
 }
 
 
-
-
 function getPrintBgMetadata(url) {
     if ( url === "" ) {
         return "";
@@ -1522,10 +1518,6 @@ function getPrintRightMetadata(url) {
 }
 
 
-
-
-
-
 function getBgDesc(url) {
     if ( url === "" ) {
         return "";
@@ -1541,23 +1533,5 @@ function getLeftDesc(url) {
 }
 function getRightDesc(url) {
     var d = getRightDataObj(url);
-    return d.description;
+    return "Character 2 is: " + d.description + ". ";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

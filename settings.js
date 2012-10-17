@@ -7,15 +7,14 @@ var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_sheep.png";
 var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
-var dText = "";
 
 var charsPerLine = 18;
 var maxLines = 9;
 var maxChars = charsPerLine*maxLines;
-var textareaWidth=185;
 
 var panelWidth = 400;
 var panelHeight = 300;
+var textareaWidth=185;
 
 var printX = 20;
 var printX2 = 220;
@@ -59,14 +58,9 @@ function getCanvasHeight(numPanels) {
     var multiplier = parseInt(index/2);
     var result = 2*borderWidth + panelHeight + multiplier*(panelHeight + 2*borderWidth);
 
-
     // Add 100 for metadata for now
     return result + 100;
 }
-
-
-
-
 
 
 /* TESTS (NB somewhat ironically, these are all broken) */

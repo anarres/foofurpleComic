@@ -7,15 +7,14 @@ var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_sheep.png";
 var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
-var dText = "";
 
 var charsPerLine = 18;
 var maxLines = 9;
 var maxChars = charsPerLine*maxLines;
-var textareaWidth=185;
 
 var panelWidth = 400;
 var panelHeight = 300;
+var textareaWidth=185;
 
 var printX = 20;
 var printX2 = 220;

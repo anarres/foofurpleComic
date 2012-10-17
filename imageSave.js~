@@ -1,3 +1,23 @@
+function imageDescription() {
+    var d = "A comic. ";
+    //alert(d);
+    d += getBgDesc(theComic.bgArt);
+    d += getLeftDesc(theComic.leftKittyUrl);
+    d += getRightDesc(theComic.rightKittyUrl);
+
+    for (var i=0; i<theComic.panelsArray.length; i++) {
+        if (theComic.panelsArray[i].ltext != "") {
+            d += "Character 1: ";
+            d += theComic.panelsArray[i].ltext;
+        }
+        if (theComic.panelsArray[i].rtext != "") {
+            d += "Character 2: ";
+            d += theComic.panelsArray[i].rtext;
+        }
+    }
+    return d;
+}
+
 // Create a canvas version of the comic
 function panelToCanvas() {
 
@@ -24,17 +44,13 @@ function panelToCanvas() {
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
 
-
-
     // Write metadata to bottom of canvas
     var mData = "This comic is a mash-up made at foofurple.com using images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
-    alert(mData);
 
-    var mArray = generalLinesArray(mData, 40, 5);
-    alert(mArray);
+    var mArray = generalLinesArray(mData, 120, 5);
     var mTop = cHeight - 80; // Fudge
 
     // Text style
@@ -119,6 +135,6 @@ function downloadImage() {
     var canvas = document.getElementById("myCanvas");
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
-    /*document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + getDescription() + "</p>";*/
+    document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
     document.getElementById('downloadDiv').style.visibility = "visible";
 }

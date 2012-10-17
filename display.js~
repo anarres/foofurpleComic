@@ -1,29 +1,3 @@
-/* Function getElementsByClassName(node,classname) by Dustin Diaz, found here: 
-http://stackoverflow.com/questions/1933602/
-how-to-getelementbyclass-instead-of-getelementbyid-with-javascript*/
-function getElementsByClassName(node, classname) {
-  if (node.getElementsByClassName) { // use native implementation if available
-    return node.getElementsByClassName(classname);
-  } else {
-    return (function getElementsByClass(searchClass,node) {
-        if ( node == null )
-          node = document;
-        var classElements = [],
-            els = node.getElementsByTagName("*"),
-            elsLen = els.length,
-            pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)"), i, j;
-
-        for (i = 0, j = 0; i < elsLen; i++) {
-          if ( pattern.test(els[i].className) ) {
-              classElements[j] = els[i];
-              j++;
-          }
-        }
-        return classElements;
-    })(classname, node);
-  }
-}
-
 function highlightSelectedPanel(pNum) {
     var oldArray = getElementsByClassName(document, "selected");
     if (oldArray.length > 0) {
@@ -144,14 +118,11 @@ function generalLinesArray(text, maxLineLength, maxNumLines) {
     return stringArray;
 }
 
-
-
-
-
 function getNumLines(text) {
     var lines = fooLinesArray(text);
     return lines.length;
 }
+
 function getTextareaHeight(text) {
     var numLines = getNumLines(text);
     if (numLines < 2) {
@@ -202,8 +173,8 @@ function getBubbleUrl(lr, numLines, bubbleMode) {
             else { return "images/bubbles/rightBubble1.png"; }
         }
         else if (n == 2) { 
-            if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
-            else { return "images/bubbles/rightBubble3.png"; }
+            if (lr == 0) { return "images/bubbles/leftBubble2.png"; }
+            else { return "images/bubbles/rightBubble2.png"; }
         }
         else if (n == 3) { 
             if (lr == 0) { return "images/bubbles/leftBubble3.png"; }

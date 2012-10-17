@@ -1501,7 +1501,6 @@ function getRightMetadata(url) {
 }
 
 
-
 function getPrintBgMetadata(url) {
     if ( url === "" ) {
         return "";
@@ -1521,5 +1520,20 @@ function getPrintRightMetadata(url) {
 }
 
 
-
-
+function getBgDesc(url) {
+    if ( url === "" ) {
+        return "";
+    }
+    else {
+        var d = getBgDataObj(url);
+        return "The scene: " + d.description + ". ";
+    }
+}
+function getLeftDesc(url) {
+    var d = getLeftDataObj(url);   
+    return "Character 1 is: " + d.description + ". ";
+}
+function getRightDesc(url) {
+    var d = getRightDataObj(url);
+    return "Character 2 is: " + d.description + ". ";
+}
