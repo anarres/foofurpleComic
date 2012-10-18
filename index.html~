@@ -18,8 +18,6 @@
 <script type="text/javascript" src="utils/jscolor/jscolor.js"></script>
 <script type="text/javascript" src="utils/getElementsByClassNameDiaz.js"></script>
 
-
-
 </head>
 
 <body onload="getStarted()">
@@ -146,18 +144,20 @@
         <img src="images/close_icon.png" alt="close">
     </div> <!--.close--><br>
 
-    <h3>Add your own image:</h3><br>
+    <h3>Add your own image:</h3>
 
-    <strong>Image address: </strong>
-    <input type="text" id="newImageUrl" value="" style="width:500px;" /> 
-    (can be a web address like http://example.com/cute_kitten.png, or a path to a file on your computer like /home/alfredina/images/cute_kitten.png)
+    <p style="text-align:left;">Web address:
+    <input type="text" id="newImageUrl" value="" style="width:500px;" /></p>
 
-    <br><br>
+    <p style="text-align:left;">
+        <input type="radio" name="foo" class="radio" id="newBgUrl" />Background image (400px by 300px)
+    </p>
 
-    <input type="radio" name="foo" id="newBgUrl" />Background image (400px by 300px):<br><br>
-    <input type="radio" name="foo" id="newKittyUrl" />Character image (100px by 100px):<br><br>
+    <p style="text-align:left;">
+        <input type="radio" name="foo" class="radio" id="newKittyUrl" />Character image (100px by 100px)
+    </p><br>
 
-    <input type="submit" value="Add image" onclick="newWebImage(1)" class="submit" /><br><br><br>
+    <button type="submit" onclick="newWebImage(1)" class="submit">Add image</button><br>
 
 <!--
     <h3>From your computer:</h3><br>

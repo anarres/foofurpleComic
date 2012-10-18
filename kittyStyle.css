@@ -50,10 +50,18 @@ a:hover {
 input {
     border: 1px solid black;
     border-radius: 3px;
-    padding: 2px;
+    padding: 3px 6px;
 }
-input.submit {
+input.radio {
+    margin-right: 10px;
+    background-color:yellow;
+}
+button {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px 8px;
     cursor: pointer;
+    font-size: 1.1em;
 }
  
 /* Buttons / Controls */

@@ -167,7 +167,7 @@ function textareaClick(pNum, leftOrRight) {
     }
     var imgObj = document.getElementById(imgID);
     var panelObj = theComic.panelsArray[index];
-    setBubbleImageMax(imgObj, lr, 0);
+    setBubbleImageMax(imgObj, lr, bMode);
 }
 
 function textareaBlur(pNum, leftOrRight) {
@@ -351,9 +351,11 @@ function randomDefaultImages(theComic) {
 
     {'bgColor':'cbcf99','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/left/shiny-octopus.png', 'right':'images/kitties/right/shiny-octopus2.png'},
 
-    {'bgColor':'d9d6ab','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
+    {'bgColor':'f2aeb1','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
 
-    {'bgColor':'21171c','bgArt':'images/backgroundArt/starry_night_transparent.png','left':'images/kitties/left/rg1024_cartoon_figure7.png', 'right':'images/kitties/right/rg1024_cartoon_figure8.png'}
+    {'bgColor':'48cbfa','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}
+
+
 
     ];
 
