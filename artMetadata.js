@@ -1036,6 +1036,59 @@ var images88 = [
             },
 
 
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter3.png",
+                "title": "Critter",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter4.png",
+                "title": "Critter 2",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter5.png",
+                "title": "Critter",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter6.png",
+                "title": "Critter 2",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
             {
             "left":
                 { 

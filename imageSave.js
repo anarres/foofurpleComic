@@ -1,6 +1,5 @@
 function imageDescription() {
     var d = "A comic. ";
-    //alert(d);
     d += getBgDesc(theComic.bgArt);
     d += getLeftDesc(theComic.leftKittyUrl);
     d += getRightDesc(theComic.rightKittyUrl);
@@ -34,6 +33,11 @@ function panelToCanvas() {
     ctx.fillStyle = "#424242";
     ctx.fillRect(0,0,cWidth,cHeight);
 
+
+
+///////////////////////////////////////////////////////////
+
+
     // Prepare images
     var bgImage = new Image();
     bgImage.src = theComic.bgArt;
@@ -43,6 +47,8 @@ function panelToCanvas() {
 
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
+
+
 
     // Write metadata to bottom of canvas
     var mData = "This comic is a mash-up made at foofurple.com using images: ";
@@ -74,8 +80,9 @@ function panelToCanvas() {
         ctx.fillStyle = "#" + theComic.bgColor;
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
+
         // Draw background image
-        ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        //ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
 
         // Draw characters
         ctx.drawImage(leftChar, x0 + kitty1X, y0 + kittyY);
@@ -133,6 +140,7 @@ function panelToCanvas() {
 function downloadImage() {
     panelToCanvas();    // Create canvas object
     var canvas = document.getElementById("myCanvas");
+    alert(canvas);
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";

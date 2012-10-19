@@ -157,7 +157,7 @@
         <input type="radio" name="foo" class="radio" id="newKittyUrl" />Character image (100px by 100px)
     </p><br>
 
-    <button type="submit" onclick="newWebImage(1)" class="submit">Add image</button><br>
+    <button type="submit" onclick="newWebImage(1)" class="submit">Add image</button><br><br>
 
 <!--
     <h3>From your computer:</h3><br>
@@ -190,6 +190,8 @@
 
     <div id="downloadInfo"></div>
 </div> <!--#downloadDiv-->
+
+<img src="file:///home/katie/Desktop/temp.png" id="fooTest" />
 
 
 <canvas id="myCanvas" style="visibility:hidden;">

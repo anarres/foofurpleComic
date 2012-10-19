@@ -28,6 +28,9 @@ function chooseBackgroundImage() {
         myObj.focus();
     }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
 function loadBgImages() {
     var html = "<div id=\"removeBackgroundArt\"     onClick=\"selectBackgroundArt('')\" >       <a>Remove background art</a>     </div>";
 
@@ -36,7 +39,7 @@ function loadBgImages() {
         html += images88[0].bg[i].url;
         html += "' id='";
         html += images88[0].bg[i].url;
-        html += "' class='backgroundChooser' onClick=\"selectBackgroundArt('";
+        html += "' class='backgroundChooser bgImgFoo' onClick=\"selectBackgroundArt('";
         html += images88[0].bg[i].url;
         html += "')\">";
     }
@@ -96,6 +99,8 @@ function selectKitty(num, imgUrl) {
     updateMetadata();
 }
 
+
+/////////////////////////////////////////////////////////////////////////////////
 function loadCharacters() {
 
     // Load the character images
@@ -106,7 +111,7 @@ function loadCharacters() {
         htmlLeft += images88[1].characters[i].left.url;
         htmlLeft += "' id='";
         htmlLeft += images88[1].characters[i].left.url;
-        htmlLeft += "' class='imgChooser1' onclick=\"selectKitty(1, '";
+        htmlLeft += "' class='imgChooser1 charImg' onclick=\"selectKitty(1, '";
         htmlLeft += images88[1].characters[i].left.url;
         htmlLeft += "')\">";
 
@@ -114,7 +119,7 @@ function loadCharacters() {
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "' id='";
         htmlRight += images88[1].characters[i].right.url;
-        htmlRight += "' class='imgChooser2' onclick=\"selectKitty(2, '";
+        htmlRight += "' class='imgChooser2 charImg' onclick=\"selectKitty(2, '";
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "')\">";
     }
@@ -208,6 +213,10 @@ function changePanelBGColor() {
     // Save the new value to the models
     theComic.setBgColor(document.getElementById("jscolor").value);
 }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function newWebImage(n) {
     var url = document.getElementById('newImageUrl').value;
@@ -353,7 +362,7 @@ function randomDefaultImages(theComic) {
 
     {'bgColor':'f2aeb1','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
 
-    {'bgColor':'48cbfa','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}
+    {'bgColor':'30b1fc','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}
 
 
 

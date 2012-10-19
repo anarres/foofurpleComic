@@ -1008,6 +1008,61 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter.png",
+                "title": "Critter",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter2.png",
+                "title": "Critter 2",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter3.png",
+                "title": "Critter",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter4.png",
+                "title": "Critter 2",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
             {
             "left":
                 { 

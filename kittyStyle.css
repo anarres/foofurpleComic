@@ -64,6 +64,16 @@ button {
     font-size: 1.1em;
 }
  
+/* Control size of images */
+img.charImg {
+    width: 100px;
+    height: 100px;
+}
+/* Control size of images !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
+
+
+
+
 /* Buttons / Controls */
 
 div#controls {
@@ -161,6 +171,7 @@ div#chooseBackgroundImage {
 }
 div#chooseBackgroundImage img {
     width: 150px;
+    height: 100px;
 }
 div#removeBackgroundArt {
     cursor: pointer;
@@ -241,10 +252,19 @@ div.backgroundArt {
     margin: 10px;
     position: relative;
     border-radius: 2px;
+    background-size:400px 300px;
+    background-repeat:no-repeat;
 }
 div.backgroundArt img {
     z-index: 2;
 }
+img.kitty1, img.kitty2 {
+    width: 100px;
+    height: 100px;
+}
+
+
+
 .leftBubbleImage {
     position: absolute;
     top: 5px;
