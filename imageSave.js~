@@ -42,12 +42,13 @@ function panelToCanvas() {
     var bgImage = new Image();
     bgImage.src = theComic.bgArt;
 
-
     var leftChar = new Image();
     leftChar.src = theComic.leftKittyUrl;
 
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
+
+
 
     // Write metadata to bottom of canvas
     var mData = "This comic is a mash-up made at foofurple.com using images: ";

@@ -140,7 +140,6 @@ function panelToCanvas() {
 function downloadImage() {
     panelToCanvas();    // Create canvas object
     var canvas = document.getElementById("myCanvas");
-    alert(canvas);
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";

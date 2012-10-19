@@ -191,8 +191,6 @@
     <div id="downloadInfo"></div>
 </div> <!--#downloadDiv-->
 
-<img src="file:///home/katie/Desktop/temp.png" id="fooTest" />
-
 
 <canvas id="myCanvas" style="visibility:hidden;">
 </canvas>
