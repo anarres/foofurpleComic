@@ -282,6 +282,7 @@ img.kitty1, img.kitty2 {
     top: 10px;
     left: 10px;
     background-color: transparent;
+    padding-bottom: 40px;
 }
 .textarea2 {
     z-index: 3;
@@ -289,6 +290,7 @@ img.kitty1, img.kitty2 {
     top: 10px;
     left: 220px;
     background-color: transparent;
+    padding-bottom: 40px;
 }
 .kitty1 {
     position: absolute;

@@ -305,8 +305,11 @@ function displayPanel(theComic, pObj, pNum) {
     var textarea1 = document.createElement("textarea");
     textarea1.setAttribute("class", "textarea1");
     textarea1.setAttribute("id", "textarea1Panel"+pNum);
+
+
     textarea1.setAttribute("onBlur", "textareaBlur(" + pNum + ", 0)");
     textarea1.setAttribute("onClick", "textareaClick(" + pNum + ", 0)");
+
     setTextareaValue(textarea1, pObj.ltext);
     panelDiv.appendChild(textarea1);
    

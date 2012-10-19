@@ -33,11 +33,6 @@ function panelToCanvas() {
     ctx.fillStyle = "#424242";
     ctx.fillRect(0,0,cWidth,cHeight);
 
-
-
-///////////////////////////////////////////////////////////
-
-
     // Prepare images
     var bgImage = new Image();
     bgImage.src = theComic.bgArt;
@@ -82,7 +77,7 @@ function panelToCanvas() {
 
 
         // Draw background image
-        //ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
 
         // Draw characters
         ctx.drawImage(leftChar, x0 + kitty1X, y0 + kittyY);

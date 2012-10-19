@@ -39,7 +39,7 @@ function loadBgImages() {
         html += images88[0].bg[i].url;
         html += "' id='";
         html += images88[0].bg[i].url;
-        html += "' class='backgroundChooser bgImgFoo' onClick=\"selectBackgroundArt('";
+        html += "' class='backgroundChooser' onClick=\"selectBackgroundArt('";
         html += images88[0].bg[i].url;
         html += "')\">";
     }
@@ -176,6 +176,7 @@ function textareaClick(pNum, leftOrRight) {
 }
 
 function textareaBlur(pNum, leftOrRight) {
+    alert('foo');
     var lr = parseInt(leftOrRight);
     var index = parseInt(pNum) - 1;    
     var myId = "textarea1Panel" + pNum;

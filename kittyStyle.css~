@@ -258,7 +258,10 @@ div.backgroundArt {
 div.backgroundArt img {
     z-index: 2;
 }
-
+img.kitty1, img.kitty2 {
+    width: 100px;
+    height: 100px;
+}
 
 
 
