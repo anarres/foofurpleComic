@@ -166,16 +166,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/bubbles2.png",
-            "title": "Bubbles 2",
-            "description": "bubbles",
-            "artist":"anarres",
-            "artist_website":"",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"images/backgroundArt/mystica_fortress_fantasy.png",
             "title": "Fantasy Fortress",
             "description": "DESCRIPTION",

@@ -91,6 +91,7 @@ div.buttonFoo {
     margin-bottom: 0px;
     float: left;
     border-radius: 5px;
+    cursor:pointer;
 }
 div.buttonFoo:hover {
     background-color: #ff1c97;
@@ -124,6 +125,7 @@ div.colorWidget input {
     text-align: center;
     border: 1px solid #434A3A;
     margin: 3px;
+    cursor: text;
 }
 
 /* White toggleDivs for choosing kitties or background art */

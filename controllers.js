@@ -5,7 +5,8 @@ function updateMetadata() {
     var bg = getBgMetadata(theComic.bgArt);
     var left = getLeftMetadata(theComic.leftKittyUrl);
     var right = getRightMetadata(theComic.rightKittyUrl);
-    document.getElementById('imagesMetadata').innerHTML = bg + left + right;
+    var html = "<h3>Images credits:</h3>";
+    document.getElementById('imagesMetadata').innerHTML = html + bg + left + right;
 }
 
 function chooseKitty() {
@@ -29,7 +30,6 @@ function chooseBackgroundImage() {
     }
 }
 
-//////////////////////////////////////////////////////////////////////////////////////////////
 
 function loadBgImages() {
     var html = "<div id=\"removeBackgroundArt\"     onClick=\"selectBackgroundArt('')\" >       <a>Remove background art</a>     </div>";
@@ -214,9 +214,6 @@ function changePanelBGColor() {
     theComic.setBgColor(document.getElementById("jscolor").value);
 }
 
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function newWebImage(n) {
     var url = document.getElementById('newImageUrl').value;
