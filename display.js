@@ -306,7 +306,6 @@ function displayPanel(theComic, pObj, pNum) {
     textarea1.setAttribute("class", "textarea1");
     textarea1.setAttribute("id", "textarea1Panel"+pNum);
 
-
     textarea1.setAttribute("onBlur", "textareaBlur(" + pNum + ", 0)");
     textarea1.setAttribute("onClick", "textareaClick(" + pNum + ", 0)");
 
@@ -351,5 +350,7 @@ function refreshDisplay(theComic) {
 
 
     // Make sure jscolor widget is displaying the riight color
+    //alert(theComic.bgColor);
     //document.getElementById('jscolor').value = theComic.bgColor;
+    //alert('foo');
 }

@@ -364,8 +364,6 @@ function randomDefaultImages(theComic) {
 
     {'bgColor':'30b1fc','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}
 
-
-
     ];
 
     var x = randomInt(0, fooArray.length);
@@ -385,4 +383,8 @@ function getStarted() {
     loadBgImages();
     loadCharacters();
     updateMetadata();
+
+    document.getElementById('jscolor').color.fromString(theComic.bgColor);
+
+
 }
