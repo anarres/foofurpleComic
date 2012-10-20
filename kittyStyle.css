@@ -69,9 +69,6 @@ img.charImg {
     width: 100px;
     height: 100px;
 }
-/* Control size of images !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
-
-
 
 
 /* Buttons / Controls */
@@ -88,13 +85,13 @@ div#controls {
 div.buttonFoo {
     text-align: center;
     background-color:#f6320b;
-    cursor: pointer;
     height: 50px;
     border: 1px solid #cccccc;
     margin: 10px 3px;
     margin-bottom: 0px;
     float: left;
     border-radius: 5px;
+    cursor:pointer;
 }
 div.buttonFoo:hover {
     background-color: #ff1c97;
@@ -126,9 +123,9 @@ div.colorWidget input {
     display: block;
     width: 150px;
     text-align: center;
-    cursor: pointer;
     border: 1px solid #434A3A;
     margin: 3px;
+    cursor: text;
 }
 
 /* White toggleDivs for choosing kitties or background art */
@@ -174,7 +171,7 @@ div#chooseBackgroundImage img {
     height: 100px;
 }
 div#removeBackgroundArt {
-    cursor: pointer;
+    //cursor...........................FIXME!!!: pointer;
 }
 div#removeBackgroundArt a {
     background-color: #ffffff;
@@ -223,7 +220,7 @@ div#removeBackgroundArt a:hover {
     margin: 5px;
     padding: 2px 6px;
     border-radius: 5px;
-    cursor: pointer;
+    //cursor...........................FIXME!!!: pointer;
 }
 .close:hover {
     background-color: #dddddd;
