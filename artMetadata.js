@@ -33,6 +33,29 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
+            "url":"images/backgroundArt/colorful-dots-light.png",
+            "title": "Colourful dots background",
+            "description": "a colourful dots background",
+            "artist":"Web Design Hot",
+            "artist_website":"http://www.webdesignhot.com",
+            "license":"Creative Commons 3.0 Attribution License",
+            "license_short":"CC BY 3.0",
+            "license_url":"http://creativecommons.org/licenses/by/3.0/"
+            },
+            { 
+            "url":"images/backgroundArt/colorful-dots-dark.png",
+            "title": "Colourful dots background",
+            "description": "a colourful dots background",
+            "artist":"Web Design Hot",
+            "artist_website":"http://www.webdesignhot.com",
+            "license":"Creative Commons 3.0 Attribution License",
+            "license_short":"CC BY 3.0",
+            "license_url":"http://creativecommons.org/licenses/by/3.0/"
+            },
+
+
+
+            { 
             "url":"images/backgroundArt/wheat-field-vector.jpg",
             "title": "Wheat field",
             "description": "wheat field",
@@ -143,16 +166,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/bubbles2.png",
-            "title": "Bubbles 2",
-            "description": "bubbles",
-            "artist":"anarres",
-            "artist_website":"",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"images/backgroundArt/mystica_fortress_fantasy.png",
             "title": "Fantasy Fortress",
             "description": "DESCRIPTION",
@@ -172,6 +185,27 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
+            { 
+            "url":"images/backgroundArt/mars-rover-jm.png",
+            "title": "Mars rover",
+            "description": "the Mars Rover on the surface of Mars",
+            "artist":"JM",
+            "artist_website":"http://www.clker.com/uploads-45252-1.html",
+            "license":"Public Domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/red-bricks-rich-guccine.png",
+            "title": "Red bricks",
+            "description": "in the background is a red brick wall",
+            "artist":"Rich Guccini",
+            "artist_website":"http://www.clker.com/uploads-57964-1.html",
+            "license":"Public Domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
             { 
             "url":"images/backgroundArt/road-trip.png",
             "title": "Road trip",
@@ -232,16 +266,49 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
+
+
             { 
-            "url":"images/backgroundArt/bubbles5.png",
-            "title": "Bubbles 5",
-            "description": "bubbles",
+            "url":"images/backgroundArt/metal-bg.png",
+            "title": "Metal",
+            "description": "a shiny metal background",
             "artist":"Anarres",
-            "artist_website":"",
+            "artist_website":"http://foofurple.com",
             "license":"Public Domain",
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
+
+
+
+
+            { 
+            "url":"images/backgroundArt/subtle-bg.png",
+            "title": "Subtle lines",
+            "description": "",
+            "artist":"Anarres",
+            "artist_website":"http://foofurple.com",
+            "license":"Public Domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+
+
+
+            { 
+            "url":"images/backgroundArt/ping-bg3.png",
+            "title": "Strange abstract background",
+            "description": "a strange, glowing abstract background with lines and blobs",
+            "artist":"Anarres",
+            "artist_website":"http://foofurple.com",
+            "license":"Public Domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
             { 
             "url":"images/backgroundArt/pinetree-forest-dragonart.jpg",
             "title": "Pinetree forest",
@@ -1086,6 +1153,63 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/little-robo.png",
+                "title": "Cartoon robot",
+                "description": "a cartoon robot",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/little-robo2.png",
+                "title": "Cartoon robot",
+                "description": "a cartoon robot",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/flying-things7.png",
+                "title": "Flying thing",
+                "description": "a cartoon monster",
+                "artist":"Ikabezier",
+                "artist_website":"http://openclipart.org/user-detail/ikabezier",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/flying-things6.png",
+                "title": "Flying thing",
+                "description": "a cartoon monster",
+                "artist":"Ikabezier",
+                "artist_website":"http://openclipart.org/user-detail/ikabezier",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
+
 
 
 
