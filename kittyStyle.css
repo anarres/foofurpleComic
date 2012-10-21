@@ -71,6 +71,18 @@ button {
     cursor: pointer;
     font-size: 1.1em;
 }
+
+/* About page */
+
+#about li {
+    padding: 8px 0px;
+    padding-left: 20px;
+}
+#about h2, #about h3 {
+    padding-top: 25px;
+}
+
+
  
 /* Control size of images */
 img.charImg {
@@ -267,9 +279,6 @@ img.kitty1, img.kitty2 {
     width: 100px;
     height: 100px;
 }
-
-
-
 .leftBubbleImage {
     position: absolute;
     top: 5px;
@@ -280,8 +289,6 @@ img.kitty1, img.kitty2 {
     top: 5px;
     left: 210px;
 }
-
-
 .textarea1 {
     z-index: 3;
     position: absolute;
@@ -290,7 +297,7 @@ img.kitty1, img.kitty2 {
     background-color: transparent;
     padding-bottom: 30px;
     overflow:hidden;
-    font-family:monospace;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
 }
@@ -303,12 +310,10 @@ img.kitty1, img.kitty2 {
     padding-bottom: 30px;
     overflow:hidden;
 
-    font-family:monospace;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: normal;
 }
-
-
 .kitty1 {
     position: absolute;
     top: 200px;

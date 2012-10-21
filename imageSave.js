@@ -56,7 +56,7 @@ function panelToCanvas() {
 
     // Text style 
     ctx.fillStyle = "#ffffff";
-    ctx.font = "12px monospace";
+    ctx.font = "12px arial;";
 
     for (var m=0; m<mArray.length; m++) {
         var x = 10;
@@ -115,7 +115,7 @@ function panelToCanvas() {
 
         // Text style
         ctx.fillStyle = "#000000";
-        ctx.font = "14px monospace";
+        ctx.font = "14px arial";
 
         // Left bubble text
         for (var lx=0; lx<lTextArray.length; lx++) {

@@ -15,12 +15,33 @@
 
 <h1 style="text-align:center;">Foofurple comics!</h1>
 
+<div id="about">
+
 <h2>About</h2>
 
-<p>This website is free software, with a Gnu Affero license on the parts I wrote myself. It's still quite buggy. You can find the code at <a href="https://github.com/anarres/foofurpleComic">foofurpleComic on Github</a></p>
+<p>We hope you have fun making comics! This software is still buggy, so if you have any questions or notice any bugs that aren't already listed, feel free to let us know using the hashtag #foofurple on Identi.ca or Twitter.</p>
 
+<h3>Known bugs</h3>
+
+<ul>
+
+<li>If you add your own image, you won't be able to save the comic. We haven't figured out why yet, but we're working on it.</li>
+
+<li>Text in word bubbles sometimes looks a bit different in the downloaded image - line breaks might be in different places, and if you completely filled the bubble with text it's possible that a few letters at the end will be cut off.</li>
+
+<li>If you have an older browser (or if you have a modern browser, but it's Internet Explorer) saving images might not work because your browser doesn't support the HTML5 toDataUrl() method. If you have the ability to install programs on your computer, you might want to try <a href="http://www.mozilla.org/en-US/firefox/fx/#desktop">Firefox</a>.
+
+<li>This is not really a bug, but when you save an image you'll probably get a weird filename made up of some random characters, possibly ending with ".png.part". That's actually a security feature in your web browser, to prevent malicious websites from tricking you into downloading something you don't really want. You'll probably want to change the filename to something more useful like 'comic.png'. Putting the '.png' extention at the end helps your computer to recognize that the file is an image.</li>
+
+</ul>
+
+<h3>Geek stuff</h3>
+
+<p>This is free software, with a Gnu Affero licence, and includes the wonderful LGPL-licensed <a href="http://jscolor.com/">jscolor widget</a>. It's still quite buggy. You can find the code at <a href="https://github.com/anarres/foofurpleComic">foofurpleComic on Github</a>.</p>
 
 <p><a href="index.html">Back to the main page</a></p>
+
+</div> <!--#about-->
 
 </div> <!--#container-->
 
