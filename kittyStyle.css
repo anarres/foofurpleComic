@@ -179,7 +179,7 @@ div#chooseBackgroundImage img {
     height: 100px;
 }
 div#removeBackgroundArt {
-    //cursor...........................FIXME!!!: pointer;
+    cursor: pointer;
 }
 div#removeBackgroundArt a {
     background-color: #ffffff;
@@ -228,7 +228,7 @@ div#removeBackgroundArt a:hover {
     margin: 5px;
     padding: 2px 6px;
     border-radius: 5px;
-    //cursor...........................FIXME!!!: pointer;
+    cursor: pointer;
 }
 .close:hover {
     background-color: #dddddd;
@@ -281,13 +281,18 @@ img.kitty1, img.kitty2 {
     left: 210px;
 }
 
+
 .textarea1 {
     z-index: 3;
     position: absolute;
     top: 10px;
     left: 10px;
     background-color: transparent;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    overflow:hidden;
+    font-family:monospace;
+    font-size: 14px;
+    font-weight: normal;
 }
 .textarea2 {
     z-index: 3;
@@ -295,8 +300,15 @@ img.kitty1, img.kitty2 {
     top: 10px;
     left: 220px;
     background-color: transparent;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
+    overflow:hidden;
+
+    font-family:monospace;
+    font-size: 14px;
+    font-weight: normal;
 }
+
+
 .kitty1 {
     position: absolute;
     top: 200px;
@@ -323,10 +335,10 @@ div#imagesMetadata {
     margin:0px;
     padding:0px;
     border:0px;
-    //visibility: hidden;
-    //position:absolute;
-    //top:-400px;
-    //left:1200px;
+    visibility: hidden;
+    position:absolute;
+    top:-10000px;
+    left:-1200px;
 }
 .extraSpace {
     padding: 5px 30px;

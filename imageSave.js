@@ -54,9 +54,9 @@ function panelToCanvas() {
     var mArray = generalLinesArray(mData, 120, 5);
     var mTop = cHeight - 80; // Fudge
 
-    // Text style
+    // Text style 
     ctx.fillStyle = "#ffffff";
-    ctx.font = "10pt Trebuchet MS, Helvetica, sans-serif";
+    ctx.font = "12px monospace";
 
     for (var m=0; m<mArray.length; m++) {
         var x = 10;
@@ -115,7 +115,7 @@ function panelToCanvas() {
 
         // Text style
         ctx.fillStyle = "#000000";
-        ctx.font = "10pt Trebuchet MS, Helvetica, sans-serif";
+        ctx.font = "14px monospace";
 
         // Left bubble text
         for (var lx=0; lx<lTextArray.length; lx++) {
