@@ -332,7 +332,6 @@ function displayPanel(theComic, pObj, pNum) {
     panelDiv.appendChild(kitty2);
 
     container.appendChild(panelDiv);
-    //updateMetadata();   // Only needed first time
 }
 
 /* Uses all the data to dynamically redisplay everything */
@@ -347,10 +346,4 @@ function refreshDisplay(theComic) {
     for (var i=0; i<pArray.length; i++) {
         displayPanel(theComic, pArray[i], i+1);
     }
-
-
-    // Make sure jscolor widget is displaying the riight color
-    //alert(theComic.bgColor);
-    //document.getElementById('jscolor').value = theComic.bgColor;
-    //alert('foo');
 }

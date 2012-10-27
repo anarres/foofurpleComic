@@ -102,8 +102,8 @@ function selectKitty(num, imgUrl) {
 function loadCharacters() {
 
     // Load the character images
-    var htmlLeft = "";
-    var htmlRight = "";
+    var htmlLeft = "<h3>Left character:</h3>";
+    var htmlRight = "<h3>Right character:</h3>";
     for( var i=0; i<images88[1].characters.length; i++ ) {
         htmlLeft += "<img src='";
         htmlLeft += images88[1].characters[i].left.url;
@@ -340,15 +340,14 @@ function randomDefaultImages(theComic) {
 
     var fooArray = [ 
 
-    {'bgColor':'','bgArt':'images/backgroundArt/spacey-scene.png','left':'images/kitties/left/purple_alien2.png', 'right':'images/kitties/right/purple_alien.png'},
+    {'bgColor':'3496CF','bgArt':'images/backgroundArt/spacey-scene.png','left':'images/kitties/left/purple_alien2.png', 'right':'images/kitties/right/purple_alien.png'},
 
-    {'bgColor':'','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
+    {'bgColor':'3496CF','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
 
     {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
 
 
     {'bgColor':'5acbed','bgArt':'images/backgroundArt/summerCartoon.jpg','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
-
 
 
     {'bgColor':'cbcf99','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/left/shiny-octopus.png', 'right':'images/kitties/right/shiny-octopus2.png'},
@@ -371,13 +370,13 @@ function localImageUpload(imgObjSrc) {
 
     if (document.getElementById('newBgUrl').checked) {
         var myObj = {"url":imgObjSrc,
-            "title": "?",
-            "description": "",
-            "artist":"?",
+            "title": "Image uploaded by user",
+            "description": "Image uploaded by user",
+            "artist":"unknown",
             "artist_website":"",
-            "license":"?",
-            "license_short":"?",
-            "license_url":""
+            "license":"unknown",
+            "license_short":"unknown",
+            "license_url":"unknown"
             }
         // Add to the metadata
         images88[0]["bg"].push(myObj);
@@ -394,24 +393,24 @@ function localImageUpload(imgObjSrc) {
             "left":
                 { 
                 "url":imgObjSrc,
-                "title": "",
-                "description": "",
-                "artist":"",
+                "title": "Image uploaded by user",
+                "description": "Image uploaded by user",
+                "artist":"unknown",
                 "artist_website":"",
-                "license":"",
-                "license_short":"",
-                "license_url":""
+                "license":"unknown",
+                "license_short":"unknown",
+                "license_url":"unknown"
                 },
             "right":
                 { 
                 "url":imgObjSrc,
-                "title": "",
-                "description": "",
-                "artist":"",
+                "title": "Image uploaded by user",
+                "description": "Image uploaded by user",
+                "artist":"unknown",
                 "artist_website":"",
-                "license":"",
-                "license_short":"",
-                "license_url":""
+                "license":"unknown",
+                "license_short":"unknown",
+                "license_url":"unknown"
                 }
             };
 
@@ -428,36 +427,6 @@ function localImageUpload(imgObjSrc) {
     document.getElementById("addNewImage").style.visibility = 'hidden';
 }
 
-
-/*
-function uploadWebImage() {
-    alert('foo1');
-    var beepImg = new Image();
-
-    alert('foo2');
-    beepImg.onload = function() {
-
-    alert('foo3');
-
-        var fooCanvas = document.createElement("canvas");
-    alert('foo31');
-        fooCanvas.setAttribute("width", 200);
-        fooCanvas.setAttribute("height", 200);
-    alert('foo32');
-        var fooctx = fooCanvas.getContext('2d');
-
-        fooctx.drawImage(img, 0, 0,100,100);
-    alert('foo33');
-        alert(fooCanvas.toDataURL());
-
-    }
-
-    alert('foo4');
-    beepImg.src = document.getElementById('newImageUrl').value;
-}
-*/
-
-
 function addListeners() {
     var myObj = document.getElementById('fooFile');
 
@@ -467,8 +436,6 @@ function addListeners() {
 
         var reader = new FileReader();  
         reader.onload = function(e) {
-            //var img = document.createElement("img");
-            //img.src = e.target.result;
             localImageUpload(e.target.result);
         }
         reader.readAsDataURL(file);
@@ -481,11 +448,9 @@ function getStarted() {
     theComic.createPanel();
     theComic.createPanel();
     refreshDisplay(theComic);
-
     loadBgImages();
     loadCharacters();
     updateMetadata();
-
     document.getElementById('jscolor').color.fromString(theComic.bgColor);
     addListeners();
 }

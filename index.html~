@@ -24,15 +24,19 @@
 
 <div id="container">
 
+
+
+
 <div id="chooseKitty" class="toggleDiv" tabindex="1" onBlur="document.getElementById('chooseKitty').style.visibility='hidden'">
 
-    <div id="kittyLeft">
-        <h3>Left character:</h3>
+    <div id="kittyLeft">        
     </div> <!--#kittyLeft-->
     <div id="kittyRight">
-        <h3>Right character:</h3>
     </div> <!--#kittyRight-->
 </div> <!--#chooseKitty-->
+
+
+
 
 <div id="chooseBackgroundImage" class="toggleDiv" tabindex="2" onBlur="document.getElementById('chooseBackgroundImage').style.visibility='hidden'">    
 </div> <!--#chooseBackgroundImage-->
@@ -151,15 +155,12 @@
         <img src="images/disgusting_icons.png" style="height: 30px;"/>
         Character image (100px by 100px)
     </p>
-
     <p style="text-align:left;">
-        <input type="radio" name="foo" class="radio" id="newBgUrl" />
+        <input type="radio" name="foo" class="radio" id="newBgUrl" slected="selected" />
         <img src="images/background_icon.png" style="height: 20px;padding-left:5px;padding-right:5px;"/>
         Background image (400px by 300px)
     </p>
-
     <br>
-
     <p style="text-align:left;">
         Select image file:
         <input type="file" id="fooFile">
@@ -168,7 +169,6 @@
     <br><br>
 
 </div> <!--#addNewImage-->
-
 
 
 <div id="comicPanels"></div>
@@ -194,32 +194,6 @@
 
 <canvas id="myCanvas" style="visibility:hidden;">
 </canvas>
-
-<!--
-
-<div id="test" style="width:500px;height:200px;border:2px solid blue;"></div>
-
-<img src="foo.jpg" id="testImage" style="width:100px;height:100px;border:2px solid red;"><br><br>
-
-<script>
-
-function test2() {
-
-alert('foo');
-    var foocanvas = document.getElementById("someCanId");
-
-    alert(foocanvas);
-    var barjar = foocanvas.toDataURL("image/png");
-    alert(barjar);
-
-}
-
-</script>
-
-<button onclick="test2()">CLICKME</button>
-
--->
-
 
 </body>
 </html>
