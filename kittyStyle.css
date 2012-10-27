@@ -1,5 +1,9 @@
 /* General layout */
 
+canvas {
+    border: 10px solid grey;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -258,6 +262,10 @@ p.description {
 }
 
 /* Comic panels */
+
+#comicPanels {
+    min-height: 300px;
+}
 
 div.backgroundArt {
     width:400px;

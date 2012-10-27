@@ -30,7 +30,6 @@ function chooseBackgroundImage() {
     }
 }
 
-
 function loadBgImages() {
     var html = "<div id=\"removeBackgroundArt\"     onClick=\"selectBackgroundArt('')\" >       <a>Remove background art</a>     </div>";
 
@@ -100,7 +99,6 @@ function selectKitty(num, imgUrl) {
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////
 function loadCharacters() {
 
     // Load the character images
@@ -278,13 +276,6 @@ function newWebImage(n) {
 }
 
 function addNewImage() {
-
-    //alert('foo');
-    // hide the selectBackgroundImage() div
-    //document.getElementById("chooseBackgroundImage").style.visibility = 'hidden';
-    //document.getElementById("chooseKitty").style.visibility = 'hidden';
-
-    // show the add new image div
     document.getElementById('addNewImage').style.visibility = "visible";
 }
 
@@ -349,11 +340,16 @@ function randomDefaultImages(theComic) {
 
     var fooArray = [ 
 
-    {'bgColor':'','bgArt':'images/backgroundArt/spacey-scene.png','left':'images/kitties/left/purple_alien2.png', 'right':'images/kitties/right/purple_alien.png'},
+    {'bgColor':'3496CF','bgArt':'images/backgroundArt/spacey-scene.png','left':'images/kitties/left/purple_alien2.png', 'right':'images/kitties/right/purple_alien.png'},
 
-    {'bgColor':'','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
+    {'bgColor':'3496CF','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
 
     {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
+
+
+    {'bgColor':'5acbed','bgArt':'images/backgroundArt/summerCartoon.jpg','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
+
+
 
     {'bgColor':'cbcf99','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/left/shiny-octopus.png', 'right':'images/kitties/right/shiny-octopus2.png'},
 
@@ -370,6 +366,115 @@ function randomDefaultImages(theComic) {
     theComic.rightKittyUrl = fooArray[x]['right'];
 }
 
+
+function localImageUpload(imgObjSrc) {
+
+    if (document.getElementById('newBgUrl').checked) {
+        var myObj = {"url":imgObjSrc,
+            "title": "?",
+            "description": "",
+            "artist":"?",
+            "artist_website":"",
+            "license":"?",
+            "license_short":"?",
+            "license_url":""
+            }
+        // Add to the metadata
+        images88[0]["bg"].push(myObj);
+
+        // Reload bg images
+        loadBgImages();
+
+        // Set new image
+        selectBackgroundArt(imgObjSrc);
+    }
+
+    else {
+        var myObj = {
+            "left":
+                { 
+                "url":imgObjSrc,
+                "title": "",
+                "description": "",
+                "artist":"",
+                "artist_website":"",
+                "license":"",
+                "license_short":"",
+                "license_url":""
+                },
+            "right":
+                { 
+                "url":imgObjSrc,
+                "title": "",
+                "description": "",
+                "artist":"",
+                "artist_website":"",
+                "license":"",
+                "license_short":"",
+                "license_url":""
+                }
+            };
+
+        // Add to the metadata
+        images88[1]["characters"].push(myObj);
+
+        // Reload character images
+        loadCharacters();
+
+        // Set new image
+        selectKitty(1, imgObjSrc);
+        selectKitty(2, imgObjSrc);
+    }
+    document.getElementById("addNewImage").style.visibility = 'hidden';
+}
+
+
+/*
+function uploadWebImage() {
+    alert('foo1');
+    var beepImg = new Image();
+
+    alert('foo2');
+    beepImg.onload = function() {
+
+    alert('foo3');
+
+        var fooCanvas = document.createElement("canvas");
+    alert('foo31');
+        fooCanvas.setAttribute("width", 200);
+        fooCanvas.setAttribute("height", 200);
+    alert('foo32');
+        var fooctx = fooCanvas.getContext('2d');
+
+        fooctx.drawImage(img, 0, 0,100,100);
+    alert('foo33');
+        alert(fooCanvas.toDataURL());
+
+    }
+
+    alert('foo4');
+    beepImg.src = document.getElementById('newImageUrl').value;
+}
+*/
+
+
+function addListeners() {
+    var myObj = document.getElementById('fooFile');
+
+    myObj.addEventListener("change", function(e) {
+
+        var file = myObj.files[0];
+
+        var reader = new FileReader();  
+        reader.onload = function(e) {
+            //var img = document.createElement("img");
+            //img.src = e.target.result;
+            localImageUpload(e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }, false);
+}
+
 function getStarted() {
     theComic = new KittyComic();
     randomDefaultImages(theComic);
@@ -382,6 +487,5 @@ function getStarted() {
     updateMetadata();
 
     document.getElementById('jscolor').color.fromString(theComic.bgColor);
-
-
+    addListeners();
 }

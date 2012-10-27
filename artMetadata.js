@@ -1158,6 +1158,32 @@ var images88 = [
             {
             "left":
                 { 
+                "url":"images/kitties/left/not-stick-figure.png",
+                "title": "Not stick figure",
+                "description": "a stick figure",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/not-stick-figure.png",
+                "title": "Not stick figure",
+                "description": "a stick",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+            {
+            "left":
+                { 
                 "url":"images/kitties/left/little-robo.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",

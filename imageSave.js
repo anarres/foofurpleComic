@@ -43,8 +43,6 @@ function panelToCanvas() {
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
 
-
-
     // Write metadata to bottom of canvas
     var mData = "This comic is a mash-up made at foofurple.com using images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
@@ -72,9 +70,7 @@ function panelToCanvas() {
         var y0 = getY0(i);       
 
         // Fill in background color
-        ctx.fillStyle = "#" + theComic.bgColor;
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
-
 
         // Draw background image
         ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);

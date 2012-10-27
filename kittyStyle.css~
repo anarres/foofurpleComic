@@ -75,7 +75,8 @@ button {
 /* About page */
 
 #about li {
-    padding: 8px 20px;
+    padding: 8px 0px;
+    padding-left: 20px;
 }
 #about h2, #about h3 {
     padding-top: 25px;
@@ -257,6 +258,10 @@ p.description {
 }
 
 /* Comic panels */
+
+#comicPanels {
+    min-height: 300px;
+}
 
 div.backgroundArt {
     width:400px;

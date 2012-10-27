@@ -1603,17 +1603,23 @@ function getPrintBgMetadata(url) {
     }
     else {
         var d = getBgDataObj(url);
-        return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+        return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
     }
 }
 function getPrintLeftMetadata(url) {
     var d = getLeftDataObj(url);
-     return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+     return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
 }
 function getPrintRightMetadata(url) {
     var d = getRightDataObj(url);
-     return "" + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+     return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
 }
+
+
+
+
+
+
 
 
 function getBgDesc(url) {

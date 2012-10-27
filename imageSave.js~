@@ -72,7 +72,6 @@ function panelToCanvas() {
         var y0 = getY0(i);       
 
         // Fill in background color
-        ctx.fillStyle = "#" + theComic.bgColor;
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
 
@@ -115,7 +114,7 @@ function panelToCanvas() {
 
         // Text style
         ctx.fillStyle = "#000000";
-        ctx.font = "16px arial";
+        ctx.font = "14px arial";
 
         // Left bubble text
         for (var lx=0; lx<lTextArray.length; lx++) {
