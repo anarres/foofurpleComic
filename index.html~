@@ -24,19 +24,12 @@
 
 <div id="container">
 
-
-
-
 <div id="chooseKitty" class="toggleDiv" tabindex="1" onBlur="document.getElementById('chooseKitty').style.visibility='hidden'">
-
     <div id="kittyLeft">        
     </div> <!--#kittyLeft-->
     <div id="kittyRight">
     </div> <!--#kittyRight-->
 </div> <!--#chooseKitty-->
-
-
-
 
 <div id="chooseBackgroundImage" class="toggleDiv" tabindex="2" onBlur="document.getElementById('chooseBackgroundImage').style.visibility='hidden'">    
 </div> <!--#chooseBackgroundImage-->
@@ -135,7 +128,7 @@
 <div id="header">
     <h1>Foofurple comics!</h1>
     <p>
-        Make your own comic using amazing Creative Commons and Public Domain images. <a href="about.html">About</a>
+        Make your own comic using amazing Creative Commons and Public Domain images. <a href="about.html">About</a> <a href="images_suggestions">Images suggestions</a>
     </p>    
     <div style="clear:both;"></div>
 </div> <!--#header-->

@@ -29,9 +29,17 @@ function panelToCanvas() {
     canvas.setAttribute("height", cHeight);
     var ctx = canvas.getContext('2d');
 
+
+
+
+
+
+
     // A background rectangle
     ctx.fillStyle = "#424242";
     ctx.fillRect(0,0,cWidth,cHeight);
+
+    var panelBgColor = "#" + theComic.bgColor;
 
     // Prepare images
     var bgImage = new Image();
@@ -67,9 +75,10 @@ function panelToCanvas() {
 
         // Get panel coordinates
         var x0 = getX0(i);
-        var y0 = getY0(i);       
+        var y0 = getY0(i);
 
         // Fill in background color
+        ctx.fillStyle = panelBgColor;
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
         // Draw background image

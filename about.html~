@@ -19,13 +19,11 @@
 
 <h2>About</h2>
 
-<p>We hope you have fun making comics! This software is still buggy, so if you have any questions or notice any bugs that aren't already listed, feel free to let us know. You can get contact us by using the hashtag #foofurple on Identi.ca or Twitter.</p>
+<p>We hope you have fun making comics! This software is still buggy, so if you have any questions or notice any bugs that aren't already listed, feel free to let us know. You can contact us by using the hashtag #foofurple on Identi.ca or Twitter.</p>
 
 <h3>Known bugs</h3>
 
 <ul>
-
-<li>If you add your own image, you won't be able to save the comic. We haven't figured out why yet, but we're working on it.</li>
 
 <li>Text in word bubbles sometimes looks a bit different in the downloaded image - line breaks might be in different places, and if you completely filled the bubble with text it's possible that a few letters at the end will be cut off.</li>
 

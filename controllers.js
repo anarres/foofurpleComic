@@ -1,6 +1,3 @@
-var images88;
-var theComic;
-
 function updateMetadata() {
     var bg = getBgMetadata(theComic.bgArt);
     var left = getLeftMetadata(theComic.leftKittyUrl);
@@ -97,7 +94,6 @@ function selectKitty(num, imgUrl) {
     }
     updateMetadata();
 }
-
 
 function loadCharacters() {
 

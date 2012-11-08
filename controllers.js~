@@ -1,6 +1,3 @@
-var images88;
-var theComic;
-
 function updateMetadata() {
     var bg = getBgMetadata(theComic.bgArt);
     var left = getLeftMetadata(theComic.leftKittyUrl);
@@ -121,8 +118,8 @@ function loadCharacters() {
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "')\">";
     }
-    document.getElementById("kittyLeft").innerHTML += htmlLeft;
-    document.getElementById("kittyRight").innerHTML += htmlRight;
+    document.getElementById("kittyLeft").innerHTML = htmlLeft;
+    document.getElementById("kittyRight").innerHTML = htmlRight;
 }
 
 function newPanel() {
