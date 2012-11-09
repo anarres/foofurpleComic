@@ -500,7 +500,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/left/kitty.png",
                 "title": "Kitty",
-                "description": "cute cat",
+                "description": "a cute cat",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -511,7 +511,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/right/kitty.png",
                 "title": "Kitty",
-                "description": "cute cat",
+                "description": "a cute cat",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -524,7 +524,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/left/fox.png",
                 "title": "Fox",
-                "description": "cute fox",
+                "description": "a cute fox",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -535,7 +535,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/right/fox.png",
                 "title": "Fox",
-                "description": "cute fox",
+                "description": "a cute fox",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -548,7 +548,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/left/bug.png",
                 "title": "Ladybug",
-                "description": "cute ladybug",
+                "description": "a cute ladybug",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -559,7 +559,7 @@ var images88 = [
                 { 
                 "url":"images/kitties/right/bug.png",
                 "title": "Ladybug",
-                "description": "cute ladybug",
+                "description": "a cute ladybug",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",

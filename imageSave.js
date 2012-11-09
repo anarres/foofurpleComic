@@ -29,21 +29,18 @@ function panelToCanvas() {
     canvas.setAttribute("height", cHeight);
     var ctx = canvas.getContext('2d');
 
-
-
-
-
-
-
-    // A background rectangle
+    // A background rectangle for the whole image
     ctx.fillStyle = "#424242";
     ctx.fillRect(0,0,cWidth,cHeight);
 
+    // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
 
     // Prepare images
-    var bgImage = new Image();
-    bgImage.src = theComic.bgArt;
+    if (theComic.bgArt) {
+        var bgImage = new Image();
+        bgImage.src = theComic.bgArt;
+    }
 
     var leftChar = new Image();
     leftChar.src = theComic.leftKittyUrl;
@@ -82,7 +79,9 @@ function panelToCanvas() {
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
         // Draw background image
-        ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        if (theComic.bgArt) {
+            ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        }
 
         // Draw characters
         ctx.drawImage(leftChar, x0 + kitty1X, y0 + kittyY);
