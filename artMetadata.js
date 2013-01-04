@@ -763,33 +763,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-            {
-            "left":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/left/character.png",
-                "title": "Badly drawn character",
-                "description": "badly drawn human figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"CC BY 3.0",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/right/character.png",
-                "title": "Badly drawn character",
-                "description": "badly drawn human figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"CC BY 3.0",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-
-
-
 
             {
             "left":

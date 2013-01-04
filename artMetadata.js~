@@ -47,6 +47,49 @@ var images88 = [
 
 
 
+
+
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/flowers2.png",
+            "title": "Pink cartoon flowers",
+            "description": "Pink cartoon flowers",
+            "artist":"Mathafix / Anarres",
+            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+
+
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/flowers4.png",
+            "title": "Pink cartoon flowers",
+            "description": "Pink cartoon flowers",
+            "artist":"Mathafix / Anarres",
+            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/flowers5.png",
+            "title": "Pink cartoon flowers",
+            "description": "Pink cartoon flowers",
+            "artist":"Mathafix / Anarres",
+            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+
+
+
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/wheat-field-vector.jpg",
             "title": "Wheat field",

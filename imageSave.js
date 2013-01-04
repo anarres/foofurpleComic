@@ -54,7 +54,7 @@ function panelToCanvas() {
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
 
-    var mArray = generalLinesArray(mData, 120, 5);
+    var mArray = generalLinesArray(mData, 60, 5);
     var mTop = cHeight - 80; // Fudge
 
     // Text style 

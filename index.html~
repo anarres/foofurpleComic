@@ -73,11 +73,11 @@
     </div>
 
     <div class="buttonFoo" title="Add your own image" onclick="addNewImage()">
-        <img src="images/drawing.png" style="width:27px;height:auto" />
+        <img src="images/drawing.png" style="width:35px;height:auto" />
     </div>
 
     <div class="buttonFoo" title="Save" onclick="downloadImage()">
-        <img src="images/folder.png" style="width:28px;height:auto" />
+        <img src="images/save.png" style="width:35px;height:auto" />
     </div>
 
     <div class="buttonFoo colorWidget">
