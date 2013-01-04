@@ -3,7 +3,7 @@ var images88 = [
     "bg":
         [
             { 
-            "url":"images/backgroundArt/a_paisaje_boceto.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/a_paisaje_boceto.png",
             "title": "A Paisaje Boceto",
             "description": "Pleasant countryside landscape",
             "artist":"rg1024",
@@ -13,7 +13,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/hereComesTheSun.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/hereComesTheSun.jpg",
             "title": "Here comes the sun",
             "description": "Sunny field with blue sky and butterflies",
             "artist":"Vector Open Stock",
@@ -23,7 +23,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/Farm-Landscape.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/Farm-Landscape.jpg",
             "title": "Farm landscape",
             "description": "farm with a red tractor",
             "artist":"Vector Open Stock",
@@ -33,7 +33,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/colorful-dots-light.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/colorful-dots-light.png",
             "title": "Colourful dots background",
             "description": "a colourful dots background",
             "artist":"Web Design Hot",
@@ -43,7 +43,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/colorful-dots-dark.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/colorful-dots-dark.png",
             "title": "Colourful dots background",
             "description": "a colourful dots background",
             "artist":"Web Design Hot",
@@ -56,7 +56,7 @@ var images88 = [
 
 
             { 
-            "url":"images/backgroundArt/wheat-field-vector.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/wheat-field-vector.jpg",
             "title": "Wheat field",
             "description": "wheat field",
             "artist":"All Vectors",
@@ -66,7 +66,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/summerCartoon.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/summerCartoon.jpg",
             "title": "Summer cartoon",
             "description": "bucolic countryside with rainbow and fluffy clouds",
             "artist":"Hubpic.com",
@@ -76,7 +76,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/ufo_invasion_full.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/ufo_invasion_full.jpg",
             "title": "UFO invasion",
             "description": "outer space, planet Earth in the background, and UFOs coming toward you",
             "artist":"DesignVector",
@@ -86,7 +86,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
             { 
-            "url":"images/backgroundArt/MONARK1981_STREET.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/MONARK1981_STREET.png",
             "title": "Street",
             "description": "it's dusk in the city, we see some buildings including a coffee shop",
             "artist":"MONARK1981",
@@ -96,7 +96,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/bubbles.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/bubbles.png",
             "title": "Bubbles",
             "description": "bubbles in the background",
             "artist":"Unknown",
@@ -106,7 +106,7 @@ var images88 = [
             "license_url":""
             },
             { 
-            "url":"images/backgroundArt/mochovka-cloudy.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/mochovka-cloudy.png",
             "title": "Cloudy",
             "description": "green hills, sun and white clouds",
             "artist":"Krystof Jetmar / Machovka",
@@ -116,7 +116,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/nuclear-explosion.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/nuclear-explosion.png",
             "title": "Mushroom cloud",
             "description": "a mushroom cloud, a nuclear explosion",
             "artist":"dasnolojy",
@@ -126,7 +126,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/nuclear-explosion2.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/nuclear-explosion2.png",
             "title": "Mushroom cloud",
             "description": "a mushroom cloud, a nuclear explosion",
             "artist":"dasnolojy",
@@ -136,7 +136,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/rainforest.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/rainforest.png",
             "title": "Green trees silhouette",
             "description": "a rainforest",
             "artist":"Mohamed Ibrahim",
@@ -146,7 +146,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/Clue_Simple_Clouds.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/Clue_Simple_Clouds.png",
             "title": "Simple clouds",
             "description": "fluffy white clouds",
             "artist":"Clue",
@@ -156,7 +156,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/palm_scene.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/palm_scene.png",
             "title": "Palm tree",
             "description": "a tiny island with a single palm tree",
             "artist":"rg1024",
@@ -166,7 +166,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/mystica_fortress_fantasy.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/mystica_fortress_fantasy.png",
             "title": "Fantasy Fortress",
             "description": "DESCRIPTION",
             "artist":"Mystica",
@@ -176,7 +176,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/landscape-netalloy.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/landscape-netalloy.png",
             "title": "Peaceful landscape",
             "description": "medieval fantasy fortress",
             "artist":"netalloy",
@@ -186,7 +186,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/mars-rover-jm.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/mars-rover-jm.png",
             "title": "Mars rover",
             "description": "the Mars Rover on the surface of Mars",
             "artist":"JM",
@@ -196,7 +196,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/red-bricks-rich-guccine.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/red-bricks-rich-guccine.png",
             "title": "Red bricks",
             "description": "in the background is a red brick wall",
             "artist":"Rich Guccini",
@@ -207,7 +207,7 @@ var images88 = [
             },
 
             { 
-            "url":"images/backgroundArt/road-trip.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/road-trip.png",
             "title": "Road trip",
             "description": "a hill, a road, evergreen trees, and the sun",
             "artist":"stevepetmonkey",
@@ -217,7 +217,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/swamp.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/swamp.png",
             "title": "Frog on bluish pond",
             "description": "frog on a blueish pond",
             "artist":"Eric Schug / schugschug",
@@ -227,7 +227,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/ibinbin_Castle.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/ibinbin_Castle.png",
             "title": "Castle",
             "description": "sunny day, fluffy clouds, and fairytale castle",
             "artist":"ibinbin",
@@ -237,7 +237,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/cartoon_building_with_trees.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/cartoon_building_with_trees.png",
             "title": "Cartoon building with trees",
             "description": "large red brick building with some trees in front",
             "artist":"Kelly",
@@ -247,7 +247,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/apollo11_earthview.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/apollo11_earthview.png",
             "title": "Apollo 11 Earth View",
             "description": "view of Earth seen from the surface of the moon",
             "artist":"Unknown",
@@ -257,7 +257,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/starry_night_transparent.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/starry_night_transparent.png",
             "title": "Starry background",
             "description": "starry night",
             "artist":"Unknown",
@@ -269,7 +269,7 @@ var images88 = [
 
 
             { 
-            "url":"images/backgroundArt/metal-bg.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/metal-bg.png",
             "title": "Metal",
             "description": "a shiny metal background",
             "artist":"Anarres",
@@ -283,7 +283,7 @@ var images88 = [
 
 
             { 
-            "url":"images/backgroundArt/subtle-bg.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/subtle-bg.png",
             "title": "Subtle lines",
             "description": "",
             "artist":"Anarres",
@@ -298,7 +298,7 @@ var images88 = [
 
 
             { 
-            "url":"images/backgroundArt/ping-bg3.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/ping-bg3.png",
             "title": "Strange abstract background",
             "description": "a strange, glowing abstract background with lines and blobs",
             "artist":"Anarres",
@@ -310,7 +310,7 @@ var images88 = [
 
 
             { 
-            "url":"images/backgroundArt/pinetree-forest-dragonart.jpg",
+            "url":"http://foofurple.com/comic/images/backgroundArt/pinetree-forest-dragonart.jpg",
             "title": "Pinetree forest",
             "description": "pinetree forest",
             "artist":"DragonArtz Designs",
@@ -320,7 +320,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
             },
             { 
-            "url":"images/backgroundArt/ufo-invasion.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/ufo-invasion.png",
             "title": "UFO invasion",
             "description": "flying saucers, with Earth in the background",
             "artist":"Andreas Preuss / marauder",
@@ -330,7 +330,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/in_a_bus.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/in_a_bus.png",
             "title": "Dart SLF Int",
             "description": "inside a bus",
             "artist":"thomas",
@@ -340,7 +340,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/Landscape_2.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/Landscape_2.png",
             "title": "Landscape",
             "description": "sunny day with blue sky, fluffy clouds and green countryside",
             "artist":"inky2010",
@@ -350,7 +350,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/city_skyline.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/city_skyline.png",
             "title": "City skyline",
             "description": "city skyline",
             "artist":"rg1024",
@@ -360,7 +360,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/cityscape_night.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/cityscape_night.png",
             "title": "Cityscape night",
             "description": "skyline of a city at night",
             "artist":"Deepak Beshra",
@@ -370,7 +370,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/abstract-dark-shiny.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/abstract-dark-shiny.png",
             "title": "Shiny dark",
             "description": "shiny dark background",
             "artist":"anarres",
@@ -380,7 +380,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/simple-border.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/simple-border.png",
             "title": "Simple border",
             "description": "",
             "artist":"anarres",
@@ -390,7 +390,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/concave-border.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/concave-border.png",
             "title": "Concave border",
             "description": "",
             "artist":"anarres",
@@ -400,7 +400,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/celtic-vine-border.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/celtic-vine-border.png",
             "title": "Celtic vine border",
             "description": "",
             "artist":"unknown",
@@ -410,7 +410,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/orleans_express_border.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/orleans_express_border.png",
             "title": "Orleans express border",
             "description": "",
             "artist":"unknown",
@@ -420,7 +420,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/abstract-rainbow-explosion.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/abstract-rainbow-explosion.png",
             "title": "Rainbow explosion",
             "description": "colourful abstract background",
             "artist":"anarres",
@@ -430,7 +430,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/abstract-scene.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/abstract-scene.png",
             "title": "Abstract scene",
             "description": "blue abstract background",
             "artist":"anarres",
@@ -440,7 +440,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/foggy.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/foggy.png",
             "title": "Foggy",
             "description": "foggy background",
             "artist":"anarres",
@@ -451,7 +451,7 @@ var images88 = [
             },
 
             { 
-            "url":"images/backgroundArt/derby-yellow.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/derby-yellow.png",
             "title": "Derby yellow",
             "description": "bright yellow background",
             "artist":"anarres",
@@ -461,7 +461,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/curved-matrix.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/curved-matrix.png",
             "title": "Curved matrix",
             "description": "An abstract grey background with curved glowing lines",
             "artist":"anarres",
@@ -471,7 +471,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/spacey-scene.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/spacey-scene.png",
             "title": "Spacey scene",
             "description": "Computer generated scene with some hills on a foggy day",
             "artist":"anarres",
@@ -481,7 +481,7 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/scribbleBg.png",
+            "url":"http://foofurple.com/comic/images/backgroundArt/scribbleBg.png",
             "title": "Scribble",
             "description": "",
             "artist":"gamillian",
@@ -498,7 +498,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/kitty.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/kitty.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -509,7 +509,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/kitty.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/kitty.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -522,7 +522,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/fox.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/fox.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -533,7 +533,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/fox.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/fox.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -546,9 +546,9 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/bug.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/bug.png",
                 "title": "Ladybug",
-                "description": "cute ladybug",
+                "description": "a cute ladybug",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -557,9 +557,9 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/bug.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/bug.png",
                 "title": "Ladybug",
-                "description": "cute ladybug",
+                "description": "a cute ladybug",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -570,7 +570,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_cow.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_cow.png",
                 "title": "Cow",
                 "description": "cow",
                 "artist":"lemmling",
@@ -581,7 +581,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_cow.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_cow.png",
                 "title": "Cow",
                 "description": "cow",
                 "artist":"lemmling",
@@ -594,7 +594,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_owl.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_owl.png",
                 "title": "Owl",
                 "description": "owl",
                 "artist":"lemmling",
@@ -605,7 +605,7 @@ var images88 = [
                 },
             "right":
                { 
-                "url":"images/kitties/right/lemmling_Cartoon_owl.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_owl.png",
                 "title": "Owl",
                 "description": "owl",
                 "artist":"lemmling",
@@ -618,7 +618,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_sheep.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_sheep.png",
                 "title": "Sheep",
                 "description": "sheep",
                 "artist":"lemmling",
@@ -629,7 +629,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_sheep.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_sheep.png",
                 "title": "Sheep",
                 "description": "sheep",
                 "artist":"lemmling",
@@ -642,7 +642,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_elephant.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_elephant.png",
                 "title": "Elephant",
                 "description": "elephant",
                 "artist":"lemmling",
@@ -653,7 +653,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_elephant.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_elephant.png",
                 "title": "Elephant",
                 "description": "elephant",
                 "artist":"lemmling",
@@ -666,7 +666,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_goat.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_goat.png",
                 "title": "Goat",
                 "description": "goat",
                 "artist":"lemmling",
@@ -677,7 +677,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_goat.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_goat.png",
                 "title": "Goat",
                 "description": "goat",
                 "artist":"lemmling",
@@ -690,7 +690,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/cartoon_penguin.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/cartoon_penguin.png",
                 "title": "Penguin",
                 "description": "penguin",
                 "artist":"lemmling",
@@ -701,7 +701,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/cartoon_penguin.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/cartoon_penguin.png",
                 "title": "Penguin",
                 "description": "penguin",
                 "artist":"lemmling",
@@ -714,7 +714,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_hippo.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/StudioFibonacci_Cartoon_hippo.png",
                 "title": "Hippo",
                 "description": "hippo",
                 "artist":"StudioFibonacci",
@@ -725,7 +725,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_hippo.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/StudioFibonacci_Cartoon_hippo.png",
                 "title": "Hippo",
                 "description": "hippo",
                 "artist":"StudioFibonacci",
@@ -738,7 +738,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_triceratops.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/StudioFibonacci_Cartoon_triceratops.png",
                 "title": "Triceratops",
                 "description": "triceratops",
                 "artist":"StudioFibonacci",
@@ -749,7 +749,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_triceratops.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/StudioFibonacci_Cartoon_triceratops.png",
                 "title": "Triceratops",
                 "description": "triceratops",
                 "artist":"StudioFibonacci",
@@ -762,7 +762,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
                 "title": "Tyrannosaurus Rex",
                 "description": "tyrannosaurus rex",
                 "artist":"StudioFibonacci",
@@ -773,7 +773,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
                 "title": "Tyrannosaurus Rex",
                 "description": "tyrannosaurus rex",
                 "artist":"StudioFibonacci",
@@ -786,7 +786,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/character.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/character.png",
                 "title": "Badly drawn character",
                 "description": "badly drawn human figure",
                 "artist":"anarres",
@@ -797,7 +797,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/character.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/character.png",
                 "title": "Badly drawn character",
                 "description": "badly drawn human figure",
                 "artist":"anarres",
@@ -810,7 +810,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/rg1024_cartoon_figure.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -821,7 +821,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/rg1024_cartoon_figure.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -835,7 +835,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/rg1024_cartoon_figure4.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure4.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -846,7 +846,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/rg1024_cartoon_figure4.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure4.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -860,7 +860,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/rg1024_cartoon_figure6.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure6.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -871,7 +871,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/rg1024_cartoon_figure6.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure6.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -885,7 +885,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/rg1024_cartoon_figure7.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure7.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -896,7 +896,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/rg1024_cartoon_figure7.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure7.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -910,7 +910,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/rg1024_cartoon_figure8.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure8.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -921,7 +921,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/rg1024_cartoon_figure8.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure8.png",
                 "title": "Cute cartoon figure",
                 "description": "cute cartoon figure",
                 "artist":"rg1024",
@@ -934,7 +934,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wanna_tweet1.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/wanna_tweet1.png",
                 "title": "Very cute twitter birdie",
                 "description": "cute birdie",
                 "artist":"dryicons",
@@ -945,7 +945,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/left/wanna_tweet2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/wanna_tweet2.png",
                 "title": "Very cute twitter birdie 2",
                 "description": "cute birdie",
                 "artist":"dryicons",
@@ -958,7 +958,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/shiny-octopus.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/shiny-octopus.png",
                 "title": "Shiny octopus",
                 "description": "weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -969,7 +969,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/shiny-octopus.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/shiny-octopus.png",
                 "title": "Shiny octopus",
                 "description": "weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -982,7 +982,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/shiny-octopus2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/shiny-octopus2.png",
                 "title": "Shiny octopus 2",
                 "description": "weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -993,7 +993,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/shiny-octopus2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/shiny-octopus2.png",
                 "title": "Shiny octopus 2",
                 "description": "weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -1006,7 +1006,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lmproulx_green_monster.png",
                 "title": "Green monster",
                 "description": "green monster",
                 "artist":"Lmproulx",
@@ -1017,7 +1017,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lmproulx_green_monster.png",
                 "title": "Green monster",
                 "description": "green monster",
                 "artist":"Lmproulx",
@@ -1030,7 +1030,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lmproulx_green_monster2.png",
                 "title": "Green monster 2",
                 "description": "purple monster",
                 "artist":"Lmproulx",
@@ -1041,7 +1041,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lmproulx_green_monster2.png",
                 "title": "Green monster 2",
                 "description": "purple monster",
                 "artist":"Lmproulx",
@@ -1054,7 +1054,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster3.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/lmproulx_green_monster3.png",
                 "title": "Green monster 3",
                 "description": "red monster",
                 "artist":"Lmproulx",
@@ -1065,7 +1065,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster3.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/lmproulx_green_monster3.png",
                 "title": "Green monster 3",
                 "description": "red monster",
                 "artist":"Lmproulx",
@@ -1080,7 +1080,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/critter.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1091,7 +1091,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/critter2.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1107,7 +1107,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter3.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/critter3.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1118,7 +1118,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter4.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/critter4.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1132,7 +1132,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter5.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/critter5.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1143,7 +1143,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter6.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/critter6.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1158,7 +1158,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/not-stick-figure.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/not-stick-figure.png",
                 "title": "Not stick figure",
                 "description": "a stick figure",
                 "artist":"anarres",
@@ -1169,7 +1169,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/not-stick-figure.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/not-stick-figure.png",
                 "title": "Not stick figure",
                 "description": "a stick",
                 "artist":"anarres",
@@ -1184,7 +1184,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/little-robo.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/little-robo.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",
                 "artist":"anarres",
@@ -1195,7 +1195,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/little-robo2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/little-robo2.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",
                 "artist":"anarres",
@@ -1211,7 +1211,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/flying-things7.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/flying-things7.png",
                 "title": "Flying thing",
                 "description": "a cartoon monster",
                 "artist":"Ikabezier",
@@ -1222,7 +1222,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/flying-things6.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/flying-things6.png",
                 "title": "Flying thing",
                 "description": "a cartoon monster",
                 "artist":"Ikabezier",
@@ -1242,7 +1242,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/purple_alien.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/purple_alien.png",
                 "title": "Purple alien",
                 "description": "purple alien",
                 "artist":"Chrisdesign",
@@ -1253,7 +1253,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/purple_alien.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/purple_alien.png",
                 "title": "Purple alien",
                 "description": "purple alien",
                 "artist":"Chrisdesign",
@@ -1266,7 +1266,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/purple_alien2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/purple_alien2.png",
                 "title": "Purple alien 2",
                 "description": "blue alien",
                 "artist":"Chrisdesign",
@@ -1277,7 +1277,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/purple_alien2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/purple_alien2.png",
                 "title": "Purple alien 2",
                 "description": "blue alien",
                 "artist":"Chrisdesign",
@@ -1290,7 +1290,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/domo_kun_nicu_buculei.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/domo_kun_nicu_buculei.png",
                 "title": "Domo kun nicu buculei",
                 "description": "monster",
                 "artist":"Unknown",
@@ -1301,7 +1301,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/domo_kun_nicu_buculei.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/domo_kun_nicu_buculei.png",
                 "title": "Domo kun nicu buculei",
                 "description": "monster",
                 "artist":"Unknown",
@@ -1314,7 +1314,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/ball_creature_dissapointed1.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/ball_creature_dissapointed1.png",
                 "title": "Disappointed ball creature 1",
                 "description": "weird little creature",
                 "artist":"Unknown",
@@ -1325,7 +1325,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/ball_creature_dissapointed1.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/ball_creature_dissapointed1.png",
                 "title": "Disappointed ball creature 1",
                 "description": "weird little creature",
                 "artist":"Unknown",
@@ -1338,7 +1338,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/ball_creature_dissapointed2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/ball_creature_dissapointed2.png",
                 "title": "Disappointed ball creature 2",
                 "description": "weird little creature",
                 "artist":"Unknown",
@@ -1349,7 +1349,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/ball_creature_dissapointed2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/ball_creature_dissapointed2.png",
                 "title": "Disappointed ball creature 2",
                 "description": "weird little creature",
                 "artist":"Unknown",
@@ -1362,7 +1362,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/Toonix.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/Toonix.png",
                 "title": "Toonix",
                 "description": "cute cartoon creature",
                 "artist":"unknown",
@@ -1373,7 +1373,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/Toonix.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/Toonix.png",
                 "title": "Toonix",
                 "description": "cute cartoon creature",
                 "artist":"unknown",
@@ -1386,7 +1386,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/Toonix2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/Toonix2.png",
                 "title": "Toonix 2",
                 "description": "cute cartoon creature",
                 "artist":"unknown",
@@ -1397,7 +1397,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/Toonix2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/Toonix2.png",
                 "title": "Toonix 2",
                 "description": "cute cartoon creature",
                 "artist":"unknown",
@@ -1410,7 +1410,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wicked_cat.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/wicked_cat.png",
                 "title": "Cat",
                 "description": "vaguely sinister cat",
                 "artist":"unknown",
@@ -1421,7 +1421,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/wicked_cat.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/wicked_cat.png",
                 "title": "Cat",
                 "description": "vaguely sinister cat",
                 "artist":"unknown",
@@ -1434,7 +1434,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wicked_cat2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/wicked_cat2.png",
                 "title": "Cat 2",
                 "description": "vaguely sinister cat",
                 "artist":"unknown",
@@ -1445,7 +1445,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/wicked_cat2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/wicked_cat2.png",
                 "title": "Cat 2",
                 "description": "vaguely sinister cat",
                 "artist":"unknown",
@@ -1458,7 +1458,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft1.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/daft1.png",
                 "title": "Funky astronaut",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1469,7 +1469,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft1.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/daft1.png",
                 "title": "Funky astronaut",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1483,7 +1483,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/daft2.png",
                 "title": "Funky astronaut 2",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1494,7 +1494,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/daft2.png",
                 "title": "Funky astronaut 2",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1507,7 +1507,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft3.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/daft3.png",
                 "title": "Funky astronaut 3",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1518,7 +1518,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft3.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/daft3.png",
                 "title": "Funky astronaut 3",
                 "description": "funky astronaut",
                 "artist":"Adiktuz",
@@ -1531,7 +1531,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/phique_owl1.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/phique_owl1.png",
                 "title": "Owl 1",
                 "description": "owl",
                 "artist":"Phique",
@@ -1542,7 +1542,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/phique_owl1.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/phique_owl1.png",
                 "title": "Owl 1",
                 "description": "owl",
                 "artist":"Phique",
@@ -1555,7 +1555,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/phique_owl2.png",
+                "url":"http://foofurple.com/comic/images/kitties/left/phique_owl2.png",
                 "title": "Owl 2",
                 "description": "owl",
                 "artist":"Phique",
@@ -1566,7 +1566,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/phique_owl2.png",
+                "url":"http://foofurple.com/comic/images/kitties/right/phique_owl2.png",
                 "title": "Owl 2",
                 "description": "owl",
                 "artist":"Phique",
@@ -1581,11 +1581,13 @@ var images88 = [
 ];
 
 function getBgDataObj(url) {
+    alert(url);
     for (var i=0; i<images88[0].bg.length; i++) {
         if (images88[0].bg[i].url === url) {
             return images88[0].bg[i];
         }
     }
+    alert('no matich!');
 }
 function getLeftDataObj(url) {
     for (var i=0; i< images88[1].characters.length; i++) {

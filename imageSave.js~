@@ -37,9 +37,10 @@ function panelToCanvas() {
     var panelBgColor = "#" + theComic.bgColor;
 
     // Prepare images
-    var bgImage = new Image();
-    alert(theComic.bgArt);
-    bgImage.src = theComic.bgArt;
+    if (theComic.bgArt) {
+        var bgImage = new Image();
+        bgImage.src = theComic.bgArt;
+    }
 
     var leftChar = new Image();
     leftChar.src = theComic.leftKittyUrl;
@@ -78,7 +79,9 @@ function panelToCanvas() {
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
         // Draw background image
-        ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        if (theComic.bgArt) {
+            ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
+        }
 
         // Draw characters
         ctx.drawImage(leftChar, x0 + kitty1X, y0 + kittyY);
@@ -136,7 +139,13 @@ function panelToCanvas() {
 function downloadImage() {
     panelToCanvas();    // Create canvas object
     var canvas = document.getElementById("myCanvas");
+
+
+alert(canvas);
     var dataUrl = canvas.toDataURL();
+
+
+alert(dataUrl);
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
     document.getElementById('downloadDiv').style.visibility = "visible";

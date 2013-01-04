@@ -22,9 +22,7 @@ body {
 #header {
     clear: both;
 }
-#header p {
-    text-align: center;
-}
+
 
 /* General typography  */
 
@@ -76,6 +74,7 @@ button {
     font-size: 1.1em;
 }
 
+
 /* About page */
 
 #about li {
@@ -98,40 +97,35 @@ img.charImg {
 /* Buttons / Controls */
 
 div#controls {
-    //position: fixed;
-    top: 0px;
     z-index: 9;
-    max-width: 860px;
     background-color: #f0f3db;
-    padding: 3px;
-    border-radius: 3px;
+    position: fixed;
+    top: 0;
 }
 div.buttonFoo {
-    text-align: center;
+    text-align: left;
     background-color:#f6320b;
-    height: 50px;
     border: 1px solid #cccccc;
     margin: 10px 3px;
     margin-bottom: 0px;
     float: left;
     border-radius: 5px;
     cursor:pointer;
+    height: 50px;
 }
 div.buttonFoo:hover {
     background-color: #ff1c97;
 }
 div.buttonFoo a {
-    display: block;
-    padding: 5px 7px;   
+    display: block; 
     font-size: 1.1em;
     color: #ffffff;
-    font-weight: bold;
     text-decoration: none;
 }
-div.buttonFooText {
-    float: right;
-    margin-left: 3px;
+div.buttonFoo img {
+    padding: 5px 7px;  
 }
+
 
 /* Color widget */
 
@@ -176,7 +170,11 @@ div#chooseKitty h3 {
     font-size: 2em;
 }
 div#chooseKitty img {
-    width: 100px;
+    width: 70px;
+    height: 70px;
+
+    padding: 3px;
+    margin: 0px;
 }
 #kittyLeft {
     width:45%;
@@ -345,13 +343,7 @@ div#imagesMetadata {
 /* Canvas */
 
 #myCanvas {
-    margin:0px;
-    padding:0px;
-    border:0px;
-    visibility: hidden;
-    position:absolute;
-    top:-10000px;
-    left:-1200px;
+    display: none;
 }
 .extraSpace {
     padding: 5px 30px;

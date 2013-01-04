@@ -95,7 +95,6 @@ function selectKitty(num, imgUrl) {
     updateMetadata();
 }
 
-
 function loadCharacters() {
 
     // Load the character images

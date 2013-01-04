@@ -36,86 +36,48 @@
 
 <div id="controls">
 
-    <div class="buttonFoo" onClick="newPanel()">
-        <a>
-            <img src="images/plus.png" style="width:20px;height:auto;" />
-            <div class='buttonFooText'>
-                New panel
-            </div>
-        </a>
+    <div class="buttonFoo" title="New panel" onClick="newPanel()">
+       <img src="images/plus.png"  style="width:20px;height:auto;" />
     </div>
 
-    <div class="buttonFoo" onClick="deletePanel()">
-        <a>
-            <img src="images/minus.png" style="width:20px;height:auto;" />
-            <div class='buttonFooText'>
-                Delete panel
-            </div>
-        </a>
+    <div class="buttonFoo" title="Delete panel" onClick="deletePanel()">
+       <img src="images/minus.png" style="width:20px;height:auto;" />
     </div>
 
     <div id="bubbleHint" class="infoDiv invisPosFixed">
+
         <div class="close" title="Close this window" 
             onclick="document.getElementById('bubbleHint').style.visibility='hidden'">
             <img src="close_icon.png" alt="close">
         </div> <!--.close-->
+
             <img src="alert.png" alt="alert" style="float:left;height:40px;margin:15px;">
             <p style="padding: 10px 40px;">First select a comic panel by clicking on it.</p>
+
     </div> <!--#bubbleHint-->
 
-    <div class="buttonFoo" onclick="toggleBubble(1)">
-        <a>
-            <img src="images/left_bubble_icon.png" style="width:25px;height:auto" />
-
-            <div class='buttonFooText'>
-                Bubble 1
-            </div>
-        </a>
+    <div class="buttonFoo" title="Bubble 1" onclick="toggleBubble(1)">
+        <img src="images/left_bubble_icon.png" style="width:25px;height:auto" />
     </div>
 
-    <div class="buttonFoo" onclick="toggleBubble(2)">
-        <a>
-            <img src="images/right_bubble_icon.png" style="width:25px;height:auto" />
-            <div class='buttonFooText'>
-                Bubble 2
-            </div>
-        </a>
+    <div class="buttonFoo" title="Bubble 2" onclick="toggleBubble(2)">
+        <img src="images/right_bubble_icon.png" style="width:25px;height:auto" />
     </div>
 
-    <div class="buttonFoo" onclick="chooseKitty()">
-        <a>
+    <div class="buttonFoo" title="Characters" onclick="chooseKitty()">
         <img src="images/disgusting_icons.png" style="height:40px;width:auto;" />
-            <div class='buttonFooText'>
-                Characters
-            </div>
-        </a>
     </div>
 
-    <div class="buttonFoo" onclick="chooseBackgroundImage()">
-        <a>
-            <img src="images/background_icon.png" style="width:50px;height:auto;" />
-            <div class='buttonFooText'>
-                Backgrounds
-            </div>
-        </a>
+    <div class="buttonFoo" title="Background image" onclick="chooseBackgroundImage()">
+        <img src="images/background_icon.png" style="width:50px;height:auto;" />
     </div>
 
-    <div class="buttonFoo" onclick="addNewImage()">
-        <a>
-            <img src="images/drawing.png" style="width:27px;height:auto" />
-            <div class='buttonFooText'>
-                Add your own image
-            </div>
-        </a>
+    <div class="buttonFoo" title="Add your own image" onclick="addNewImage()">
+        <img src="images/drawing.png" style="width:27px;height:auto" />
     </div>
 
-    <div class="buttonFoo" onclick="downloadImage()">
-        <a>
-            <img src="images/folder.png" style="width:28px;height:auto" />
-            <div class='buttonFooText'>
-                Save
-            </div>
-        </a>
+    <div class="buttonFoo" title="Save" onclick="downloadImage()">
+        <img src="images/folder.png" style="width:28px;height:auto" />
     </div>
 
     <div class="buttonFoo colorWidget">
@@ -124,6 +86,8 @@
     </div>
 
 </div><!--#controls-->
+
+<div style="height:100px;clear:both;"></div>
 
 <div id="header">
     <h1>Foofurple comics!</h1>
@@ -170,6 +134,7 @@
 </div> <!--#imagesMetadata-->
 
 <div id="downloadDiv" class="infoDiv invisPosFixed">
+
     <img src="images/close_icon.png" alt="close" class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
     <p>
         <a style="font-size:1.2em;padding:10px;" id="downloadLink">
@@ -185,7 +150,7 @@
 </div> <!--#downloadDiv-->
 
 
-<canvas id="myCanvas" style="visibility:hidden;">
+<canvas id="myCanvas">
 </canvas>
 
 </body>
