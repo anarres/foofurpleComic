@@ -163,8 +163,6 @@ div.toggleDiv {
 }
 div.toggleDiv img {
     cursor: pointer;
-    padding: 5px;
-    margin: 5px;
 }
 div#chooseKitty h3 {
     font-size: 2em;
@@ -191,6 +189,8 @@ div#chooseBackgroundImage {
 div#chooseBackgroundImage img {
     width: 150px;
     height: 100px;
+    padding: 0px;
+    margin: 3px;
 }
 div#removeBackgroundArt {
     cursor: pointer;
@@ -343,7 +343,7 @@ div#imagesMetadata {
 /* Canvas */
 
 #myCanvas {
-    visibility: hidden;
+    display: none;
 }
 .extraSpace {
     padding: 5px 30px;

@@ -32,25 +32,17 @@ var images88 = [
             "license_short":"CC BY 3.0",
             "license_url":"http://creativecommons.org/licenses/by/3.0/"
             },
+
+
             { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/colorful-dots-light.png",
-            "title": "Colourful dots background",
-            "description": "a colourful dots background",
-            "artist":"Web Design Hot",
-            "artist_website":"http://www.webdesignhot.com",
-            "license":"Creative Commons 3.0 Attribution License",
+            "url":"http://foofurple.com/comic/images/backgroundArt/pirates.jpg",
+            "title": "Pirates",
+            "description": "A beach scene with a big skull and crossbones pirate flag, barrels of rum and an overturned barrel overflowing with gold. A pirate lies sprawled on the beach holding an empty bottle, behind him are two vultures, a dead man hanging from a tree, and a sinking ship.",
+            "artist":"vectorarts.nets",
+            "artist_website":"http://www.vectorarts.net",
+            "license":"Attribution 3.0 ShareAlike",
             "license_short":"CC BY 3.0",
-            "license_url":"http://creativecommons.org/licenses/by/3.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/colorful-dots-dark.png",
-            "title": "Colourful dots background",
-            "description": "a colourful dots background",
-            "artist":"Web Design Hot",
-            "artist_website":"http://www.webdesignhot.com",
-            "license":"Creative Commons 3.0 Attribution License",
-            "license_short":"CC BY 3.0",
-            "license_url":"http://creativecommons.org/licenses/by/3.0/"
+            "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
             },
 
 
@@ -295,20 +287,6 @@ var images88 = [
 
 
 
-
-
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/ping-bg3.png",
-            "title": "Strange abstract background",
-            "description": "a strange, glowing abstract background with lines and blobs",
-            "artist":"Anarres",
-            "artist_website":"http://foofurple.com",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-
-
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/pinetree-forest-dragonart.jpg",
             "title": "Pinetree forest",
@@ -370,16 +348,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/abstract-dark-shiny.png",
-            "title": "Shiny dark",
-            "description": "shiny dark background",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"http://foofurple.com/comic/images/backgroundArt/simple-border.png",
             "title": "Simple border",
             "description": "",
@@ -420,16 +388,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/abstract-rainbow-explosion.png",
-            "title": "Rainbow explosion",
-            "description": "colourful abstract background",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"http://foofurple.com/comic/images/backgroundArt/abstract-scene.png",
             "title": "Abstract scene",
             "description": "blue abstract background",
@@ -439,17 +397,6 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/foggy.png",
-            "title": "Foggy",
-            "description": "foggy background",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/derby-yellow.png",
             "title": "Derby yellow",
@@ -464,16 +411,6 @@ var images88 = [
             "url":"http://foofurple.com/comic/images/backgroundArt/curved-matrix.png",
             "title": "Curved matrix",
             "description": "An abstract grey background with curved glowing lines",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/spacey-scene.png",
-            "title": "Spacey scene",
-            "description": "Computer generated scene with some hills on a foggy day",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
             "license":"Public domain",
@@ -807,128 +744,187 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+
+
             {
             "left":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/left/fringe.png",
+                "title": "Fringe",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/right/fringe.png",
+                "title": "Fringe",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
+                }
+            },
+
+
+            {
+            "left":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/left/laughing.png",
+                "title": "Laughing",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
+                },
+            "right":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/right/laughing.png",
+                "title": "Laughing",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
                 }
             },
 
             {
             "left":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure4.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/left/pink_shirt.png",
+                "title": "Pink shirt",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure4.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/right/pink_shirt.png",
+                "title": "Pink shirt",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
                 }
             },
 
             {
             "left":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure6.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/left/grin.png",
+                "title": "Grin",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure6.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/right/grin.png",
+                "title": "Grin",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
                 }
             },
+
+
+
 
             {
             "left":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure7.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/left/yellowCap.png",
+                "title": "Yellow cap",
+                "description": "Cartoon character wearing a yellow cap",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure7.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/right/yellowCap.png",
+                "title": "Yellow cap",
+                "description": "Cartoon character wearing a yellow cap",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
                 }
             },
+
+
 
             {
             "left":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/left/rg1024_cartoon_figure8.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/left/headphones.png",
+                "title": "Headphones",
+                "description": "Cartoon character wearing headphones",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/rg1024_cartoon_figure8.png",
-                "title": "Cute cartoon figure",
-                "description": "cute cartoon figure",
-                "artist":"rg1024",
-                "artist_website":"openclipart.org/user-detail/rg1024",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                "url":"http://foofurple.com/comic/images/kitties/right/headphones.png",
+                "title": "Headphones",
+                "description": "Cartoon character wearing headphones",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/left/cornRows.png",
+                "title": "Character",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
+                },
+            "right":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/right/cornRows.png",
+                "title": "Character",
+                "description": "Cartoon character",
+                "artist":"VectorVaco.com",
+                "artist_website":"http://www.vectorvaco.com",
+                "license":"Creative Commons Attribution NonCommercial 3.0",
+                "license_short":"CC BY-NC 3.0",
+                "license_url":"http://creativecommons.org/licenses/by-nc/3.0/"
                 }
             },
             {
@@ -1581,13 +1577,11 @@ var images88 = [
 ];
 
 function getBgDataObj(url) {
-    alert(url);
     for (var i=0; i<images88[0].bg.length; i++) {
         if (images88[0].bg[i].url === url) {
             return images88[0].bg[i];
         }
     }
-    alert('no matich!');
 }
 function getLeftDataObj(url) {
     for (var i=0; i< images88[1].characters.length; i++) {

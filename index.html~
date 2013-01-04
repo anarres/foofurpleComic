@@ -37,11 +37,11 @@
 <div id="controls">
 
     <div class="buttonFoo" title="New panel" onClick="newPanel()">
-       <img src="images/plus.png"  style="width:20px;height:auto;" />
+       <img src="images/plus.png"  style="width:35px;height:auto;" />
     </div>
 
     <div class="buttonFoo" title="Delete panel" onClick="deletePanel()">
-       <img src="images/minus.png" style="width:20px;height:auto;" />
+       <img src="images/minus.png" style="width:35px;height:auto;" />
     </div>
 
     <div id="bubbleHint" class="infoDiv invisPosFixed">
@@ -57,11 +57,11 @@
     </div> <!--#bubbleHint-->
 
     <div class="buttonFoo" title="Bubble 1" onclick="toggleBubble(1)">
-        <img src="images/left_bubble_icon.png" style="width:25px;height:auto" />
+        <img src="images/left_bubble_icon.png" style="width:35px;height:auto" />
     </div>
 
     <div class="buttonFoo" title="Bubble 2" onclick="toggleBubble(2)">
-        <img src="images/right_bubble_icon.png" style="width:25px;height:auto" />
+        <img src="images/right_bubble_icon.png" style="width:35px;height:auto" />
     </div>
 
     <div class="buttonFoo" title="Characters" onclick="chooseKitty()">
@@ -150,7 +150,7 @@
 </div> <!--#downloadDiv-->
 
 
-<canvas id="myCanvas" >
+<canvas id="myCanvas">
 </canvas>
 
 </body>

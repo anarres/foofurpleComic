@@ -336,7 +336,7 @@ function randomDefaultImages(theComic) {
 
     var fooArray = [ 
 
-    {'bgColor':'3496CF','bgArt':'http://foofurple.com/comic/images/backgroundArt/spacey-scene.png','left':'http://foofurple.com/comic/images/kitties/left/purple_alien2.png', 'right':'http://foofurple.com/comic/images/kitties/right/purple_alien.png'},
+    {'bgColor':'FFE3A3','bgArt':'http://foofurple.com/comic/images/backgroundArt/city_skyline.png','left':'http://foofurple.com/comic/images/kitties/left/little-robo.png', 'right':'http://foofurple.com/comic/images/kitties/right/flying-things6.png'},
 
     {'bgColor':'3496CF','bgArt':'http://foofurple.com/comic/images/backgroundArt/Farm-Landscape.jpg','left':'http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_cow.png', 'right':'http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_sheep.png'}, 
 

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>MOAR IMAGES! Foofurple comics!</title>
+<meta name="description" content="About: Foofurple comics. Make your own webcomic using amazing Creative Commons and Public Domain images.">
+<link rel="icon" type="image/png" href="kittyIcon.png">
+<link rel="stylesheet" type="text/css" href="kittyStyle.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<h1 style="text-align:center;">Foofurple comics!</h1>
+
+<div id="about">
+
+<h2>Moar images!</h2>
+
+<p>Want more images? Here's a few ways you could get some:</p>
+
+<p>If one of the existing images is almost right, go ahead and tweak it to fit your needs. If you end up sharing your image be sure to give the artist credit and use a compatible license (if the original image has a Share-Alike license, derivative works of it have to be Share-Alike too).</p>
+
+<p>A huge number of public domain clip-arts are available at <a href="http://www.openclipart.com">Open Clipart Library</a> and <a href="http://www.clker.com">Clker</a>.</p>
+
+<p>Some possible sources of Creative Commons licensed artworks are:</p>
+
+<ul>
+
+<li><a href="http://www.flickr.com/creativecommons/">Flickr: Creative Commons</a></li>
+
+<li><a href="">Deviantart</a> contains a lot of beautiful artwork, and some users add a Creative Commons license to their work.</li>
+
+<li><a href="http://search.creativecommons.org/">Creative Commons search</a></li>
+
+</ul>
+
+<p>Note that images with a "No Derivatives" license can't be used on Foofurple Comics.</p>
+
+<p>You could always make your own images using a drawing program such as Inkscape or the Gimp.</p>
+
+<p>Or you could have fun playing with one of these online drawing tools:</p>
+
+<ul>
+
+</ul>
+
+<p><strong><a href="index.html">Back to the main page</a></strong></p>
+
+</div> <!--#about-->
+
+</div> <!--#container-->
+
+</body>
+</html>

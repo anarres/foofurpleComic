@@ -163,8 +163,6 @@ div.toggleDiv {
 }
 div.toggleDiv img {
     cursor: pointer;
-    padding: 5px;
-    margin: 5px;
 }
 div#chooseKitty h3 {
     font-size: 2em;
@@ -189,8 +187,10 @@ div#chooseBackgroundImage {
     background-image:url('sinus.png');
 }
 div#chooseBackgroundImage img {
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
+    padding: 0px;
+    margin: 3px;
 }
 div#removeBackgroundArt {
     cursor: pointer;
