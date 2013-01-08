@@ -14,9 +14,8 @@
 <script type="text/javascript" src="display.js"></script>
 <script type="text/javascript" src="controllers.js"></script>
 <script type="text/javascript" src="imageSave.js"></script>
-<script type="text/javascript" src="utils/stringUtils.js"></script>
-<script type="text/javascript" src="utils/jscolor/jscolor.js"></script>
-<script type="text/javascript" src="utils/getElementsByClassNameDiaz.js"></script>
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="jscolor/jscolor.js"></script>
 
 </head>
 
@@ -48,10 +47,10 @@
 
         <div class="close" title="Close this window" 
             onclick="document.getElementById('bubbleHint').style.visibility='hidden'">
-            <img src="close_icon.png" alt="close">
+            <img src="images/close_icon.png" alt="close">
         </div> <!--.close-->
 
-            <img src="alert.png" alt="alert" style="float:left;height:40px;margin:15px;">
+            <img src="images/alert.png" alt="alert" style="float:left;height:40px;margin:15px;">
             <p style="padding: 10px 40px;">First select a comic panel by clicking on it.</p>
 
     </div> <!--#bubbleHint-->
@@ -109,12 +108,12 @@
 
     <p style="text-align:left;">
         <input type="radio" name="foo" class="radio" id="newKittyUrl" />
-        <img src="images/disgusting_icons.png" style="height: 30px;"/>
+        <img src="images/disgusting_icons.png" alt="Two cute cartoon kitties" style="height: 30px;"/>
         Character image (100px by 100px)
     </p>
     <p style="text-align:left;">
-        <input type="radio" name="foo" class="radio" id="newBgUrl" slected="selected" />
-        <img src="images/background_icon.png" style="height: 20px;padding-left:5px;padding-right:5px;"/>
+        <input type="radio" name="foo" class="radio" id="newBgUrl" checked />
+        <img src="images/background_icon.png" alt="A cartoon landscape" style="height: 20px;padding-left:5px;padding-right:5px;"/>
         Background image (400px by 300px)
     </p>
     <br>
@@ -138,7 +137,7 @@
     <img src="images/close_icon.png" alt="close" class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
     <p>
         <a style="font-size:1.2em;padding:10px;" id="downloadLink">
-            <img src="images/save.png">
+            <img src="images/save.png" alt="save">
             Right-click to download your image
         </a>
     </p>
@@ -152,6 +151,8 @@
 
 <canvas id="myCanvas">
 </canvas>
+
+</div> <!--#container-->
 
 </body>
 </html>

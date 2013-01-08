@@ -48,15 +48,15 @@ function selectBackgroundArt(url) {
     var imgArray = getElementsByClassName(document, 'backgroundChooser');
 
     for ( var i=0; i<imgArray.length; i++ ) {
-        (imgArray[i]).style.backgroundImage="url('clear.png')";
+        (imgArray[i]).style.backgroundImage="url('images/clear.png')";
     }
     // Hightlight newly selected image
     if (url !== "") {
-        document.getElementById(url).style.backgroundImage="url('yellow.png')";
+        document.getElementById(url).style.backgroundImage="url('images/yellow.png')";
     }
+
     // Get all divs of class backgroundArt and give them this bg image
     var divs = getElementsByClassName(document, "backgroundArt");
-
     for (var j=0; j<divs.length; j++) {
         var myObj = divs[j];
         var myCSS = "url('" + url + "')";
@@ -72,7 +72,7 @@ function selectKitty(num, imgUrl) {
     // Remove bg color from previously selected image
     var imgArray = getElementsByClassName(document, myClassName);
     for ( var i=0; i<imgArray.length; i++ ) {
-        (imgArray[i]).style.backgroundImage="url('clear.png')";
+        (imgArray[i]).style.backgroundImage="url('images/clear.png')";
     }
     // Set kitty1url (global var) and Change src of all kitty1's
     if ( num === 1 ) {
@@ -80,7 +80,7 @@ function selectKitty(num, imgUrl) {
         for (var j=0; j<images.length; j++) {   
             (images[j]).setAttribute("src", imgUrl);
         }
-        document.getElementById(imgUrl).style.backgroundImage="url('yellow.png')";
+        document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
         theComic.leftKittyUrl = imgUrl;
     }
     // Do the same if kitty2
@@ -89,7 +89,7 @@ function selectKitty(num, imgUrl) {
         for (var k=0; k<images2.length; k++ ) {
             (images2[k]).setAttribute("src", imgUrl);
         }  
-        document.getElementById(imgUrl).style.backgroundImage="url('yellow.png')";
+        document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
         theComic.rightKittyUrl = imgUrl;
     }
     updateMetadata();

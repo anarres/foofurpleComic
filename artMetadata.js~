@@ -44,8 +44,26 @@ var images88 = [
             "license_short":"CC BY 3.0",
             "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
             },
-
-
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/big_white_dots.png",
+            "title": "Big white dots",
+            "description": "Big white dots",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/stage.png",
+            "title": "Stage",
+            "description": "A wooden stage, with a spotlight, and fancy red and yellow curtains drawn back.",
+            "artist":"Viscous-Speed",
+            "artist_website":"http://viscious-speed.deviantart.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
 
 
 
@@ -59,22 +77,6 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-
-
-
-
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/flowers4.png",
-            "title": "Pink cartoon flowers",
-            "description": "Pink cartoon flowers",
-            "artist":"Mathafix / Anarres",
-            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-
-
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/flowers5.png",
             "title": "Pink cartoon flowers",
@@ -85,10 +87,6 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-
-
-
-
 
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/wheat-field-vector.jpg",
@@ -131,16 +129,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/bubbles.png",
-            "title": "Bubbles",
-            "description": "bubbles in the background",
-            "artist":"Unknown",
-            "artist_website":"Unknown",
-            "license":"Unknown",
-            "license_short":"",
-            "license_url":""
-            },
-            { 
             "url":"http://foofurple.com/comic/images/backgroundArt/mochovka-cloudy.png",
             "title": "Cloudy",
             "description": "green hills, sun and white clouds",
@@ -152,16 +140,6 @@ var images88 = [
             },
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/nuclear-explosion.png",
-            "title": "Mushroom cloud",
-            "description": "a mushroom cloud, a nuclear explosion",
-            "artist":"dasnolojy",
-            "artist_website":"http://openclipart.org/user-detail/dasnolojy",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/nuclear-explosion2.png",
             "title": "Mushroom cloud",
             "description": "a mushroom cloud, a nuclear explosion",
             "artist":"dasnolojy",
@@ -301,35 +279,6 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-
-
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/metal-bg.png",
-            "title": "Metal",
-            "description": "a shiny metal background",
-            "artist":"Anarres",
-            "artist_website":"http://foofurple.com",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-
-
-
-
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/subtle-bg.png",
-            "title": "Subtle lines",
-            "description": "",
-            "artist":"Anarres",
-            "artist_website":"http://foofurple.com",
-            "license":"Public Domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-
-
-
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/pinetree-forest-dragonart.jpg",
             "title": "Pinetree forest",
@@ -361,16 +310,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/Landscape_2.png",
-            "title": "Landscape",
-            "description": "sunny day with blue sky, fluffy clouds and green countryside",
-            "artist":"inky2010",
-            "artist_website":"openclipart.org/user-detail/inky2010",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"http://foofurple.com/comic/images/backgroundArt/city_skyline.png",
             "title": "City skyline",
             "description": "city skyline",
@@ -393,16 +332,6 @@ var images88 = [
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/simple-border.png",
             "title": "Simple border",
-            "description": "",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/concave-border.png",
-            "title": "Concave border",
             "description": "",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
@@ -446,26 +375,6 @@ var images88 = [
             "description": "bright yellow background",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/curved-matrix.png",
-            "title": "Curved matrix",
-            "description": "An abstract grey background with curved glowing lines",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/scribbleBg.png",
-            "title": "Scribble",
-            "description": "",
-            "artist":"gamillian",
-            "artist_website":"http://openclipart.org/user-detail/gammillian",
             "license":"Public domain",
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
@@ -763,33 +672,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-            {
-            "left":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/left/character.png",
-                "title": "Badly drawn character",
-                "description": "badly drawn human figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"CC BY 3.0",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/right/character.png",
-                "title": "Badly drawn character",
-                "description": "badly drawn human figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"CC BY 3.0",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-
-
-
 
             {
             "left":
@@ -1008,30 +890,6 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"http://foofurple.com/comic/images/kitties/right/shiny-octopus.png",
-                "title": "Shiny octopus",
-                "description": "weird octopus",
-                "artist":"Andreas Preuss / marauder",
-                "artist_website":"openclipart.org/user-detail/marauder",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-            {
-            "left":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/left/shiny-octopus2.png",
-                "title": "Shiny octopus 2",
-                "description": "weird octopus",
-                "artist":"Andreas Preuss / marauder",
-                "artist_website":"openclipart.org/user-detail/marauder",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
                 "url":"http://foofurple.com/comic/images/kitties/right/shiny-octopus2.png",
                 "title": "Shiny octopus 2",
                 "description": "weird octopus",
@@ -1192,34 +1050,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-
-
-            {
-            "left":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/left/not-stick-figure.png",
-                "title": "Not stick figure",
-                "description": "a stick figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/right/not-stick-figure.png",
-                "title": "Not stick figure",
-                "description": "a stick",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-
-
             {
             "left":
                 { 
@@ -1244,9 +1074,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-
-
-
             {
             "left":
                 { 
@@ -1355,30 +1182,6 @@ var images88 = [
                 { 
                 "url":"http://foofurple.com/comic/images/kitties/left/ball_creature_dissapointed1.png",
                 "title": "Disappointed ball creature 1",
-                "description": "weird little creature",
-                "artist":"Unknown",
-                "artist_website":"http://cliparts101.com/free_clipart/36432/Ball_Creature_Disappointed.aspx",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/right/ball_creature_dissapointed1.png",
-                "title": "Disappointed ball creature 1",
-                "description": "weird little creature",
-                "artist":"Unknown",
-                "artist_website":"http://cliparts101.com/free_clipart/36432/Ball_Creature_Disappointed.aspx",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-            {
-            "left":
-                { 
-                "url":"http://foofurple.com/comic/images/kitties/left/ball_creature_dissapointed2.png",
-                "title": "Disappointed ball creature 2",
                 "description": "weird little creature",
                 "artist":"Unknown",
                 "artist_website":"http://cliparts101.com/free_clipart/36432/Ball_Creature_Disappointed.aspx",
@@ -1650,43 +1453,31 @@ function getBgMetadata(url) {
         return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
     }
 }
-
 function getLeftMetadata(url) {
     var d = getLeftDataObj(url);
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
 }
-
 function getRightMetadata(url) {
     var d = getRightDataObj(url);
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
 }
-
-
 function getPrintBgMetadata(url) {
     if ( url === "" ) {
         return "";
     }
     else {
         var d = getBgDataObj(url);
-        return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+        return " " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
     }
 }
 function getPrintLeftMetadata(url) {
     var d = getLeftDataObj(url);
-     return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+     return " " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
 }
 function getPrintRightMetadata(url) {
     var d = getRightDataObj(url);
-     return "... " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+     return " " + d.title + " by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
 }
-
-
-
-
-
-
-
-
 function getBgDesc(url) {
     if ( url === "" ) {
         return "";

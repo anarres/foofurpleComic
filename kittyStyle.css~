@@ -155,7 +155,7 @@ div.toggleDiv {
     width: 95%;
     height: 60%;
     background-color: #ffffff;
-    background-image:url('sinus.png');
+    background-image:url('images/sinus.png');
     z-index: 10;
     visibility: hidden;
     border-radius: 35px;
@@ -170,9 +170,10 @@ div#chooseKitty h3 {
 div#chooseKitty img {
     width: 70px;
     height: 70px;
-
     padding: 3px;
     margin: 0px;
+    background-color: yellow;
+    background-opacity: 0;
 }
 #kittyLeft {
     width:45%;
@@ -184,13 +185,12 @@ div#chooseKitty img {
     border-left:3px dashed blue;
 }
 div#chooseBackgroundImage {
-    background-image:url('sinus.png');
+    background-image:url('images/sinus.png');
 }
 div#chooseBackgroundImage img {
-    width: 150px;
-    height: 100px;
-    padding: 0px;
-    margin: 3px;
+    width: 120px;
+    height: 80px;
+    padding: 5px;
 }
 div#removeBackgroundArt {
     cursor: pointer;

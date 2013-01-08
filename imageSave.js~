@@ -30,7 +30,7 @@ function panelToCanvas() {
     var ctx = canvas.getContext('2d');
 
     // A background rectangle for the whole image
-    ctx.fillStyle = "#424242";
+    ctx.fillStyle = "#fff";
     ctx.fillRect(0,0,cWidth,cHeight);
 
     // Panel background color
@@ -54,11 +54,11 @@ function panelToCanvas() {
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
 
-    var mArray = generalLinesArray(mData, 120, 5);
+    var mArray = generalLinesArray(mData, 60, 5);
     var mTop = cHeight - 80; // Fudge
 
     // Text style 
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#000";
     ctx.font = "12px arial;";
 
     for (var m=0; m<mArray.length; m++) {
@@ -144,3 +144,4 @@ function downloadImage() {
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
     document.getElementById('downloadDiv').style.visibility = "visible";
 }
+
