@@ -18,7 +18,7 @@ function imageDescription() {
 }
 
 // Create a canvas version of the comic
-function panelToCanvas() {
+function panelToCanvas(niceBorder) {
 
     var numPanels = theComic.numPanels();
     var canvas = document.getElementById('myCanvas');
@@ -29,10 +29,6 @@ function panelToCanvas() {
     canvas.setAttribute("height", cHeight);
     var ctx = canvas.getContext('2d');
 
-    // A background rectangle for the whole image
-    ctx.fillStyle = "#fff";
-    ctx.fillRect(0,0,cWidth,cHeight);
-
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
 
@@ -41,28 +37,30 @@ function panelToCanvas() {
         var bgImage = new Image();
         bgImage.src = theComic.bgArt;
     }
-
     var leftChar = new Image();
     leftChar.src = theComic.leftKittyUrl;
-
     var rightChar = new Image();
     rightChar.src = theComic.rightKittyUrl;
 
-    // Write metadata to bottom of canvas
+
+    // Get metadata
     var mData = "This comic is a mash-up made at foofurple.com using images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
 
     var mArray = generalLinesArray(mData, 60, 5);
-    var mTop = cHeight - 130; // Fudge
+    var mTop = cHeight - 120;               // Fudge - top of metadata
+    var mTopBackground = cHeight - 145;     // Fudge - top of metadata label image
+    ctx.drawImage(niceBorder, 0, mTopBackground);
 
     // Text style 
     ctx.fillStyle = "#000";
     ctx.font = "12px arial;";
 
     for (var m=0; m<mArray.length; m++) {
-        var x = 10;
+        //var x = 10;
+        var x = 20;
         var y = mTop + m*printLineHeight;
         ctx.fillText(mArray[m], x, y);
     }
@@ -74,6 +72,10 @@ function panelToCanvas() {
         var x0 = getX0(i);
         var y0 = getY0(i);
 
+        // Create a 2px-wide border for the panel
+        ctx.fillStyle = "#444";
+        ctx.fillRect(x0-2,y0-2,panelWidth+4,panelHeight+4);
+
         // Fill in background color
         ctx.fillStyle = panelBgColor;
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
@@ -82,7 +84,6 @@ function panelToCanvas() {
         if (theComic.bgArt) {
             ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
         }
-
         // Draw characters
         ctx.drawImage(leftChar, x0 + kitty1X, y0 + kittyY);
         ctx.drawImage(rightChar, x0 + kitty2X, y0 + kittyY);
@@ -136,12 +137,22 @@ function panelToCanvas() {
     }
 }
 
-function downloadImage() {
-    panelToCanvas();    // Create canvas object
+function downloadImage2(niceBorder) {
+    panelToCanvas(niceBorder);    
     var canvas = document.getElementById("myCanvas");
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
     document.getElementById('downloadDiv').style.visibility = "visible";
+    return false;
+}
+
+
+function downloadImage() {
+
+    // Nice border around the metadata
+    var niceBorder = new Image();
+    niceBorder.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAACRCAQAAABKg1YRAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdAQoBKhvUZQN2AAACaElEQVR42u3aMVIaURzH8R8Zi3AGalspsMgVuATbYBetPQekg0YuwRG0VFtrzvDoNoWYoFkSaDLOvM+nYYcdmv/sd97bZXttG+AIX4wAxAJiAbHAJ3Z26ETPbKhUe9rKsjUxqrU9bWV5THKRJ3OjMsM85zHfTllZvicZmxzVGe+u/s5bk64/JVdp0s9LBmZHZTY5T8ldJsetLKs0SWZSoUKDzJI0Wf0rlm0ecpkmySJTc6NK0yySNLnMw4db/b1t2NvD4n5mUqFqy9yk7I7bQ7FcZJxrGzDcu2SedZ7/FotXkGFv4/WuCa+7wJHEAmIBsYBYQCwgFhALIBYQC4gFxAJiAbGAWACxgFhALCAWEAuIBRALiAXEAmIBsYBYQCyAWEAsIBYQC4gFxAJiAcQCYgGxgFhALCAWQCwgFhALiAXEAmIBsQBiAbGAWEAsIBYQCyAWEAuIBcQCYgGxgFgAsYBYQCwgFhALiAXEAogFxAJiAbGAWEAsgFhALCAWEAuIBcQCYgHEAmIBsYBYQCwgFkAsIBYQC4gFxAJiAbEAYgGxgFhALCAWEAuIBRALiAXEAmIBsYBYALGAWEAsIBYQC4gFxAKIBcQC/z+WYW6zMRWqt8lthh++67Xtr8PdZz+zTE2Lii1zk7I7brtWljYl9xml5CpL86LiVK5SMsp9yl4q71aWN6s0SRZWF6pNJbnL5I8zHbG85tLPSwYmR3X3KucpnakceBo2ySglc5OjOvOUjDpTOfjo+EeStclRnfXu6u/SuQ1LtumbG5Uq+XpKLL8fJENtDiSRs1N/ALXyuguIBcQCYoHP7CcgjFvwdN1nJwAAAABJRU5ErkJggg==";
+    niceBorder.onload = downloadImage2(niceBorder);
 }
 
