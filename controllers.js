@@ -124,6 +124,7 @@ function loadCharacters() {
 function newPanel() {
     theComic.createPanel();
     refreshDisplay(theComic);
+    //alert('ok');
 }
 function deletePanel() {
     theComic.delPanel();

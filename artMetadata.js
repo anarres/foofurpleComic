@@ -12,6 +12,18 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
+
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/grass4.png",
+            "title": "Grass",
+            "description": "Thick green grass against a clear sky.",
+            "artist":"rg1024",
+            "artist_website":"openclipart.org/user-detail/rg1024",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/hereComesTheSun.jpg",
             "title": "Here comes the sun",
@@ -998,6 +1010,88 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+            {
+            "left":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/left/foofurpleMonster.png",
+                "title": "Foofurple Monster",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/right/foofurpleMonster.png",
+                "title": "Foofurple Monster",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+            {
+            "left":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/left/foofurpleMonster2.png",
+                "title": "Foofurple Monster 2",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/right/foofurpleMonster2.png",
+                "title": "Foofurple Monster 2",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
+
+            {
+            "left":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/left/foofurpleMonster3.png",
+                "title": "Foofurple Monster 3",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"http://foofurple.com/comic/images/kitties/right/foofurpleMonster3.png",
+                "title": "Foofurple Monster 3",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
 
 
 

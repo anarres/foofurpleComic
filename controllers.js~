@@ -55,14 +55,8 @@ function selectBackgroundArt(url) {
         document.getElementById(url).style.backgroundImage="url('images/yellow.png')";
     }
 
-
-
     // Get all divs of class backgroundArt and give them this bg image
     var divs = getElementsByClassName(document, "backgroundArt");
-
-
-
-
     for (var j=0; j<divs.length; j++) {
         var myObj = divs[j];
         var myCSS = "url('" + url + "')";
@@ -71,12 +65,6 @@ function selectBackgroundArt(url) {
     theComic.bgArt = url;
     updateMetadata();
 }
-
-
-
-
-
-
 
 function selectKitty(num, imgUrl) {
     var myClassName = "imgChooser" + num;
@@ -136,6 +124,7 @@ function loadCharacters() {
 function newPanel() {
     theComic.createPanel();
     refreshDisplay(theComic);
+    alert('ok');
 }
 function deletePanel() {
     theComic.delPanel();

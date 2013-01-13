@@ -15,10 +15,8 @@ function Panel(selected, lBubbleMode, rBubbleMode) {
         var bb = new Bubble("", this.rBubbleMode, 1, this.rBubbleHasFocus);
         return bb;
     }
-    this.blab2 = function() {
-        return "Panel object<br>";
-    }
 }
+
 /* The state of the whole app */
 function KittyComic() {
     this.bgColor = dBgColor;

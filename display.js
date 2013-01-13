@@ -293,12 +293,14 @@ function displayPanel(theComic, pObj, pNum) {
     var lBubble = document.createElement("img");
     lBubble.setAttribute("class", "leftBubbleImage");
     lBubble.setAttribute("id", "leftBubble"+pNum);
-    setBubbleImageUrl(lBubble, 0, pObj.ltext, 0);
+    setBubbleImageUrl(lBubble, 0, pObj.ltext, pObj.lBubbleMode);
     panelDiv.appendChild(lBubble);
+
+
     var rBubble = document.createElement("img");
     rBubble.setAttribute("class", "rightBubbleImage");
     rBubble.setAttribute("id", "rightBubble"+pNum);
-    setBubbleImageUrl(rBubble, 1, pObj.rtext, 0)
+    setBubbleImageUrl(rBubble, 1, pObj.rtext,  pObj.rBubbleMode)
     panelDiv.appendChild(rBubble);
 
     // Textareas for speech bubbles      
