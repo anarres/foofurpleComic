@@ -50,16 +50,8 @@ var images88 = [
             "license_short":"http://www.patterncooler.com/license.php",
             "license_url":"http://www.patterncooler.com/license.php"
             },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/patternCoolerYellowFlowers.png",
-            "title": "Yellow flowers",
-            "description": "Decorative yellow flowers background",
-            "artist":"Pattern Cooler",
-            "artist_website":"http://www.patterncooler.com",
-            "license":"http://www.patterncooler.com/license.php",
-            "license_short":"http://www.patterncooler.com/license.php",
-            "license_url":"http://www.patterncooler.com/license.php"
-            },
+
+
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/patternCoolerPinkFlowers.png",
             "title": "Pink flowers",
@@ -123,28 +115,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
 
-
-
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/flowers2.png",
-            "title": "Pink cartoon flowers",
-            "description": "Pink cartoon flowers",
-            "artist":"Mathafix / Anarres",
-            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"http://foofurple.com/comic/images/backgroundArt/flowers5.png",
-            "title": "Pink cartoon flowers",
-            "description": "Pink cartoon flowers",
-            "artist":"Mathafix / Anarres",
-            "artist_website":"http://openclipart.org/detail/169669/fleur-by-mathafix",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
 
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/wheat-field-vector.jpg",
