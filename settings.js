@@ -8,7 +8,7 @@ var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
 
-var charsPerLine = 25;
+var charsPerLine = 23;
 var maxLines = 10;
 var maxChars = charsPerLine*maxLines;
 

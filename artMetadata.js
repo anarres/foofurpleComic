@@ -13,6 +13,23 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
 
+
+
+
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/frenchCafe.png",
+            "title": "French cafe",
+            "description": "A street scene outside a French cafe",
+            "artist":"sammo241",
+            "artist_website":"http://openclipart.org/user-detail/sammo241",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+
+
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/grass4.png",
             "title": "Grass",
@@ -23,7 +40,36 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
-
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/patternCoolerBlueFlowers.png",
+            "title": "Blue flowers",
+            "description": "Decorative blue flowers background",
+            "artist":"Pattern Cooler",
+            "artist_website":"http://www.patterncooler.com",
+            "license":"http://www.patterncooler.com/license.php",
+            "license_short":"http://www.patterncooler.com/license.php",
+            "license_url":"http://www.patterncooler.com/license.php"
+            },
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/patternCoolerYellowFlowers.png",
+            "title": "Yellow flowers",
+            "description": "Decorative yellow flowers background",
+            "artist":"Pattern Cooler",
+            "artist_website":"http://www.patterncooler.com",
+            "license":"http://www.patterncooler.com/license.php",
+            "license_short":"http://www.patterncooler.com/license.php",
+            "license_url":"http://www.patterncooler.com/license.php"
+            },
+            { 
+            "url":"http://foofurple.com/comic/images/backgroundArt/patternCoolerPinkFlowers.png",
+            "title": "Pink flowers",
+            "description": "Decorative pink flowers background",
+            "artist":"Pattern Cooler",
+            "artist_website":"http://www.patterncooler.com",
+            "license":"http://www.patterncooler.com/license.php",
+            "license_short":"http://www.patterncooler.com/license.php",
+            "license_url":"http://www.patterncooler.com/license.php"
+            },
             { 
             "url":"http://foofurple.com/comic/images/backgroundArt/hereComesTheSun.jpg",
             "title": "Here comes the sun",

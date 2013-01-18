@@ -18,7 +18,7 @@ function imageDescription() {
 }
 
 // Create a canvas version of the comic
-function panelToCanvas(niceBorder) {
+function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles) {
 
     var numPanels = theComic.numPanels();
     var canvas = document.getElementById('myCanvas');
@@ -31,17 +31,6 @@ function panelToCanvas(niceBorder) {
 
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
-
-    // Prepare images
-    if (theComic.bgArt) {
-        var bgImage = new Image();
-        bgImage.src = theComic.bgArt;
-    }
-    var leftChar = new Image();
-    leftChar.src = theComic.leftKittyUrl;
-    var rightChar = new Image();
-    rightChar.src = theComic.rightKittyUrl;
-
 
     // Get metadata
     var mData = "This comic is a mash-up made at foofurple.com using images: ";
@@ -81,7 +70,7 @@ function panelToCanvas(niceBorder) {
         ctx.fillRect(x0,y0,panelWidth,panelHeight);
 
         // Draw background image
-        if (theComic.bgArt) {
+        if (bgImage) {
             ctx.drawImage(bgImage, x0, y0, panelWidth, panelHeight);
         }
         // Draw characters
@@ -96,23 +85,9 @@ function panelToCanvas(niceBorder) {
         var lNumLines = getNumLines(ltext);
         var rNumLines = getNumLines(rtext);
 
-        // Determine which type of bubble
-        var lBubbleMode = theComic.panelsArray[i].lBubbleMode;
-        var rBubbleMode = theComic.panelsArray[i].rBubbleMode;
-
-        // Get bubble image url
-        var lBubbleUrl = getBubbleUrl(0, lNumLines, lBubbleMode);
-        var rBubbleUrl = getBubbleUrl(1, rNumLines, rBubbleMode);
-
-        // Create DOM image object
-        var lBubbleImage = new Image();
-        lBubbleImage.src = lBubbleUrl;
-        var rBubbleImage = new Image();
-        rBubbleImage.src = rBubbleUrl;
-
         // Draw bubbles
-        ctx.drawImage(lBubbleImage, x0+leftBubbleX , y0+bubbleY);
-        ctx.drawImage(rBubbleImage, x0+rightBubbleX , y0+bubbleY);
+        ctx.drawImage(leftBubbles[i], x0+leftBubbleX , y0+bubbleY);
+        ctx.drawImage(rightBubbles[i], x0+rightBubbleX , y0+bubbleY);
 
         // Array of strings, one per line
         var lTextArray = fooLinesArray(ltext);
@@ -134,25 +109,77 @@ function panelToCanvas(niceBorder) {
             var y = y0 + printTop + rx * printLineHeight;
             ctx.fillText(rTextArray[rx], x, y);
         }
-    }
+
+    }   // Closes the for each panel loop
+    return true;
 }
 
-function downloadImage2(niceBorder) {
-    panelToCanvas(niceBorder);    
+function displayDownloadLink() {
     var canvas = document.getElementById("myCanvas");
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
     document.getElementById('downloadDiv').style.visibility = "visible";
-    return false;
 }
-
 
 function downloadImage() {
 
-    // Nice border around the metadata
+    var leftBubbles = [];
+    var rightBubbles = [];
+    var numPanels = theComic.numPanels();
+
+    for (var i=0; i<numPanels; i++) {
+
+        // Determine which type of bubble
+        var lBubbleMode = theComic.panelsArray[i].lBubbleMode;
+        var rBubbleMode = theComic.panelsArray[i].rBubbleMode;
+
+        // Get bubble text
+        var ltext = theComic.panelsArray[i].ltext;
+        var rtext = theComic.panelsArray[i].rtext;
+
+        // Get bubble number of lines of text
+        var lNumLines = getNumLines(ltext);
+        var rNumLines = getNumLines(rtext);
+
+        var num = i+1;
+        var leftID = "leftBubble" + num;
+        var rightID = "rightBubble" + num;
+
+        var leftBubble = document.getElementById(leftID);
+        var rightBubble = document.getElementById(rightID);
+
+        leftBubbles.push(leftBubble);
+        rightBubbles.push(rightBubble);
+    }
+
+    // Prepare images
+    var kitty1Array = getElementsByClassName(document, 'kitty1');
+    var leftChar = kitty1Array[0];
+
+    var kitty2Array = getElementsByClassName(document, 'kitty2');
+    var rightChar = kitty2Array[0];
+
     var niceBorder = new Image();
     niceBorder.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAACRCAQAAABKg1YRAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdAQoBKhvUZQN2AAACaElEQVR42u3aMVIaURzH8R8Zi3AGalspsMgVuATbYBetPQekg0YuwRG0VFtrzvDoNoWYoFkSaDLOvM+nYYcdmv/sd97bZXttG+AIX4wAxAJiAbHAJ3Z26ETPbKhUe9rKsjUxqrU9bWV5THKRJ3OjMsM85zHfTllZvicZmxzVGe+u/s5bk64/JVdp0s9LBmZHZTY5T8ldJsetLKs0SWZSoUKDzJI0Wf0rlm0ecpkmySJTc6NK0yySNLnMw4db/b1t2NvD4n5mUqFqy9yk7I7bQ7FcZJxrGzDcu2SedZ7/FotXkGFv4/WuCa+7wJHEAmIBsYBYQCwgFhALIBYQC4gFxAJiAbGAWACxgFhALCAWEAuIBRALiAXEAmIBsYBYQCyAWEAsIBYQC4gFxAJiAcQCYgGxgFhALCAWQCwgFhALiAXEAmIBsQBiAbGAWEAsIBYQCyAWEAuIBcQCYgGxgFgAsYBYQCwgFhALiAXEAogFxAJiAbGAWEAsgFhALCAWEAuIBcQCYgHEAmIBsYBYQCwgFkAsIBYQC4gFxAJiAbEAYgGxgFhALCAWEAuIBRALiAXEAmIBsYBYALGAWEAsIBYQC4gFxAKIBcQC/z+WYW6zMRWqt8lthh++67Xtr8PdZz+zTE2Lii1zk7I7brtWljYl9xml5CpL86LiVK5SMsp9yl4q71aWN6s0SRZWF6pNJbnL5I8zHbG85tLPSwYmR3X3KucpnakceBo2ySglc5OjOvOUjDpTOfjo+EeStclRnfXu6u/SuQ1LtumbG5Uq+XpKLL8fJENtDiSRs1N/ALXyuguIBcQCYoHP7CcgjFvwdN1nJwAAAABJRU5ErkJggg==";
-    niceBorder.onload = downloadImage2(niceBorder);
+    niceBorder.onload = function() {
+        var bgImage = false;
+        if (theComic.bgArt) {
+            bgImage = new Image();
+            bgImage.src = theComic.bgArt;
+            bgImage.onload = function() {
+                var result = panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles);
+                if (result) {
+                    displayDownloadLink();
+                }
+            }
+        }
+        else {
+            var result = panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles);
+            if (result) {
+                displayDownloadLink();
+            }
+        }
+    }
 }
 

@@ -1,14 +1,14 @@
 //  d = default
 var dBgColor = "3496CF";
-var dBgArt = "http://foofurple.com/comic/images/backgroundArt/bubbles.png";
-var dLeftKittyUrl = "http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_cow.png";
-var dRightKittyUrl= "http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_sheep.png";
+var dBgArt = "images/backgroundArt/bubbles.png";
+var dLeftKittyUrl = "images/kitties/left/lemmling_Cartoon_cow.png";
+var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_sheep.png";
 
 var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
 
-var charsPerLine = 25;
+var charsPerLine = 22;
 var maxLines = 10;
 var maxChars = charsPerLine*maxLines;
 
