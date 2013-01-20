@@ -31,13 +31,21 @@ function KittyComic() {
         this.panelsArray.push( newPanelObj );
         return newPanelObj;
     }
+
+
     this.delPanel = function() {
         var index = this.highlit-1;
-        this.panelsArray.pop(index);
+
+        this.panelsArray = removeItemFromArray(this.panelsArray, index);
+
         if (this.highlit > this.panelsArray.length) {
-            this.highlit -= 1;
+            this.highlit = 1;
         }
     }
+
+
+
+
     this.numPanels = function() {
         return this.panelsArray.length;
     }

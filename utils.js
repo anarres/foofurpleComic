@@ -88,3 +88,22 @@ function dealWithLongChunk(chunk, charsPerLine) {
     }
     return lineArray;
 }
+
+function removeItemFromArray(fooArray, index) {
+    var newArray = [];
+    for (var i=0; i<fooArray.length; i++) {
+        if (i < index) {
+            newArray.push(fooArray[i]);
+        }
+        else if (i == index) {
+            //pass;
+        }
+        else {
+            newArray.push(fooArray[i]);
+        }
+    }
+    return newArray;
+}
+
+
+
