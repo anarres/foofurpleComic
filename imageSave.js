@@ -161,7 +161,7 @@ function downloadImage() {
     var rightChar = kitty2Array[0];
 
     var niceBorder = new Image();
-    niceBorder.src = "http://foofurple.com/comic/images/nice_border.png";
+    niceBorder.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAACRCAAAAADF4cFGAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdARMNDxiBlGNaAAAB2ElEQVR42u3YMW7iUABF0eeRIypqiogqPUIiZAHeyDRZFk02wgIgSBELyBRU1KkQSJ4iASWwgP+lnFu5fke2v930UX39MUGNtZerhTGK93xzt5yMUr7Tzd2yz91fuxTt5bi/v75blhkbpmzjLK8fYttDMzdM2ebNYfuTZbvKbGiYsg1nWX25NH1y2i8PeZzapXhvrxl0ozZp+iySNDMqVbhs+iTPnyexu/HcE6yKpg/r3fF8QHYyruf90mURP18qDQsWYcEiLFiERViwCAsWYcEiLMKCRViwCAsWYREWLMKCRViEBYuwYBEWLMIiLFiEBYuwYBEWYcEiLFiEBYuwCAsWYcEiLMKCRViwCAsWYREWLMKCRViwCIuwYBEWLMIiLFiEBYuwYBEWYcEiLFiEBYuwCAsWYcEiLFiERViwCAsWYREWLMKCRViwCIuwYBEWLMKCRViEBYuwYBEWLMIiLFiE5RfUJsnLeD40RRV9rHcXluP7v9nUJBX0tumTJE2fnPbLQx65VKDymkE3aj9ZkmxXXKpQeZp8f+VPnrL5sEvh98rmrHI5iU0G/dowZVv3g8n1AbnLzjBl26X7cUBOklGOC8sUbnTzOdkapZKvyPMBWdXl50uV/QfO2EXZOtwOkwAAAABJRU5ErkJggg==";
 
     niceBorder.onload = function() {
         var bgImage = false;

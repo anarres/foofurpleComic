@@ -161,7 +161,7 @@ function downloadImage() {
     var rightChar = kitty2Array[0];
 
     var niceBorder = new Image();
-    niceBorder.src = "http://foofurple.com/comic/images/nice_label.png";
+    niceBorder.src = "http://foofurple.com/comic/images/nice_border.png";
 
     niceBorder.onload = function() {
         var bgImage = false;

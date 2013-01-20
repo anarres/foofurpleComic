@@ -130,7 +130,7 @@ div.buttonFoo img {
 /* Color widget */
 
 div.colorWidget {
-    background-image:url('images/spectrum.png');
+    background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAWCAYAAACFbNPBAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wIBBAkLici5XsAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAABdElEQVR42u2b7W6DMAxFTwi0Xbe+/0vtabqNfXSQ/cBIXlQmKNUk4B7JMgVTBUsXx0kbEvEZCqACDsAj8ASc7PgB2AElXVy0z0OxlYsNdrwDji62jz8AkUSkIXABvoAaeHX2DnwC32at+Q8XezZf2/k+roFf3/sGvJiv7fwFaEL3aKkE9jbck7M8DaXZ3q75NBwttrJ0FaPSADFByEf8v5kINESgJG05DV2cjfkGkvO5CbEeMoGECbe2yp7YmkDmVBMhJJCBKqJqIjYhkDnVIKmyCFUQISQQIcQ9BFI4H5RNsQWBjN3P6G8dEoYEIzTFEmKLAtHbX4gBgYwVR+umZNfQMq9YnUCmVg6/UZgyL8RqK0i/KjVGMEmiEGrSr4tCu+diMwK5R2Ou5l6ogrjplzetGItVCiTvNXyznUboK/zhhVi4QG7rGrwI+j9TTmnshVjQFGvcj0tS1mfkq11Fdm3GDE6IZfUgaaAH6StHzPoRIdbBDyxdkhTKvhP/AAAAAElFTkSuQmCC);
     border: 1px solid #cccccc;
     margin: 10px 3px;
     border-radius: 5px;
