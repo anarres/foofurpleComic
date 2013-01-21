@@ -118,7 +118,7 @@ function displayDownloadLink() {
     var canvas = document.getElementById("myCanvas");
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
-    document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <p class='description'>" + imageDescription() + "</p>";
+    document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
     document.getElementById('downloadDiv').style.visibility = "visible";
 }
 

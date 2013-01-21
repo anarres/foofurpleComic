@@ -448,6 +448,6 @@ function getStarted() {
     loadBgImages();
     loadCharacters();
     updateMetadata();
-    document.getElementById('jscolor').color.fromString(theComic.bgColor);
+    document.getElementById('jscolor').value = theComic.bgColor;
     addListeners();
 }
