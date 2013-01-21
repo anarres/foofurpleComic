@@ -209,7 +209,7 @@ function changePanelBGColor() {
     theComic.setBgColor(document.getElementById("jscolor").value);
 }
 
-
+/*
 function newWebImage(n) {
     var url = document.getElementById('newImageUrl').value;
     if (n == 2) {
@@ -271,9 +271,13 @@ function newWebImage(n) {
     }
     document.getElementById("addNewImage").style.visibility = 'hidden';
 }
+*/
 
 function addNewImage() {
-    document.getElementById('addNewImage').style.visibility = "visible";
+    var myObj = document.getElementById('addNewImage');
+    myObj.style.visibility = "visible";
+
+    myObj.focus();
 }
 
 function bmCycle(bm) {

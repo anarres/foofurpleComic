@@ -119,10 +119,15 @@ function displayDownloadLink() {
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
-    document.getElementById('downloadDiv').style.visibility = "visible";
+
+    var myObj = document.getElementById('downloadDiv');
+    myObj.style.visibility = "visible";
+
+    myObj.focus();
 }
 
 function downloadImage() {
+
 
     var leftBubbles = [];
     var rightBubbles = [];
