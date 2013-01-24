@@ -92,7 +92,12 @@
 </div> <!--#header-->
 
 
-<div id="addNewImage" tabindex="3" onBlur="document.getElementById('addNewImage').style.visibility='hidden'">
+<div id="addNewImage" tabindex="3">
+
+
+    <div class="close" onclick="document.getElementById('addNewImage').style.visibility='hidden'">
+        <img src="images/close_icon.png" alt="close">
+    </div>
 
     <h3>Add an image from your computer:</h3>
 
@@ -127,7 +132,11 @@
 
 
 
-<div id="downloadDiv" tabindex="4" onBlur="document.getElementById('downloadDiv').style.visibility='hidden'">
+<div id="downloadDiv" tabindex="4">
+
+    <div class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
+        <img src="images/close_icon.png" alt="close">
+    </div>
 
     <p>
         <a id="downloadLink">
