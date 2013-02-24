@@ -95,7 +95,9 @@
 <div id="addNewImage" tabindex="3">
 
 
-    <div class="close" onclick="document.getElementById('addNewImage').style.visibility='hidden'">CLOSE</div>
+    <div class="close" onclick="document.getElementById('addNewImage').style.visibility='hidden'">
+        <img src="images/close_icon.png" alt="close">
+    </div>
 
     <h3>Add an image from your computer:</h3>
 
@@ -133,7 +135,7 @@
 <div id="downloadDiv" tabindex="4">
 
     <div class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
-        CLOSE
+        <img src="images/close_icon.png" alt="close">
     </div>
 
     <p>

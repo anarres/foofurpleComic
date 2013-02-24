@@ -33,7 +33,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var panelBgColor = "#" + theComic.bgColor;
 
     // Get metadata
-    var mData = "This comic is a mash-up made at foofurple.com using images: ";
+    var mData = "This comic is a mash-up made at foofurple.com using the following  images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
@@ -119,15 +119,12 @@ function displayDownloadLink() {
     var dataUrl = canvas.toDataURL();
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
-
     var myObj = document.getElementById('downloadDiv');
     myObj.style.visibility = "visible";
-
     myObj.focus();
 }
 
 function downloadImage() {
-
 
     var leftBubbles = [];
     var rightBubbles = [];

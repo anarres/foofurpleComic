@@ -124,7 +124,6 @@ function loadCharacters() {
 function newPanel() {
     theComic.createPanel();
     refreshDisplay(theComic);
-    //alert('ok');
 }
 function deletePanel() {
     theComic.delPanel();
@@ -338,32 +337,11 @@ function randomInt(lowestInt, highestInt) {
 }
 
 function randomDefaultImages(theComic) {
-
-    var fooArray = [ 
-
-    {'bgColor':'FFE3A3','bgArt':'http://foofurple.com/comic/images/backgroundArt/city_skyline.png','left':'http://foofurple.com/comic/images/kitties/left/little-robo.png', 'right':'http://foofurple.com/comic/images/kitties/right/flying-things6.png'},
-
-    {'bgColor':'3496CF','bgArt':'http://foofurple.com/comic/images/backgroundArt/Farm-Landscape.jpg','left':'http://foofurple.com/comic/images/kitties/left/lemmling_Cartoon_cow.png', 'right':'http://foofurple.com/comic/images/kitties/right/lemmling_Cartoon_sheep.png'}, 
-
-    {'bgColor':'5acbed','bgArt':'http://foofurple.com/comic/images/backgroundArt/mochovka-cloudy.png','left':'http://foofurple.com/comic/images/kitties/left/kitty.png', 'right':'http://foofurple.com/comic/images/kitties/right/fox.png'},
-
-
-    {'bgColor':'5acbed','bgArt':'http://foofurple.com/comic/images/backgroundArt/summerCartoon.jpg','left':'http://foofurple.com/comic/images/kitties/left/kitty.png', 'right':'http://foofurple.com/comic/images/kitties/right/fox.png'},
-
-
-    {'bgColor':'cbcf99','bgArt':'http://foofurple.com/comic/images/backgroundArt/ufo-invasion.png','left':'http://foofurple.com/comic/images/kitties/left/shiny-octopus.png', 'right':'http://foofurple.com/comic/images/kitties/right/shiny-octopus2.png'},
-
-    {'bgColor':'f2aeb1','bgArt':'http://foofurple.com/comic/images/backgroundArt/celtic-vine-border.png','left':'http://foofurple.com/comic/images/kitties/left/phique_owl1.png', 'right':'http://foofurple.com/comic/images/kitties/right/phique_owl2.png'},
-
-    {'bgColor':'30b1fc','bgArt':'http://foofurple.com/comic/images/backgroundArt/Clue_Simple_Clouds.png','left':'http://foofurple.com/comic/images/kitties/left/critter.png', 'right':'http://foofurple.com/comic/images/kitties/right/critter2.png'}
-
-    ];
-
-    var x = randomInt(0, fooArray.length);
-    theComic.bgColor = fooArray[x]['bgColor'];
-    theComic.bgArt = fooArray[x]['bgArt'];
-    theComic.leftKittyUrl = fooArray[x]['left'];
-    theComic.rightKittyUrl = fooArray[x]['right'];
+    var x = randomInt(0, defaultImagesArray.length);
+    theComic.bgColor = defaultImagesArray[x]['bgColor'];
+    theComic.bgArt = defaultImagesArray[x]['bgArt'];
+    theComic.leftKittyUrl = defaultImagesArray[x]['left'];
+    theComic.rightKittyUrl = defaultImagesArray[x]['right'];
 }
 
 
