@@ -300,7 +300,7 @@ var images88 = [
             "description": "a pine forest",
             "artist":"DragonArtz Designs",
             "artist_website":"dragonartz.net",
-            "license":"Attribution-NonCommercial-ShareAlike 3.0 United States",
+            "license":"Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States",
             "license_short":"CC BY NC SA 3.0",
             "license_url":"http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
             },

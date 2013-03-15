@@ -33,7 +33,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var panelBgColor = "#" + theComic.bgColor;
 
     // Get metadata
-    var mData = "This comic is a mash-up made at foofurple.com using images: ";
+    var mData = "This comic is a mash-up made at foofurple.com using the following  images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
@@ -45,7 +45,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
 
     // Text style 
     ctx.fillStyle = "#000";
-    ctx.font = "12px arial;";
+    ctx.font = "14px UbuntuMono;";
 
     for (var m=0; m<mArray.length; m++) {
         //var x = 10;
@@ -95,7 +95,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
 
         // Text style
         ctx.fillStyle = "#000000";
-        ctx.font = "14px arial";
+        ctx.font = "14px UbuntuMono;";
 
         // Left bubble text
         for (var lx=0; lx<lTextArray.length; lx++) {
@@ -115,17 +115,15 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
 }
 
 function displayDownloadLink() {
-    var canvas = document.getElementById("myCanvas");
-    var dataUrl = canvas.toDataURL();
-    document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
-    var myObj = document.getElementById('downloadDiv');
-    myObj.style.visibility = "visible";
-    myObj.focus();
+    var dataUrl = document.getElementById("myCanvas").toDataURL();
+
+    document.getElementById('downloadDiv').style.visibility = "visible";
+    document.getElementById("downloadLink").setAttribute('href', dataUrl);
+    document.getElementById('downloadDiv').focus();
 }
 
 function downloadImage() {
-
     var leftBubbles = [];
     var rightBubbles = [];
     var numPanels = theComic.numPanels();

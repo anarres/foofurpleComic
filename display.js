@@ -305,8 +305,14 @@ function displayPanel(theComic, pObj, pNum) {
 
     // Textareas for speech bubbles      
     var textarea1 = document.createElement("textarea");
+
+
     textarea1.setAttribute("class", "textarea1");
     textarea1.setAttribute("id", "textarea1Panel"+pNum);
+
+    textarea1.style.width = textareaWidth;
+    textarea1.style.top = textareaTop;
+    textarea1.style.left = textarea1Left;
 
     textarea1.setAttribute("onBlur", "textareaBlur(" + pNum + ", 0)");
     textarea1.setAttribute("onClick", "textareaClick(" + pNum + ", 0)");
@@ -315,8 +321,13 @@ function displayPanel(theComic, pObj, pNum) {
     panelDiv.appendChild(textarea1);
    
     var textarea2 = document.createElement("textarea");
+
+    textarea2.style.width = textareaWidth;
     textarea2.setAttribute("class", "textarea2");
     textarea2.setAttribute("id", "textarea2Panel"+pNum);
+
+    textarea2.style.top = textareaTop;
+    textarea2.style.left = textarea2Left;
     textarea2.setAttribute("onBlur", "textareaBlur(" + pNum + ", 1)");
     textarea2.setAttribute("onClick", "textareaClick(" + pNum + ", 1)");
     setTextareaValue(textarea2, pObj.rtext);

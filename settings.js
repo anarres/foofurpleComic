@@ -8,18 +8,22 @@ var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
 
-var charsPerLine = 23;
-var maxLines = 10;
+var charsPerLine = 22;
+var maxLines = 11;
 var maxChars = charsPerLine*maxLines;
 
 var panelWidth = 400;
 var panelHeight = 300;
-var textareaWidth=185;
+
+var textareaWidth = "175px";
+var textareaTop = "10px";
+var textarea1Left = "11px";
+var textarea2Left = "216px";
 
 var printX = 20;
 var printX2 = 220;
 var printTop = 30;
-var printLineHeight = 17;
+var printLineHeight = 14;
 
 var leftBubbleX = 10;
 var rightBubbleX = 210;

@@ -8,18 +8,23 @@ var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
 
-var charsPerLine = 23;
-var maxLines = 10;
+var charsPerLine = 22;
+var maxLines = 11;
 var maxChars = charsPerLine*maxLines;
 
 var panelWidth = 400;
 var panelHeight = 300;
-var textareaWidth=185;
+
+
+var textareaWidth = "175px";
+var textareaTop = "10px";
+var textarea1Left = "11px";
+var textarea2Left = "216px";
 
 var printX = 20;
 var printX2 = 220;
 var printTop = 30;
-var printLineHeight = 17;
+var printLineHeight = 14;
 
 var leftBubbleX = 10;
 var rightBubbleX = 210;
@@ -40,9 +45,8 @@ var defaultImagesArray = [
 {'bgColor':'f2aeb1','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
 {'bgColor':'30b1fc','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}];
 
+// pIndex is 0, 1, 2, ...
 
-// Takes the index of the panel, and returns coords x0,y0,x1,y1
-// pIndex is BASE ZERO
 function getX0(pIndex) {
     return borderWidth;
 }
@@ -60,7 +64,7 @@ function getCanvasHeight(numPanels) {
     var multiplier = parseInt(index);
     var result = 2*borderWidth + panelHeight + multiplier*(panelHeight + 2*borderWidth);
 
-    // Add 100 for metadata for now
+    // Add 150 for metadata for now
     return result + 150;
 }
 

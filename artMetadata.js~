@@ -300,9 +300,19 @@ var images88 = [
             "description": "a pine forest",
             "artist":"DragonArtz Designs",
             "artist_website":"dragonartz.net",
-            "license":"Attribution-NonCommercial-ShareAlike 3.0 United States",
+            "license":"Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States",
             "license_short":"CC BY NC SA 3.0",
             "license_url":"http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
+            },
+            { 
+            "url":"images/backgroundArt/CentralPlaceArcadeMelbourne-CC-BY-AdamSelwood.png",
+            "title": "Central Place Arcade, Melbourne",
+            "description": "a city street with graffiti",
+            "artist":"Adam Selwood",
+            "artist_website":"http://www.flickr.com/photos/adselwood/",
+            "license":"Creative Commons Attribution 2.0",
+            "license_short":"CC BY 2.0",
+            "license_url":"http://creativecommons.org/licenses/by/2.0/"
             },
             { 
             "url":"images/backgroundArt/ufo-invasion.png",
@@ -1523,8 +1533,6 @@ function getRightMetadata(url) {
     var d = getRightDataObj(url);
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
 }
-
-
 
 
 function getPrintBgMetadata(url) {
