@@ -8,22 +8,25 @@ var dltext = "";
 var drtext = "";
 var dBubbleMode = 0;
 
-var charsPerLine = 22;
+var charsPerLine = 24;
 var maxLines = 11;
 var maxChars = charsPerLine*maxLines;
 
 var panelWidth = 400;
 var panelHeight = 300;
 
-var textareaWidth = "175px";
-var textareaTop = "10px";
+
+var textareaWidth = "180px";
+var textareaTop = "9px";
 var textarea1Left = "11px";
 var textarea2Left = "216px";
+
 
 var printX = 20;
 var printX2 = 220;
 var printTop = 30;
 var printLineHeight = 14;
+
 
 var leftBubbleX = 10;
 var rightBubbleX = 210;
@@ -33,7 +36,7 @@ var kitty1X = 50;
 var kitty2X = 250;
 var kittyY = 200;
 
-var borderWidth = 4;   // Canvas only for now
+var borderWidth = 4;   
 
 var defaultImagesArray = [
 {'bgColor':'FFE3A3','bgArt':'images/backgroundArt/city_skyline.png','left':'images/kitties/left/little-robo.png', 'right':'images/kitties/right/flying-things6.png'},

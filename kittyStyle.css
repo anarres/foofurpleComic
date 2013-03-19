@@ -1,5 +1,10 @@
-/* General layout */
+@font-face
+{
+font-family: UbuntuMono;
+src: url('fonts/UbuntuMono-R.ttf')
+} 
 
+/* General layout */
 canvas {
     border: 10px solid grey;
 }
@@ -18,22 +23,12 @@ body {
     max-width: 860px;
     margin: 0px auto;
 }
-
 #header {
     clear: both;
 }
 
 
-
-@font-face
-{
-font-family: UbuntuMono;
-src: url('fonts/UbuntuMono-R.ttf')
-} 
-
-
 /* General typography  */
-
 h1 {
     text-align:center;
     padding: 10px;
@@ -95,7 +90,6 @@ label {
 #about h2, #about h3 {
     padding-top: 25px;
 }
-
 
  
 /* Control size of images */
@@ -326,17 +320,12 @@ img.kitty1, img.kitty2 {
     left: 210px;
 }
 
-
-
-
-
 .textarea1 {
     z-index: 3;
     position: absolute;
     background-color: transparent;
-    padding-bottom: 30px;
     overflow:hidden;
-    font-family:UbuntuMono, monospace;
+    font-family:UbuntuMono;
     font-size: 14px;
     font-weight: normal;
 }
@@ -344,9 +333,8 @@ img.kitty1, img.kitty2 {
     z-index: 3;
     position: absolute;
     background-color: transparent;
-    padding-bottom: 30px;
     overflow:hidden;
-    font-family:UbuntuMono, monospace;
+    font-family:UbuntuMono;
     font-size: 14px;
     font-weight: normal;
 }

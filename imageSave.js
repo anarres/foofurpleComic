@@ -33,7 +33,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var panelBgColor = "#" + theComic.bgColor;
 
     // Get metadata
-    var mData = "This comic is a mash-up made at foofurple.com using the following  images: ";
+    var mData = "This comic is a mash-up made at foofurple.com using the following images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
@@ -45,7 +45,8 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
 
     // Text style 
     ctx.fillStyle = "#000";
-    ctx.font = "14px UbuntuMono;";
+    ctx.font = "14px UbuntuMono";
+
 
     for (var m=0; m<mArray.length; m++) {
         //var x = 10;
@@ -94,8 +95,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
         var rTextArray = fooLinesArray(rtext);
 
         // Text style
-        ctx.fillStyle = "#000000";
-        ctx.font = "14px UbuntuMono;";
+        ctx.fillStyle = "#000";
 
         // Left bubble text
         for (var lx=0; lx<lTextArray.length; lx++) {

@@ -126,10 +126,10 @@ function getNumLines(text) {
 function getTextareaHeight(text) {
     var numLines = getNumLines(text);
     if (numLines < 2) {
-        return 30;
+        return 60;
     }
     else if (numLines === 2) {
-        return 45;
+        return 60;
     }
     else if (numLines === 3) {
         return 60;
@@ -150,10 +150,10 @@ function getTextareaHeight(text) {
         return 160;
     }
     else if (numLines === 9) {
-        return 160;
+        return 166;
     }
     else {
-        return 160;
+        return 166;
     }
 }
 
