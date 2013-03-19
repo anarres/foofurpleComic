@@ -38,7 +38,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
 
-    var mArray = generalLinesArray(mData, 60, 5);
+    var mArray = generalLinesArray(mData, 53, 8);
     var mTop = cHeight - 120;               // Fudge - top of metadata
     var mTopBackground = cHeight - 145;     // Fudge - top of metadata label image
     ctx.drawImage(niceBorder, 0, mTopBackground);

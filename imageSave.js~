@@ -33,19 +33,19 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var panelBgColor = "#" + theComic.bgColor;
 
     // Get metadata
-    var mData = "This comic is a mash-up made at foofurple.com using the following  images: ";
+    var mData = "This comic is a mash-up made at foofurple.com using the following images: ";
     mData += getPrintBgMetadata(theComic.bgArt);
     mData += getPrintLeftMetadata(theComic.leftKittyUrl);
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
 
-    var mArray = generalLinesArray(mData, 60, 5);
+    var mArray = generalLinesArray(mData, 55, 8);
     var mTop = cHeight - 120;               // Fudge - top of metadata
     var mTopBackground = cHeight - 145;     // Fudge - top of metadata label image
     ctx.drawImage(niceBorder, 0, mTopBackground);
 
     // Text style 
     ctx.fillStyle = "#000";
-    ctx.font = "14px UbuntuMono";//////////////////////////////////////////
+    ctx.font = "14px UbuntuMono";
 
 
     for (var m=0; m<mArray.length; m++) {
