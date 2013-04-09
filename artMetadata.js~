@@ -305,16 +305,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by-nc-sa/3.0/us/"
             },
             { 
-            "url":"images/backgroundArt/CentralPlaceArcadeMelbourne-CC-BY-AdamSelwood.png",
-            "title": "Central Place Arcade, Melbourne",
-            "description": "a city street with graffiti",
-            "artist":"Adam Selwood",
-            "artist_website":"http://www.flickr.com/photos/adselwood/",
-            "license":"Creative Commons Attribution 2.0",
-            "license_short":"CC BY 2.0",
-            "license_url":"http://creativecommons.org/licenses/by/2.0/"
-            },
-            { 
             "url":"images/backgroundArt/ufo-invasion.png",
             "title": "UFO invasion",
             "description": "a silhouetted scene of flying saucers attacking a city with laser beams",
@@ -388,6 +378,66 @@ var images88 = [
             "url":"images/backgroundArt/abstract-scene.png",
             "title": "Abstract scene",
             "description": "a blue abstract background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone2.png",
+            "title": "Part-tone background 2",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone3.png",
+            "title": "Part-tone background 3",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone4.png",
+            "title": "Part-tone background 4",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone5.png",
+            "title": "Part-tone background 5",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone6.png",
+            "title": "Part-tone background",
+            "description": "a blank patterned background 6",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone7.png",
+            "title": "Part-tone background 7",
+            "description": "a blank patterned background",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
             "license":"Public domain",
@@ -1154,6 +1204,35 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/littleStickFigureWithABigHeadFoofurple.png",
+                "title": "Little stick figure with a big head",
+                "description": "a stick figure",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/littleStickFigureWithABigHeadFoofurple.png",
+                "title": "Little stick figure with a big head",
+                "description": "a stick figure",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
             {
             "left":
                 { 

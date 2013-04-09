@@ -385,6 +385,56 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
+            "url":"images/backgroundArt/partTone2.png",
+            "title": "Part-tone background 2",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone4.png",
+            "title": "Part-tone background 4",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone5.png",
+            "title": "Part-tone background 5",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone6.png",
+            "title": "Part-tone background",
+            "description": "a blank patterned background 6",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
+            "url":"images/backgroundArt/partTone7.png",
+            "title": "Part-tone background 7",
+            "description": "a blank patterned background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+            { 
             "url":"images/backgroundArt/derby-yellow.png",
             "title": "Derby yellow",
             "description": "a very bright yellow background",
@@ -1144,6 +1194,35 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/littleStickFigureWithABigHeadFoofurple.png",
+                "title": "Little stick figure with a big head",
+                "description": "a stick figure",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/littleStickFigureWithABigHeadFoofurple.png",
+                "title": "Little stick figure with a big head",
+                "description": "a stick figure",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+
+
+
             {
             "left":
                 { 
