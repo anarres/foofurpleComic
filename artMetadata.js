@@ -1029,30 +1029,6 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter.png",
-                "title": "Critter",
-                "description": "a cute cartoon creature",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"images/kitties/right/critter2.png",
-                "title": "Critter 2",
-                "description": "a cute cartoon creature",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-            {
-            "left":
-                { 
                 "url":"images/kitties/left/foofurpleMonster.png",
                 "title": "Foofurple Monster",
                 "description": "a cute cartoon monster",
@@ -1125,7 +1101,79 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter3.png",
+                "url":"images/kitties/left/foofurpleMonster4.png",
+                "title": "Foofurple Monster 4",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/foofurpleMonster4.png",
+                "title": "Foofurple Monster 4",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/foofurpleMonster5.png",
+                "title": "Foofurple Monster 5",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/foofurpleMonster5.png",
+                "title": "Foofurple Monster 5",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/foofurpleMonster6.png",
+                "title": "Foofurple Monster 6",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/foofurpleMonster6.png",
+                "title": "Foofurple Monster 6",
+                "description": "a cute cartoon monster",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1136,7 +1184,31 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter4.png",
+                "url":"images/kitties/right/critter.png",
+                "title": "Critter",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter2.png",
+                "title": "Critter 2",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter2.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1149,8 +1221,80 @@ var images88 = [
             {
             "left":
                 { 
+                "url":"images/kitties/left/critter3.png",
+                "title": "Critter 3",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter3.png",
+                "title": "Critter 3",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter4.png",
+                "title": "Critter 4",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter4.png",
+                "title": "Critter 4",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
                 "url":"images/kitties/left/critter5.png",
-                "title": "Critter",
+                "title": "Critter 5",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/right/critter5.png",
+                "title": "Critter 5",
+                "description": "a cute cartoon creature",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/left/critter6.png",
+                "title": "Critter 6",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
                 "artist_website":"",
@@ -1161,7 +1305,7 @@ var images88 = [
             "right":
                 { 
                 "url":"images/kitties/right/critter6.png",
-                "title": "Critter 2",
+                "title": "Critter 6",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
                 "artist_website":"",

@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
 function highlightSelectedPanel(pNum) {
     var oldArray = getElementsByClassName(document, "selected");
     if (oldArray.length > 0) {
@@ -126,10 +139,10 @@ function getNumLines(text) {
 function getTextareaHeight(text) {
     var numLines = getNumLines(text);
     if (numLines < 2) {
-        return 30;
+        return 60;
     }
     else if (numLines === 2) {
-        return 45;
+        return 60;
     }
     else if (numLines === 3) {
         return 60;
