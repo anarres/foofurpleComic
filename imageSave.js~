@@ -17,13 +17,35 @@ function imageDescription() {
     return d;
 }
 
+
+
 // Create a canvas version of the comic
 function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles) {
 
     var numPanels = theComic.numPanels();
     var canvas = document.getElementById('myCanvas');
-    var cWidth = getCanvasWidth(numPanels);
     var cHeight = getCanvasHeight(numPanels);
+    var cWidth = getCanvasWidth(numPanels);         // Does not incluce space for metadata
+
+
+
+
+    // Get metadata
+    var mData =  "CREDITS: ";
+    mData += getPrintBgMetadata(theComic.bgArt);
+    mData += getPrintLeftMetadata(theComic.leftKittyUrl);
+    mData += getPrintRightMetadata(theComic.rightKittyUrl);
+    mData += "Mashed-up at foofurple.com/comic/.  ";
+
+//cHeight-20
+    var maxLineLengthz = numPanels * 42;
+    var maxNumLinesz = 8;
+
+    var mArray = generalLinesArray(mData, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata
+    //var metaDataHeight = 20 + 20*mArray.length;         // FUDGE - 20 should be lineheight
+    var metaDataHeight = 10 + mArray.length * 18;
+
+    cWidth += metaDataHeight;
 
     canvas.setAttribute("width", cWidth);
     canvas.setAttribute("height", cHeight);
@@ -31,30 +53,6 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
 
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
-
-    // Get metadata
-    var mData =  "";
-    mData += getPrintBgMetadata(theComic.bgArt);
-    mData += getPrintLeftMetadata(theComic.leftKittyUrl);
-    mData += getPrintRightMetadata(theComic.rightKittyUrl);
-    mData += "Mashed-up at foofurple.com/comic/.  ";
-
-    var mArray = generalLinesArray(mData, 53, 8);
-    var mTop = cHeight - 120;               // Fudge - top of metadata
-    var mTopBackground = cHeight - 145;     // Fudge - top of metadata label image
-    ctx.drawImage(niceBorder, 0, mTopBackground);
-
-    // Text style 
-    ctx.fillStyle = "#000";
-    ctx.font = "14px UbuntuMono";
-
-
-    for (var m=0; m<mArray.length; m++) {
-        //var x = 10;
-        var x = 20;
-        var y = mTop + m*printLineHeight;
-        ctx.fillText(mArray[m], x, y);
-    }
     
     // For each panel
     for (var i=0; i<numPanels; i++) {
@@ -112,6 +110,47 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
         }
 
     }   // Closes the for each panel loop
+
+
+
+
+
+
+
+
+
+    // Text style 
+    ctx.fillStyle = "#000";
+    ctx.font = "14px UbuntuMono";
+
+
+
+
+
+    // translate context to center of canvas
+    //context.translate(canvas.width / 2, canvas.height / 2);
+    ctx.translate(420, cHeight-10);
+
+    // rotate 45 degrees clockwise
+    //ctx.rotate(Math.PI/2.0);
+    ctx.rotate(1.5*Math.PI);
+
+
+    for (var m=0; m<mArray.length; m++) {
+        var x = 0;
+        var y = 0 + m*printLineHeight;
+        ctx.fillText(mArray[m], x, y);
+    }
+
+
+    //ctx.fillText(mData, 0, 0);
+    //ctx.fillText(mData, 200, 200);
+
+
+
+
+
+
     return true;
 }
 

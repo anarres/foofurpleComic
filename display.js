@@ -57,17 +57,17 @@ function getY0(pIndex) {
     var result = borderWidth + multiplier*(panelHeight + 2*borderWidth);
     return result;
 }
+
 function getCanvasWidth(numPanels) {
     var result = panelWidth + 2*borderWidth;
     return result;
 }
+
 function getCanvasHeight(numPanels) {
     var index = numPanels - 1;
     var multiplier = parseInt(index);
     var result = 2*borderWidth + panelHeight + multiplier*(panelHeight + 2*borderWidth);
-
-    // Add 150 for metadata for now
-    return result + 150;
+    return result;
 }
 
 
@@ -202,6 +202,8 @@ function generalLinesArray(text, maxLineLength, maxNumLines) {
     }
     return stringArray;
 }
+
+
 
 function getNumLines(text) {
     var lines = fooLinesArray(text);
