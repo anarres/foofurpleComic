@@ -1747,25 +1747,58 @@ function getRightMetadata(url) {
     return "<p><b>" + d.title + "</b> by <a href='" + d.artist_website + "'>"  + d.artist + "</a>, <a href='" + d.license_url + "'>" + d.license_short +"</a></p>";
 }
 
-
 function getPrintBgMetadata(url) {
     if ( url === "" ) {
         return "";
     }
     else {
         var d = getBgDataObj(url);
-        return " '" + d.title + "' by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+        var output = "Background: " + d.title;
+        if ( (d.artist != "") && (d.artist != " ") && (d.artist != "unknown") ) {
+            output +=  " by " + d.artist;
+        }
+        if ( (d.artist_website != "") && (d.artist_website != " ") && (d.artist_website != "unknown") ) {
+            output += " " + d.artist_website;
+        }
+        if ( (d.license_short != "") && (d.license_short != "") && (d.license_short != "unknown") ) {
+            output += " "  + d.license_short;
+        }
+        output += ". ";
+        return output;
     }
 }
+
 function getPrintLeftMetadata(url) {
     var d = getLeftDataObj(url);
-     return " '" + d.title + "' by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
-}
-function getPrintRightMetadata(url) {
-    var d = getRightDataObj(url);
-     return " '" + d.title + "' by " + d.artist + ", " + d.artist_website + ", " + d.license_short;
+    var output = " Left character: " + d.title;
+    if ( (d.artist != "") && (d.artist != " ") && (d.artist != "unknown") ) {
+        output +=  " by " + d.artist;
+    }
+    if ( (d.artist_website != "") && (d.artist_website != " ") && (d.artist_website != "unknown") ) {
+        output += " " + d.artist_website;
+    }
+    if ( (d.license_short != "") && (d.license_short != "") && (d.license_short != "unknown") ) {
+        output += " "  + d.license_short;
+    }
+    output += ". ";
+    return output;
 }
 
+function getPrintRightMetadata(url) {
+    var d = getRightDataObj(url);
+    var output = " Right character: " + d.title;
+    if ( (d.artist != "") && (d.artist != " ") && (d.artist != "unknown") ) {
+        output +=  " by " + d.artist;
+    }
+    if ( (d.artist_website != "") && (d.artist_website != " ") && (d.artist_website != "unknown") ) {
+        output += " " + d.artist_website;
+    }
+    if ( (d.license_short != "") && (d.license_short != "") && (d.license_short != "unknown") ) {
+        output += " "  + d.license_short;
+    }
+    output += ". ";
+    return output;
+}
 
 function getBgDesc(url) {
     if ( url === "" ) {
