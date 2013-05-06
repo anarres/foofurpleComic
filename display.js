@@ -1,8 +1,8 @@
 //  d = default
 var dBgColor = "3496CF";
-var dBgArt = "images/backgroundArt/bubbles.png";
-var dLeftKittyUrl = "images/kitties/left/lemmling_Cartoon_cow.png";
-var dRightKittyUrl= "images/kitties/right/lemmling_Cartoon_sheep.png";
+var dBgArt = "images/backgroundArt/rainforest.png";
+var dLeftKittyUrl = "images/kitties/lemmling_Cartoon_cow.png";
+var dRightKittyUrl= "images/kitties/lemmling_Cartoon_sheep.png";
 
 var dltext = "";
 var drtext = "";
@@ -15,18 +15,15 @@ var maxChars = charsPerLine*maxLines;
 var panelWidth = 400;
 var panelHeight = 300;
 
-
 var textareaWidth = "180px";
 var textareaTop = "9px";
 var textarea1Left = "11px";
 var textarea2Left = "216px";
 
-
 var printX = 20;
 var printX2 = 220;
 var printTop = 30;
 var printLineHeight = 14;
-
 
 var leftBubbleX = 10;
 var rightBubbleX = 210;
@@ -44,9 +41,11 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left_kitty.png', 'right':'images/kitties/right_fox.png'},
 
-{'bgColor':'F26DDC', 'bgArt':'images/backgroundArt/partTone7.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'F26DDC', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
-{'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}];
+{'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
+
+];
 
 // pIndex is 0, 1, 2, ...
 
@@ -70,19 +69,6 @@ function getCanvasHeight(numPanels) {
     var result = 2*borderWidth + panelHeight + multiplier*(panelHeight + 2*borderWidth);
     return result;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function highlightSelectedPanel(pNum) {
     var oldArray = getElementsByClassName(document, "selected");
@@ -384,7 +370,6 @@ function displayPanel(theComic, pObj, pNum) {
     setBubbleImageUrl(lBubble, 0, pObj.ltext, pObj.lBubbleMode);
     panelDiv.appendChild(lBubble);
 
-
     var rBubble = document.createElement("img");
     rBubble.setAttribute("class", "rightBubbleImage");
     rBubble.setAttribute("id", "rightBubble"+pNum);
@@ -393,7 +378,6 @@ function displayPanel(theComic, pObj, pNum) {
 
     // Textareas for speech bubbles      
     var textarea1 = document.createElement("textarea");
-
 
     textarea1.setAttribute("class", "textarea1");
     textarea1.setAttribute("id", "textarea1Panel"+pNum);

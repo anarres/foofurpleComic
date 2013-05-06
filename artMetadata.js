@@ -1308,8 +1308,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-
-
             {
             "left":
                 { 
