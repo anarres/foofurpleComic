@@ -27,9 +27,6 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var cHeight = getCanvasHeight(numPanels);
     var cWidth = getCanvasWidth(numPanels);         // Does not incluce space for metadata
 
-
-
-
     // Get metadata
     var mData =  "CREDITS: ";
     mData += getPrintBgMetadata(theComic.bgArt);
@@ -37,19 +34,18 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
     mData += "Mashed-up at foofurple.com/comic/.  ";
 
-//cHeight-20
-    var maxLineLengthz = numPanels * 42;
+    var maxLineLengthz = numPanels * 55;
     var maxNumLinesz = 8;
 
     var mArray = generalLinesArray(mData, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata
-    //var metaDataHeight = 20 + 20*mArray.length;         // FUDGE - 20 should be lineheight
-    var metaDataHeight = 10 + mArray.length * 16;
+    var metaDataHeight = 8 + mArray.length * 12;
 
     cWidth += metaDataHeight;
 
     canvas.setAttribute("width", cWidth);
     canvas.setAttribute("height", cHeight);
     var ctx = canvas.getContext('2d');
+    ctx.font = "14px UbuntuMono";
 
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
@@ -108,49 +104,21 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
             var y = y0 + printTop + rx * printLineHeight;
             ctx.fillText(rTextArray[rx], x, y);
         }
-
     }   // Closes the for each panel loop
-
-
-
-
-
-
-
-
 
     // Text style 
     ctx.fillStyle = "#000";
-    ctx.font = "14px UbuntuMono";
+    ctx.font = "10px UbuntuMono";
 
-
-
-
-
-    // translate context to center of canvas
-    //context.translate(canvas.width / 2, canvas.height / 2);
-    ctx.translate(420, cHeight-10);
-
-    // rotate 45 degrees clockwise
-    //ctx.rotate(Math.PI/2.0);
+    // translate context to center of canvas, then rotate
+    ctx.translate(420, cHeight-10); 
     ctx.rotate(1.5*Math.PI);
-
 
     for (var m=0; m<mArray.length; m++) {
         var x = 0;
-        var y = 0 + m*printLineHeight;
+        var y = 0 + m*metadataPrintLineHeight;
         ctx.fillText(mArray[m], x, y);
     }
-
-
-    //ctx.fillText(mData, 0, 0);
-    //ctx.fillText(mData, 200, 200);
-
-
-
-
-
-
     return true;
 }
 
