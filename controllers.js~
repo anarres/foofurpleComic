@@ -368,6 +368,7 @@ function localImageUpload(imgObjSrc) {
     }
 
     else {
+        alert("FIXME!!!!!!!!!!!!!");
         var myObj = {
             "left":
                 { 
@@ -426,13 +427,10 @@ function getStarted() {
     randomDefaultImages(theComic);
     theComic.createPanel();
     theComic.createPanel();
-
     refreshDisplay(theComic);
-
     loadBgImages();
     loadCharacters();
     updateMetadata();
     document.getElementById('jscolor').value = theComic.bgColor;
     addListeners();
-*/
 }

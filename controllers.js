@@ -100,6 +100,7 @@ function loadCharacters() {
     // Load the character images
     var htmlLeft = "<h3>Left character:</h3>";
     var htmlRight = "<h3>Right character:</h3>";
+
     for( var i=0; i<images88[1].characters.length; i++ ) {
         htmlLeft += "<img src='";
         htmlLeft += images88[1].characters[i].left.url;
@@ -117,6 +118,7 @@ function loadCharacters() {
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "')\">";
     }
+
     document.getElementById("kittyLeft").innerHTML = htmlLeft;
     document.getElementById("kittyRight").innerHTML = htmlRight;
 }
@@ -368,6 +370,7 @@ function localImageUpload(imgObjSrc) {
     }
 
     else {
+        alert("FIXME!!!!!!!!!!!!!");
         var myObj = {
             "left":
                 { 

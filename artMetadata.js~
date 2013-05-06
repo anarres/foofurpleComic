@@ -375,16 +375,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
             { 
-            "url":"images/backgroundArt/partTone2.png",
-            "title": "Part-tone background 2",
-            "description": "a blank patterned background",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"images/backgroundArt/partTone5.png",
             "title": "Part-tone background 5",
             "description": "a blank patterned background",
@@ -432,7 +422,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/kitty.png",
+                "url":"images/kitties/left_kitty.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -443,7 +433,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/kitty.png",
+                "url":"images/kitties/right_kitty.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -456,7 +446,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/fox.png",
+                "url":"images/kitties/left_fox.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -467,7 +457,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/fox.png",
+                "url":"images/kitties/right_fox.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -480,7 +470,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/bug.png",
+                "url":"images/kitties/bug.png",
                 "title": "Ladybug",
                 "description": "a cute ladybug",
                 "artist":"yurike11",
@@ -491,7 +481,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/bug.png",
+                "url":"images/kitties/bug.png",
                 "title": "Ladybug",
                 "description": "a cute ladybug",
                 "artist":"yurike11",
@@ -504,7 +494,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_cow.png",
+                "url":"images/kitties/lemmling_Cartoon_cow.png",
                 "title": "Cow",
                 "description": "a cow",
                 "artist":"lemmling",
@@ -515,7 +505,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_cow.png",
+                "url":"images/kitties/lemmling_Cartoon_cow.png",
                 "title": "Cow",
                 "description": "a cow",
                 "artist":"lemmling",
@@ -528,7 +518,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_owl.png",
+                "url":"images/kitties/lemmling_Cartoon_owl.png",
                 "title": "Owl",
                 "description": "an owl",
                 "artist":"lemmling",
@@ -539,7 +529,7 @@ var images88 = [
                 },
             "right":
                { 
-                "url":"images/kitties/right/lemmling_Cartoon_owl.png",
+                "url":"images/kitties/lemmling_Cartoon_owl.png",
                 "title": "Owl",
                 "description": "an owl",
                 "artist":"lemmling",
@@ -552,7 +542,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_sheep.png",
+                "url":"images/kitties/lemmling_Cartoon_sheep.png",
                 "title": "Sheep",
                 "description": "a sheep",
                 "artist":"lemmling",
@@ -563,7 +553,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_sheep.png",
+                "url":"images/kitties/lemmling_Cartoon_sheep.png",
                 "title": "Sheep",
                 "description": "a sheep",
                 "artist":"lemmling",
@@ -576,7 +566,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_elephant.png",
+                "url":"images/kitties/lemmling_Cartoon_elephant.png",
                 "title": "Elephant",
                 "description": "an elephant",
                 "artist":"lemmling",
@@ -587,7 +577,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_elephant.png",
+                "url":"images/kitties/lemmling_Cartoon_elephant.png",
                 "title": "Elephant",
                 "description": "an elephant",
                 "artist":"lemmling",
@@ -600,7 +590,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lemmling_Cartoon_goat.png",
+                "url":"images/kitties/lemmling_Cartoon_goat.png",
                 "title": "Goat",
                 "description": "a goat",
                 "artist":"lemmling",
@@ -611,7 +601,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lemmling_Cartoon_goat.png",
+                "url":"images/kitties/lemmling_Cartoon_goat.png",
                 "title": "Goat",
                 "description": "a goat",
                 "artist":"lemmling",
@@ -624,7 +614,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/cartoon_penguin.png",
+                "url":"images/kitties/cartoon_penguin.png",
                 "title": "Penguin",
                 "description": "a penguin",
                 "artist":"lemmling",
@@ -635,7 +625,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/cartoon_penguin.png",
+                "url":"images/kitties/cartoon_penguin.png",
                 "title": "Penguin",
                 "description": "a penguin",
                 "artist":"lemmling",
@@ -648,7 +638,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_hippo.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_hippo.png",
                 "title": "Hippo",
                 "description": "a hippo",
                 "artist":"StudioFibonacci",
@@ -659,7 +649,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_hippo.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_hippo.png",
                 "title": "Hippo",
                 "description": "a hippo",
                 "artist":"StudioFibonacci",
@@ -672,7 +662,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_triceratops.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_triceratops.png",
                 "title": "Triceratops",
                 "description": "a triceratops (dinosaur)",
                 "artist":"StudioFibonacci",
@@ -683,7 +673,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_triceratops.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_triceratops.png",
                 "title": "Triceratops",
                 "description": "a triceratops (dinosaur)",
                 "artist":"StudioFibonacci",
@@ -696,7 +686,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
                 "title": "Tyrannosaurus Rex",
                 "description": "a tyrannosaurus rex (dinosaur)",
                 "artist":"StudioFibonacci",
@@ -707,7 +697,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
+                "url":"images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png",
                 "title": "Tyrannosaurus Rex",
                 "description": "a tyrannosaurus rex (dinosaur)",
                 "artist":"StudioFibonacci",
@@ -721,7 +711,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/fringe.png",
+                "url":"images/kitties/fringe.png",
                 "title": "Fringe",
                 "description": "a cartoon person",
                 "artist":"VectorVaco.com",
@@ -732,7 +722,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/fringe.png",
+                "url":"images/kitties/fringe.png",
                 "title": "Fringe",
                 "description": "a cartoon person",
                 "artist":"VectorVaco.com",
@@ -745,7 +735,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/laughing.png",
+                "url":"images/kitties/laughing.png",
                 "title": "Laughing",
                 "description": "a cartoon person",
                 "artist":"VectorVaco.com",
@@ -756,7 +746,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/laughing.png",
+                "url":"images/kitties/laughing.png",
                 "title": "Laughing",
                 "description": "a cartoon person",
                 "artist":"VectorVaco.com",
@@ -769,7 +759,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/pink_shirt.png",
+                "url":"images/kitties/pink_shirt.png",
                 "title": "Pink shirt",
                 "description": "a cartoon person wearing a pink shirt",
                 "artist":"VectorVaco.com",
@@ -780,7 +770,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/pink_shirt.png",
+                "url":"images/kitties/pink_shirt.png",
                 "title": "Pink shirt",
                 "description": "a cartoon person wearing a pink shirt",
                 "artist":"VectorVaco.com",
@@ -793,7 +783,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/grin.png",
+                "url":"images/kitties/grin.png",
                 "title": "Grin",
                 "description": "a smiling cartoon person",
                 "artist":"VectorVaco.com",
@@ -804,7 +794,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/grin.png",
+                "url":"images/kitties/grin.png",
                 "title": "Grin",
                 "description": "a smiling cartoon person",
                 "artist":"VectorVaco.com",
@@ -817,7 +807,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/yellowCap.png",
+                "url":"images/kitties/yellowCap.png",
                 "title": "Yellow cap",
                 "description": "a cartoon character wearing a yellow cap",
                 "artist":"VectorVaco.com",
@@ -828,7 +818,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/yellowCap.png",
+                "url":"images/kitties/yellowCap.png",
                 "title": "Yellow cap",
                 "description": "a cartoon character wearing a yellow cap",
                 "artist":"VectorVaco.com",
@@ -841,7 +831,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/headphones.png",
+                "url":"images/kitties/headphones.png",
                 "title": "Headphones",
                 "description": "a cartoon character wearing headphones",
                 "artist":"VectorVaco.com",
@@ -852,7 +842,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/headphones.png",
+                "url":"images/kitties/headphones.png",
                 "title": "Headphones",
                 "description": "a cartoon character wearing headphones",
                 "artist":"VectorVaco.com",
@@ -865,7 +855,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/cornRows.png",
+                "url":"images/kitties/cornRows.png",
                 "title": "Character",
                 "description": "a cartoon character",
                 "artist":"VectorVaco.com",
@@ -876,7 +866,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/cornRows.png",
+                "url":"images/kitties/cornRows.png",
                 "title": "Character",
                 "description": "a cartoon character",
                 "artist":"VectorVaco.com",
@@ -889,7 +879,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wanna_tweet1.png",
+                "url":"images/kitties/wanna_tweet1.png",
                 "title": "Very cute twitter birdie",
                 "description": "a cute bird",
                 "artist":"dryicons",
@@ -900,7 +890,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/left/wanna_tweet2.png",
+                "url":"images/kitties/wanna_tweet2.png",
                 "title": "Very cute twitter birdie 2",
                 "description": "a cute bird",
                 "artist":"dryicons",
@@ -913,7 +903,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/shiny-octopus.png",
+                "url":"images/kitties/shiny-octopus.png",
                 "title": "Shiny octopus",
                 "description": "a weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -924,7 +914,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/shiny-octopus2.png",
+                "url":"images/kitties/shiny-octopus2.png",
                 "title": "Shiny octopus 2",
                 "description": "a weird octopus",
                 "artist":"Andreas Preuss / marauder",
@@ -937,7 +927,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster.png",
+                "url":"images/kitties/left_lmproulx_green_monster.png",
                 "title": "Green monster",
                 "description": "a funny green monster",
                 "artist":"Lmproulx",
@@ -948,7 +938,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster.png",
+                "url":"images/kitties/right_lmproulx_green_monster.png",
                 "title": "Green monster",
                 "description": "a funny green monster",
                 "artist":"Lmproulx",
@@ -961,7 +951,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster2.png",
+                "url":"images/kitties/left_lmproulx_green_monster2.png",
                 "title": "Green monster 2",
                 "description": "a funny purple monster",
                 "artist":"Lmproulx",
@@ -972,7 +962,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster2.png",
+                "url":"images/kitties/right_lmproulx_green_monster2.png",
                 "title": "Green monster 2",
                 "description": "a funny purple monster",
                 "artist":"Lmproulx",
@@ -985,7 +975,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/lmproulx_green_monster3.png",
+                "url":"images/kitties/left_lmproulx_green_monster3.png",
                 "title": "Green monster 3",
                 "description": "a red monster",
                 "artist":"Lmproulx",
@@ -996,7 +986,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/lmproulx_green_monster3.png",
+                "url":"images/kitties/right_lmproulx_green_monster3.png",
                 "title": "Green monster 3",
                 "description": "a red monster",
                 "artist":"Lmproulx",
@@ -1009,7 +999,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster.png",
+                "url":"images/kitties/left_foofurpleMonster.png",
                 "title": "Foofurple Monster",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1020,7 +1010,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster.png",
+                "url":"images/kitties/right_foofurpleMonster.png",
                 "title": "Foofurple Monster",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1033,7 +1023,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster2.png",
+                "url":"images/kitties/left_foofurpleMonster2.png",
                 "title": "Foofurple Monster 2",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1044,7 +1034,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster2.png",
+                "url":"images/kitties/right_foofurpleMonster2.png",
                 "title": "Foofurple Monster 2",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1057,7 +1047,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster3.png",
+                "url":"images/kitties/left_foofurpleMonster3.png",
                 "title": "Foofurple Monster 3",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1068,7 +1058,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster3.png",
+                "url":"images/kitties/right_foofurpleMonster3.png",
                 "title": "Foofurple Monster 3",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1081,7 +1071,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster4.png",
+                "url":"images/kitties/left_foofurpleMonster4.png",
                 "title": "Foofurple Monster 4",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1092,7 +1082,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster4.png",
+                "url":"images/kitties/right_foofurpleMonster4.png",
                 "title": "Foofurple Monster 4",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1105,7 +1095,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster5.png",
+                "url":"images/kitties/left_foofurpleMonster5.png",
                 "title": "Foofurple Monster 5",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1116,7 +1106,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster5.png",
+                "url":"images/kitties/right_foofurpleMonster5.png",
                 "title": "Foofurple Monster 5",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1129,7 +1119,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/foofurpleMonster6.png",
+                "url":"images/kitties/left_foofurpleMonster6.png",
                 "title": "Foofurple Monster 6",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1140,7 +1130,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/foofurpleMonster6.png",
+                "url":"images/kitties/right_foofurpleMonster6.png",
                 "title": "Foofurple Monster 6",
                 "description": "a cute cartoon monster",
                 "artist":"anarres",
@@ -1153,7 +1143,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter.png",
+                "url":"images/kitties/critter.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1164,7 +1154,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter.png",
+                "url":"images/kitties/critter.png",
                 "title": "Critter",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1177,7 +1167,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter2.png",
+                "url":"images/kitties/critter2.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1188,7 +1178,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter2.png",
+                "url":"images/kitties/critter2.png",
                 "title": "Critter 2",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1201,7 +1191,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter3.png",
+                "url":"images/kitties/critter3.png",
                 "title": "Critter 3",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1212,7 +1202,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter3.png",
+                "url":"images/kitties/critter3.png",
                 "title": "Critter 3",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1225,7 +1215,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter4.png",
+                "url":"images/kitties/critter4.png",
                 "title": "Critter 4",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1236,7 +1226,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter4.png",
+                "url":"images/kitties/critter4.png",
                 "title": "Critter 4",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1249,7 +1239,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter6.png",
+                "url":"images/kitties/critter6.png",
                 "title": "Critter 6",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1260,7 +1250,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/critter6.png",
+                "url":"images/kitties/critter6.png",
                 "title": "Critter 6",
                 "description": "a cute cartoon creature",
                 "artist":"anarres",
@@ -1273,7 +1263,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/little-robo.png",
+                "url":"images/kitties/little-robo.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",
                 "artist":"anarres",
@@ -1284,7 +1274,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/little-robo2.png",
+                "url":"images/kitties/little-robo2.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",
                 "artist":"anarres",
@@ -1294,39 +1284,10 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-
-
             {
             "left":
                 { 
-                "url":"images/kitties/left/littleStickFigureWithABigHeadFoofurple.png",
-                "title": "Little stick figure with a big head",
-                "description": "a stick figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"images/kitties/right/littleStickFigureWithABigHeadFoofurple.png",
-                "title": "Little stick figure with a big head",
-                "description": "a stick figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-
-
-
-            {
-            "left":
-                { 
-                "url":"images/kitties/left/flying-things7.png",
+                "url":"images/kitties/left_flying-things7.png",
                 "title": "Flying thing",
                 "description": "a cartoon monster",
                 "artist":"Ikabezier",
@@ -1337,7 +1298,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/flying-things6.png",
+                "url":"images/kitties/right_flying-things6.png",
                 "title": "Flying thing",
                 "description": "a cartoon monster",
                 "artist":"Ikabezier",
@@ -1350,7 +1311,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/purple_alien.png",
+                "url":"images/kitties/left_purple_alien.png",
                 "title": "Purple alien",
                 "description": "a purple alien",
                 "artist":"Chrisdesign",
@@ -1361,7 +1322,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/purple_alien.png",
+                "url":"images/kitties/right_purple_alien.png",
                 "title": "Purple alien",
                 "description": "a purple alien",
                 "artist":"Chrisdesign",
@@ -1374,7 +1335,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/purple_alien2.png",
+                "url":"images/kitties/left_purple_alien2.png",
                 "title": "Purple alien 2",
                 "description": "a blue alien",
                 "artist":"Chrisdesign",
@@ -1385,7 +1346,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/purple_alien2.png",
+                "url":"images/kitties/right_purple_alien2.png",
                 "title": "Purple alien 2",
                 "description": "a blue alien",
                 "artist":"Chrisdesign",
@@ -1398,7 +1359,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/domo_kun_nicu_buculei.png",
+                "url":"images/kitties/domo_kun_nicu_buculei.png",
                 "title": "Domo kun nicu buculei",
                 "description": "a brown monster",
                 "artist":"Unknown",
@@ -1409,7 +1370,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/domo_kun_nicu_buculei.png",
+                "url":"images/kitties/domo_kun_nicu_buculei.png",
                 "title": "Domo kun nicu buculei",
                 "description": "a brown monster",
                 "artist":"Unknown",
@@ -1422,7 +1383,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/ball_creature_dissapointed1.png",
+                "url":"images/kitties/ball_creature_dissapointed1.png",
                 "title": "Disappointed ball creature 1",
                 "description": "a weird little creature",
                 "artist":"Unknown",
@@ -1433,7 +1394,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/ball_creature_dissapointed2.png",
+                "url":"images/kitties/ball_creature_dissapointed2.png",
                 "title": "Disappointed ball creature 2",
                 "description": "a weird little creature",
                 "artist":"Unknown",
@@ -1446,7 +1407,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/Toonix.png",
+                "url":"images/kitties/left_Toonix.png",
                 "title": "Toonix",
                 "description": "a cute cartoon creature",
                 "artist":"unknown",
@@ -1457,7 +1418,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/Toonix.png",
+                "url":"images/kitties/right_Toonix.png",
                 "title": "Toonix",
                 "description": "a cute cartoon creature",
                 "artist":"unknown",
@@ -1470,7 +1431,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/Toonix2.png",
+                "url":"images/kitties/left_Toonix2.png",
                 "title": "Toonix 2",
                 "description": "a cute cartoon creature",
                 "artist":"unknown",
@@ -1481,7 +1442,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/Toonix2.png",
+                "url":"images/kitties/right_Toonix2.png",
                 "title": "Toonix 2",
                 "description": "a cute cartoon creature",
                 "artist":"unknown",
@@ -1494,7 +1455,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wicked_cat.png",
+                "url":"images/kitties/left_wicked_cat.png",
                 "title": "Cat",
                 "description": "a vaguely sinister cat",
                 "artist":"unknown",
@@ -1505,7 +1466,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/wicked_cat.png",
+                "url":"images/kitties/right_wicked_cat.png",
                 "title": "Cat",
                 "description": "a vaguely sinister cat",
                 "artist":"unknown",
@@ -1518,7 +1479,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/wicked_cat2.png",
+                "url":"images/kitties/left_wicked_cat2.png",
                 "title": "Cat 2",
                 "description": "a vaguely sinister cat",
                 "artist":"unknown",
@@ -1529,7 +1490,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/wicked_cat2.png",
+                "url":"images/kitties/right_wicked_cat2.png",
                 "title": "Cat 2",
                 "description": "a vaguely sinister cat",
                 "artist":"unknown",
@@ -1542,7 +1503,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft1.png",
+                "url":"images/kitties/daft1.png",
                 "title": "Funky astronaut",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1553,7 +1514,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft1.png",
+                "url":"images/kitties/daft1.png",
                 "title": "Funky astronaut",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1566,7 +1527,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft2.png",
+                "url":"images/kitties/daft2.png",
                 "title": "Funky astronaut 2",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1577,7 +1538,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft2.png",
+                "url":"images/kitties/daft2.png",
                 "title": "Funky astronaut 2",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1590,7 +1551,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/daft3.png",
+                "url":"images/kitties/daft3.png",
                 "title": "Funky astronaut 3",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1601,7 +1562,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/daft3.png",
+                "url":"images/kitties/daft3.png",
                 "title": "Funky astronaut 3",
                 "description": "a funky astronaut",
                 "artist":"Adiktuz",
@@ -1614,7 +1575,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/phique_owl1.png",
+                "url":"images/kitties/left_phique_owl1.png",
                 "title": "Owl 1",
                 "description": "an owl",
                 "artist":"Phique",
@@ -1625,7 +1586,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/phique_owl1.png",
+                "url":"images/kitties/right_phique_owl1.png",
                 "title": "Owl 1",
                 "description": "an owl",
                 "artist":"Phique",
@@ -1638,7 +1599,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/phique_owl2.png",
+                "url":"images/kitties/left_phique_owl2.png",
                 "title": "Owl 2",
                 "description": "an owl",
                 "artist":"Phique",
@@ -1649,7 +1610,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right/phique_owl2.png",
+                "url":"images/kitties/right_phique_owl2.png",
                 "title": "Owl 2",
                 "description": "an owl",
                 "artist":"Phique",
