@@ -85,16 +85,6 @@ var images88 = [
             "license_url":"http://creativecommons.org/licenses/by-sa/3.0/"
             },
             { 
-            "url":"images/backgroundArt/big_white_dots.png",
-            "title": "Big white dots",
-            "description": "a decorative pattern of big white dots",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
             "url":"images/backgroundArt/stage.png",
             "title": "Stage",
             "description": "a wooden stage, with a spotlight and fancy red and yellow curtains drawn back",
@@ -387,16 +377,6 @@ var images88 = [
             { 
             "url":"images/backgroundArt/partTone2.png",
             "title": "Part-tone background 2",
-            "description": "a blank patterned background",
-            "artist":"anarres",
-            "artist_website":"http://foofurple.com/",
-            "license":"Public domain",
-            "license_short":"Public domain",
-            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-            },
-            { 
-            "url":"images/backgroundArt/partTone4.png",
-            "title": "Part-tone background 4",
             "description": "a blank patterned background",
             "artist":"anarres",
             "artist_website":"http://foofurple.com/",
@@ -1269,30 +1249,6 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left/critter5.png",
-                "title": "Critter 5",
-                "description": "a cute cartoon creature",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"images/kitties/right/critter5.png",
-                "title": "Critter 5",
-                "description": "a cute cartoon creature",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-            {
-            "left":
-                { 
                 "url":"images/kitties/left/critter6.png",
                 "title": "Critter 6",
                 "description": "a cute cartoon creature",
@@ -1338,35 +1294,6 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
-
-
-            {
-            "left":
-                { 
-                "url":"images/kitties/left/littleStickFigureWithABigHeadFoofurple.png",
-                "title": "Little stick figure with a big head",
-                "description": "a stick figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                },
-            "right":
-                { 
-                "url":"images/kitties/right/littleStickFigureWithABigHeadFoofurple.png",
-                "title": "Little stick figure with a big head",
-                "description": "a stick figure",
-                "artist":"anarres",
-                "artist_website":"",
-                "license":"Public domain",
-                "license_short":"Public domain",
-                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
-                }
-            },
-
-
-
             {
             "left":
                 { 
