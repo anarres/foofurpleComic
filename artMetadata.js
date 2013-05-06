@@ -1274,6 +1274,30 @@ var images88 = [
                 },
             "right":
                 { 
+                "url":"images/kitties/little-robo.png",
+                "title": "Cartoon robot",
+                "description": "a cartoon robot",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
+            {
+            "left":
+                { 
+                "url":"images/kitties/little-robo2.png",
+                "title": "Cartoon robot",
+                "description": "a cartoon robot",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
                 "url":"images/kitties/little-robo2.png",
                 "title": "Cartoon robot",
                 "description": "a cartoon robot",
@@ -1284,6 +1308,8 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+
             {
             "left":
                 { 

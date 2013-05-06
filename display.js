@@ -39,13 +39,14 @@ var kittyY = 200;
 var borderWidth = 4;   
 
 var defaultImagesArray = [
-{'bgColor':'FFE3A3','bgArt':'images/backgroundArt/city_skyline.png','left':'images/kitties/left/little-robo.png', 'right':'images/kitties/right/flying-things6.png'},
-{'bgColor':'3496CF','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/left/lemmling_Cartoon_cow.png', 'right':'images/kitties/right/lemmling_Cartoon_sheep.png'}, 
-{'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
-{'bgColor':'5acbed','bgArt':'images/backgroundArt/summerCartoon.jpg','left':'images/kitties/left/kitty.png', 'right':'images/kitties/right/fox.png'},
-{'bgColor':'cbcf99','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/left/shiny-octopus.png', 'right':'images/kitties/right/shiny-octopus2.png'},
-{'bgColor':'f2aeb1','bgArt':'images/backgroundArt/celtic-vine-border.png','left':'images/kitties/left/phique_owl1.png', 'right':'images/kitties/right/phique_owl2.png'},
-{'bgColor':'30b1fc','bgArt':'images/backgroundArt/Clue_Simple_Clouds.png','left':'images/kitties/left/critter.png', 'right':'images/kitties/right/critter2.png'}];
+
+{'bgColor':'3496CF','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/lemmling_Cartoon_cow.png', 'right':'images/kitties/lemmling_Cartoon_sheep.png'}, 
+
+{'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left_kitty.png', 'right':'images/kitties/right_fox.png'},
+
+{'bgColor':'F26DDC', 'bgArt':'images/backgroundArt/partTone7.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+
+{'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}];
 
 // pIndex is 0, 1, 2, ...
 
