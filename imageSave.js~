@@ -46,12 +46,9 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
     var ctx = canvas.getContext('2d');
     ctx.font = "14px UbuntuMono";
 
-
-
     // White background rectangle for metadata
+    ctx.fillStyle = "#fff";
     ctx.fillRect(metadataX0,0,cWidth,cHeight);
-
-
 
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
@@ -62,10 +59,6 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
         // Get panel coordinates
         var x0 = getX0(i);
         var y0 = getY0(i);
-
-        // Create a 2px-wide border for the panel
-        //ctx.fillStyle = "#444";
-        //ctx.fillRect(x0-2,y0-2,panelWidth+4,panelHeight+4);
 
         // Fill in background color
         ctx.fillStyle = panelBgColor;
@@ -112,8 +105,6 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
         }
     }   // Closes the for each panel loop
 
-    // Metadata:
-
     // Text style 
     ctx.fillStyle = "#575757";
     ctx.font = "10px UbuntuMono";
@@ -133,7 +124,6 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
 function displayDownloadLink() {
     document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
     var dataUrl = document.getElementById("myCanvas").toDataURL();
-
     document.getElementById('downloadDiv').style.visibility = "visible";
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
     document.getElementById('downloadDiv').focus();

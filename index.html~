@@ -76,7 +76,7 @@
 </div> <!--#header-->
 
 
-<div id="addNewImage" tabindex="3">
+<div id="addNewImage" tabindex="3" class="popupDiv">
 
 
     <div class="close" onclick="document.getElementById('addNewImage').style.visibility='hidden'">
@@ -109,6 +109,13 @@
         <br><input type="file" id="fooFile">
     </p>
 
+    <!-- Hacky way to get the div to expand to its max width -->
+    <span style="visibility:hidden">
+        0000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000
+    </span>
+
     <br><br>
 
 </div> <!--#addNewImage-->
@@ -124,7 +131,7 @@
 
 
 
-<div id="downloadDiv" tabindex="4">
+<div id="downloadDiv" tabindex="4" class="popupDiv">
 
     <div class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
         <img src="images/close_icon.png" alt="close">
@@ -139,6 +146,14 @@
     <p>We suggest you choose a name like 'comic.png'.</p>
     <div id="downloadInfo"></div>
 
+
+    <!-- Hacky way to get the div to expand to its max width -->
+    <span style="visibility:hidden">
+        0000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000
+    </span>
+
 </div> <!--#downloadDiv-->
 
 
@@ -147,8 +162,6 @@
 
 
 
-
-<script type="text/javascript" src="settings.js"></script>
 <script type="text/javascript" src="artMetadata.js"></script>
 <script type="text/javascript" src="models.js"></script>
 <script type="text/javascript" src="display.js"></script>

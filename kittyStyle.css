@@ -16,6 +16,7 @@ canvas {
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     background-color: #f0f3db;
 }
 #container {
@@ -219,6 +220,22 @@ div#removeBackgroundArt a:hover {
 
 /* Various other divs */
 
+.popupDiv {
+    min-width: 100px;
+    max-width: 800px;
+    margin: 10px auto;
+    max-height: 60%;
+    position: fixed;
+    top: 10px;
+    z-index: 99;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 3px solid #f6320b;
+    overflow: auto;
+}
+/*
 #addNewImage, #downloadDiv {
     position: fixed;
     top: 10px;
@@ -233,6 +250,7 @@ div#removeBackgroundArt a:hover {
     border: 3px solid #f6320b;
     overflow: auto;
 }
+
 #downloadDiv h3 {
     text-align: left;
 }
@@ -240,6 +258,7 @@ div#removeBackgroundArt a:hover {
 #downloadDiv p {
     max-width: 600px;
 }
+*/
 #downloadDiv textarea {
     border: 2px solid #aaa;
     background-color: #fff;
@@ -319,7 +338,6 @@ img.kitty1, img.kitty2 {
     top: 5px;
     left: 210px;
 }
-
 .textarea1 {
     z-index: 3;
     position: absolute;
