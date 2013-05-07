@@ -18,7 +18,6 @@ function imageDescription() {
 }
 
 
-
 // Create a canvas version of the comic
 function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles) {
 

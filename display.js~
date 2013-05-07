@@ -24,6 +24,7 @@ var printX = 20;
 var printX2 = 220;
 var printTop = 30;
 var printLineHeight = 14;
+var metadataPrintLineHeight = 10;
 
 var leftBubbleX = 10;
 var rightBubbleX = 210;
@@ -41,7 +42,9 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left_kitty.png', 'right':'images/kitties/right_fox.png'},
 
-{'bgColor':'C4C0BC', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
+
+{'bgColor':'CF8992', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
 {'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
 

@@ -34,7 +34,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     mData += getPrintRightMetadata(theComic.rightKittyUrl);
     mData += "Mashed-up at foofurple.com/comic/.  ";
 
-    var maxLineLengthz = numPanels * 53;
+    var maxLineLengthz = numPanels * 55;
     var maxNumLinesz = 8;
 
     var mArray = generalLinesArray(mData, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata

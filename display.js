@@ -42,7 +42,9 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left_kitty.png', 'right':'images/kitties/right_fox.png'},
 
-{'bgColor':'C4C0BC', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
+
+{'bgColor':'CF8992', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
 {'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
 
@@ -295,8 +297,8 @@ function getBubbleUrl(lr, numLines, bubbleMode) {
             else { return "images/bubbles/rightBubble3.png"; }
         }
         else if (n == 4) { 
-            if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
-            else { return "images/bubbles/rightBubble7.png"; }
+            if (lr == 0) { return "images/bubbles/leftBubble3.png"; }
+            else { return "images/bubbles/rightBubble3.png"; }
         }
         else if (n == 5) { 
             if (lr == 0) { return "images/bubbles/leftBubble7.png"; }
