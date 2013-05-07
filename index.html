@@ -83,7 +83,11 @@
         <img src="images/close_icon.png" alt="close">
     </div>
 
-    <h3>Add an image from your computer:</h3>
+
+    <h3>Please select an image file:</h3>
+    <input type="file" id="fooFile">
+
+    <br><br>
 
     <p>
         <input type="radio" name="addAnImage" class="radio" id="newKittyUrl">
@@ -96,17 +100,9 @@
     <p>
         <input type="radio" name="addAnImage" class="radio" id="newBgUrl" checked />
 
-
-
-
         <label for="newBgUrl">
         <img src="data:image/png;base64,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">
     Background image (400px by 300px)</label>
-    </p>
-    <br>
-    <p style="text-align:left;">
-        Select image file:
-        <br><input type="file" id="fooFile">
     </p>
 
     <!-- Hacky way to get the div to expand to its max width -->
@@ -115,8 +111,6 @@
         0000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000
     </span>
-
-    <br><br>
 
 </div> <!--#addNewImage-->
 

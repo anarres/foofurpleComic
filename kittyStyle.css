@@ -44,7 +44,7 @@ h2 {
     padding: 10px 0px;
 }
 h3,h4,h5,h6 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight:bold;
     text-align:center;
     padding: 10px 0px;
@@ -234,6 +234,10 @@ div#removeBackgroundArt a:hover {
     border-radius: 5px;
     border: 3px solid #f6320b;
     overflow: auto;
+}
+
+#addNewImage h3 {
+    text-align: left;
 }
 
 a#downloadLink {

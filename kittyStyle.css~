@@ -236,6 +236,10 @@ div#removeBackgroundArt a:hover {
     overflow: auto;
 }
 
+#addNewImage h3 {
+    text-align: left;
+}
+
 a#downloadLink {
     display: block;
     font-size: 1.5em;
