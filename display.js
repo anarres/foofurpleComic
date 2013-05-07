@@ -249,32 +249,32 @@ function getBubbleUrl(lr, numLines, bubbleMode) {
             else { return "images/bubbles/rightCloud1.png"; }
         }
         else if (n == 2) { 
-            if (lr == 0) { return "images/bubbles/leftCloud2.png"; }
-            else { return "images/bubbles/rightCloud2.png"; }
+            if (lr == 0) { return "images/bubbles/leftCloud1.png"; }
+            else { return "images/bubbles/rightCloud1.png"; }
         }
         else if (n == 3) { 
             if (lr == 0) { return "images/bubbles/leftCloud3.png"; }
             else { return "images/bubbles/rightCloud3.png"; }
         }
         else if (n == 4) { 
-            if (lr == 0) { return "images/bubbles/leftCloud4.png"; }
-            else { return "images/bubbles/rightCloud4.png"; }
+            if (lr == 0) { return "images/bubbles/leftCloud3.png"; }
+            else { return "images/bubbles/rightCloud3.png"; }
         }
         else if (n == 5) { 
             if (lr == 0) { return "images/bubbles/leftCloud5.png"; }
             else { return "images/bubbles/rightCloud5.png"; }
         }
         else if (n == 6) { 
-            if (lr == 0) { return "images/bubbles/leftCloud6.png"; }
-            else { return "images/bubbles/rightCloud6.png"; }
+            if (lr == 0) { return "images/bubbles/leftCloud5.png"; }
+            else { return "images/bubbles/rightCloud5.png"; }
         }
         else if (n == 7) { 
             if (lr == 0) { return "images/bubbles/leftCloud7.png"; }
             else { return "images/bubbles/rightCloud7.png"; }
         }
         else if (n == 8) { 
-            if (lr == 0) { return "images/bubbles/leftCloud8.png"; }
-            else { return "images/bubbles/rightCloud8.png"; }
+            if (lr == 0) { return "images/bubbles/leftCloud9.png"; }
+            else { return "images/bubbles/rightCloud9.png"; }
         }
         else { 
             if (lr == 0) { return "images/bubbles/leftCloud9.png"; }
