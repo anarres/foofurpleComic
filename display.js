@@ -44,13 +44,13 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
 
-{'bgColor':'CF8992', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'6858F5', 'bgArt':'images/backgroundArt/partTone5.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+
+{'bgColor':'CEDBBA', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
 
 {'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
 
 ];
-
-// pIndex is 0, 1, 2, ...
 
 function getX0(pIndex) {
     return borderWidth;

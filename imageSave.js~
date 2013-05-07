@@ -17,10 +17,8 @@ function imageDescription() {
     return d;
 }
 
-
-
 // Create a canvas version of the comic
-function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles) {
+function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) {
 
     var numPanels = theComic.numPanels();
     var canvas = document.getElementById('myCanvas');
@@ -40,12 +38,20 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
     var mArray = generalLinesArray(mData, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata
     var metaDataHeight = 8 + mArray.length * 12;
 
+    var metadataX0 = cWidth;
     cWidth += metaDataHeight;
 
     canvas.setAttribute("width", cWidth);
     canvas.setAttribute("height", cHeight);
     var ctx = canvas.getContext('2d');
     ctx.font = "14px UbuntuMono";
+
+
+
+    // White background rectangle for metadata
+    ctx.fillRect(metadataX0,0,cWidth,cHeight);
+
+
 
     // Panel background color
     var panelBgColor = "#" + theComic.bgColor;
@@ -58,8 +64,8 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
         var y0 = getY0(i);
 
         // Create a 2px-wide border for the panel
-        ctx.fillStyle = "#444";
-        ctx.fillRect(x0-2,y0-2,panelWidth+4,panelHeight+4);
+        //ctx.fillStyle = "#444";
+        //ctx.fillRect(x0-2,y0-2,panelWidth+4,panelHeight+4);
 
         // Fill in background color
         ctx.fillStyle = panelBgColor;
@@ -106,8 +112,10 @@ function panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, ri
         }
     }   // Closes the for each panel loop
 
+    // Metadata:
+
     // Text style 
-    ctx.fillStyle = "#000";
+    ctx.fillStyle = "#575757";
     ctx.font = "10px UbuntuMono";
 
     // translate context to center of canvas, then rotate
@@ -168,26 +176,21 @@ function downloadImage() {
     var kitty2Array = getElementsByClassName(document, 'kitty2');
     var rightChar = kitty2Array[0];
 
-    var niceBorder = new Image();
-    niceBorder.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZYAAACRCAAAAADF4cFGAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdARMNDxiBlGNaAAAB2ElEQVR42u3YMW7iUABF0eeRIypqiogqPUIiZAHeyDRZFk02wgIgSBELyBRU1KkQSJ4iASWwgP+lnFu5fke2v930UX39MUGNtZerhTGK93xzt5yMUr7Tzd2yz91fuxTt5bi/v75blhkbpmzjLK8fYttDMzdM2ebNYfuTZbvKbGiYsg1nWX25NH1y2i8PeZzapXhvrxl0ozZp+iySNDMqVbhs+iTPnyexu/HcE6yKpg/r3fF8QHYyruf90mURP18qDQsWYcEiLFiERViwCAsWYcEiLMKCRViwCAsWYREWLMKCRViEBYuwYBEWLMIiLFiEBYuwYBEWYcEiLFiEBYuwCAsWYcEiLMKCRViwCAsWYREWLMKCRViwCIuwYBEWLMIiLFiEBYuwYBEWYcEiLFiEBYuwCAsWYcEiLFiERViwCAsWYREWLMKCRViwCIuwYBEWLMKCRViEBYuwYBEWLMIiLFiE5RfUJsnLeD40RRV9rHcXluP7v9nUJBX0tumTJE2fnPbLQx65VKDymkE3aj9ZkmxXXKpQeZp8f+VPnrL5sEvh98rmrHI5iU0G/dowZVv3g8n1AbnLzjBl26X7cUBOklGOC8sUbnTzOdkapZKvyPMBWdXl50uV/QfO2EXZOtwOkwAAAABJRU5ErkJggg==";
-
-    niceBorder.onload = function() {
-        var bgImage = false;
-        if (theComic.bgArt) {
-            bgImage = new Image();
-            bgImage.src = theComic.bgArt;
-            bgImage.onload = function() {
-                var result = panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles);
-                if (result) {
-                    displayDownloadLink();
-                }
-            }
-        }
-        else {
-            var result = panelToCanvas(bgImage, leftChar, rightChar, niceBorder, leftBubbles, rightBubbles);
+    var bgImage = false;
+    if (theComic.bgArt) {
+        bgImage = new Image();
+        bgImage.src = theComic.bgArt;
+        bgImage.onload = function() {
+            var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles);
             if (result) {
                 displayDownloadLink();
             }
+        }
+    }
+    else {
+        var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles);
+        if (result) {
+            displayDownloadLink();
         }
     }
 }

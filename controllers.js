@@ -210,70 +210,6 @@ function changePanelBGColor() {
     theComic.setBgColor(document.getElementById("jscolor").value);
 }
 
-/*
-function newWebImage(n) {
-    var url = document.getElementById('newImageUrl').value;
-    if (n == 2) {
-        url = document.getElementById('newImageFileLocation').value;
-    }
-    if (document.getElementById('newBgUrl').checked) {
-        var myObj = {"url":url,
-            "title": "?",
-            "description": "",
-            "artist":"?",
-            "artist_website":"",
-            "license":"?",
-            "license_short":"?",
-            "license_url":""
-            }
-        // Add to the metadata
-        images88[0]["bg"].push(myObj);
-
-        // Reload bg images
-        loadBgImages();
-
-        // Set new image
-        selectBackgroundArt(url);
-    }
-    else {
-        var myObj = {
-            "left":
-                { 
-                "url":url,
-                "title": "",
-                "description": "",
-                "artist":"",
-                "artist_website":"",
-                "license":"",
-                "license_short":"",
-                "license_url":""
-                },
-            "right":
-                { 
-                "url":url,
-                "title": "",
-                "description": "",
-                "artist":"",
-                "artist_website":"",
-                "license":"",
-                "license_short":"",
-                "license_url":""
-                }
-            };
-        // Add to the metadata
-        images88[1]["characters"].push(myObj);
-
-        // Reload character images
-        loadCharacters();
-
-        // Set new image
-        selectKitty(1, url);
-        selectKitty(2, url);
-    }
-    document.getElementById("addNewImage").style.visibility = 'hidden';
-}
-*/
-
 function addNewImage() {
     var myObj = document.getElementById('addNewImage');
     myObj.style.visibility = "visible";
@@ -370,7 +306,6 @@ function localImageUpload(imgObjSrc) {
     }
 
     else {
-        alert("FIXME!!!!!!!!!!!!!");
         var myObj = {
             "left":
                 { 
