@@ -146,7 +146,6 @@
     <p>We suggest you choose a name like 'comic.png'.</p>
     <div id="downloadInfo"></div>
 
-
     <!-- Hacky way to get the div to expand to its max width -->
     <span style="visibility:hidden">
         0000000000000000000000000000000000000000000000000000000000000

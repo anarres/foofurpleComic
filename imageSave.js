@@ -122,7 +122,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
 }
 
 function displayDownloadLink() {
-    document.getElementById('downloadInfo').innerHTML = "<h3>Automatically generated image description:</h3> <textarea>" + imageDescription() + "</textarea>";
+    document.getElementById('downloadInfo').innerHTML = "<p>Automatically generated image description:</p> <textarea>" + imageDescription() + "</textarea>";
     var dataUrl = document.getElementById("myCanvas").toDataURL();
     document.getElementById('downloadDiv').style.visibility = "visible";
     document.getElementById("downloadLink").setAttribute('href', dataUrl);

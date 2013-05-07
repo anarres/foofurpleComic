@@ -44,7 +44,7 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
 
-{'bgColor':'6858F5', 'bgArt':'images/backgroundArt/partTone5.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'F0CC9E', 'bgArt':'images/backgroundArt/partTone5.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
 {'bgColor':'CEDBBA', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
 

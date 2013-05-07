@@ -273,8 +273,8 @@ function getBubbleUrl(lr, numLines, bubbleMode) {
             else { return "images/bubbles/rightCloud7.png"; }
         }
         else if (n == 8) { 
-            if (lr == 0) { return "images/bubbles/leftCloud8.png"; }
-            else { return "images/bubbles/rightCloud8.png"; }
+            if (lr == 0) { return "images/bubbles/leftCloud9.png"; }
+            else { return "images/bubbles/rightCloud9.png"; }
         }
         else { 
             if (lr == 0) { return "images/bubbles/leftCloud9.png"; }
