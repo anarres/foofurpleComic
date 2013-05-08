@@ -1,3 +1,11 @@
+/*
+* artMetadata.js
+* 
+* A huge array of metadata and a few functions for parsing it.
+* The metadata describes the Public Domain and Creative Commons
+* images used in Foofurple Comics.
+*/
+
 var images88 = [
     {
     "bg":

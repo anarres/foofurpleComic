@@ -1,3 +1,11 @@
+/*
+* models.js
+*
+* Abstract information state of Foofurple Comics.
+*/
+
+
+
 /* Panel Objects */
 function Panel(selected, lBubbleMode, rBubbleMode) {
     this.selected = parseInt(selected);
@@ -32,19 +40,13 @@ function KittyComic() {
         return newPanelObj;
     }
 
-
     this.delPanel = function() {
         var index = this.highlit-1;
-
         this.panelsArray = removeItemFromArray(this.panelsArray, index);
-
         if (this.highlit > this.panelsArray.length) {
             this.highlit = 1;
         }
     }
-
-
-
 
     this.numPanels = function() {
         return this.panelsArray.length;

@@ -80,7 +80,7 @@ function selectKitty(num, imgUrl) {
         for (var j=0; j<images.length; j++) {   
             (images[j]).setAttribute("src", imgUrl);
         }
-        document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
+        //document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
         theComic.leftKittyUrl = imgUrl;
     }
     // Do the same if kitty2
@@ -89,7 +89,7 @@ function selectKitty(num, imgUrl) {
         for (var k=0; k<images2.length; k++ ) {
             (images2[k]).setAttribute("src", imgUrl);
         }  
-        document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
+        //document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
         theComic.rightKittyUrl = imgUrl;
     }
     updateMetadata();
@@ -359,15 +359,22 @@ function addListeners() {
     }, false);
 }
 
-function getStarted() {
+
+function getDisplayStarted() {
     theComic = new KittyComic();
     randomDefaultImages(theComic);
     theComic.createPanel();
     theComic.createPanel();
     refreshDisplay(theComic);
-    loadBgImages();
-    loadCharacters();
-    updateMetadata();
-    document.getElementById('jscolor').value = theComic.bgColor;
-    addListeners();
+    return true;
+}
+
+function getStarted() {
+    if (getDisplayStarted()) {
+        loadBgImages();
+        loadCharacters();
+        updateMetadata();
+        document.getElementById('jscolor').value = theComic.bgColor;
+        addListeners();
+    }
 }

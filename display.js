@@ -1,3 +1,11 @@
+/*
+* display.js
+*
+* Controls visual display of Foofurple Comics,
+* both for the HTML/Javascript app and for canvas images
+* downloaded as dataurls.
+*/
+
 //  d = default
 var dBgColor = "3496CF";
 var dBgArt = "images/backgroundArt/rainforest.png";
@@ -44,9 +52,9 @@ var defaultImagesArray = [
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
 
-{'bgColor':'F0CC9E', 'bgArt':'images/backgroundArt/partTone5.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
+{'bgColor':'DADE6A', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
-{'bgColor':'CEDBBA', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
+{'bgColor':'42B0B8', 'bgArt':'images/backgroundArt/partTone7.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
 
 {'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
 

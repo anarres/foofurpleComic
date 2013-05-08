@@ -1,26 +1,35 @@
-function imageDescription() {
-    var d = "A comic. ";
-    d += getBgDesc(theComic.bgArt);
-    d += getLeftDesc(theComic.leftKittyUrl);
-    d += getRightDesc(theComic.rightKittyUrl);
+/*
+* imageSave.js
+* 
+* Contains the functions needed to convert Foofurple comics to a
+* canvas image, then allow that image to be downloaded as a dataurl.
+* Also provides an image description.
+*/
 
-    for (var i=0; i<theComic.panelsArray.length; i++) {
-        if (theComic.panelsArray[i].ltext != "") {
+
+function imageDescription(bgArtPartUrl, leftChar, rightChar, pArray) {
+    var d = "A comic. ";
+    d += getBgDesc(bgArtPartUrl);
+    d += getLeftDesc(leftChar);
+    d += getRightDesc(rightChar);
+
+    for (var i=0; i<pArray.length; i++) {
+        if (pArray[i].ltext != "") {
             d += " Character 1: ";
-            d += theComic.panelsArray[i].ltext;
+            d += pArray[i].ltext;
         }
-        if (theComic.panelsArray[i].rtext != "") {
+        if (pArray[i].rtext != "") {
             d += " Character 2: ";
-            d += theComic.panelsArray[i].rtext;
+            d += pArray[i].rtext;
         }
     }
     return d;
 }
 
 // Create a canvas version of the comic
-function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) {
+function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray) {
 
-    var numPanels = theComic.numPanels();
+    var numPanels = pArray.length;
     var canvas = document.getElementById('myCanvas');
     var cHeight = getCanvasHeight(numPanels);
     var cWidth = getCanvasWidth(numPanels);         // Does not incluce space for metadata
@@ -73,8 +82,8 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
         ctx.drawImage(rightChar, x0 + kitty2X, y0 + kittyY);
 
         // Get bubble text
-        var ltext = theComic.panelsArray[i].ltext;
-        var rtext = theComic.panelsArray[i].rtext;
+        var ltext = pArray[i].ltext;
+        var rtext = pArray[i].rtext;
 
         // Get bubble number of lines of text
         var lNumLines = getNumLines(ltext);
@@ -106,7 +115,7 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
     }   // Closes the for each panel loop
 
     // Text style 
-    ctx.fillStyle = "#575757";
+    ctx.fillStyle = "#666";
     ctx.font = "10px UbuntuMono";
 
     // translate context to center of canvas, then rotate
@@ -121,8 +130,10 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles) 
     return true;
 }
 
-function displayDownloadLink() {
-    document.getElementById('downloadInfo').innerHTML = "<p>Automatically generated image description:</p> <textarea>" + imageDescription() + "</textarea>";
+function displayDownloadLink(comicAsStory) {
+    document.getElementById('downloadInfo').innerHTML = 
+        "<p>Automatically generated image description:</p> <textarea>" + 
+        comicAsStory + "</textarea>";
     var dataUrl = document.getElementById("myCanvas").toDataURL();
     document.getElementById('downloadDiv').style.visibility = "visible";
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
@@ -130,19 +141,25 @@ function displayDownloadLink() {
 }
 
 function downloadImage() {
+
+    // Global variables make javascript run slow
     var leftBubbles = [];
     var rightBubbles = [];
     var numPanels = theComic.numPanels();
+    var pArray = theComic.panelsArray;
+    var bgArtPartUrl = theComic.bgArt;
+    var leftPartUrl = theComic.leftKittyUrl;
+    var rightPartUrl = theComic.rightKittyUrl;
 
     for (var i=0; i<numPanels; i++) {
 
         // Determine which type of bubble
-        var lBubbleMode = theComic.panelsArray[i].lBubbleMode;
-        var rBubbleMode = theComic.panelsArray[i].rBubbleMode;
+        var lBubbleMode = pArray[i].lBubbleMode;
+        var rBubbleMode = pArray[i].rBubbleMode;
 
         // Get bubble text
-        var ltext = theComic.panelsArray[i].ltext;
-        var rtext = theComic.panelsArray[i].rtext;
+        var ltext = pArray[i].ltext;
+        var rtext = pArray[i].rtext;
 
         // Get bubble number of lines of text
         var lNumLines = getNumLines(ltext);
@@ -167,21 +184,15 @@ function downloadImage() {
     var rightChar = kitty2Array[0];
 
     var bgImage = false;
-    if (theComic.bgArt) {
+    if (bgArtPartUrl) {
         bgImage = new Image();
         bgImage.src = theComic.bgArt;
-        bgImage.onload = function() {
-            var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles);
-            if (result) {
-                displayDownloadLink();
-            }
-        }
     }
-    else {
-        var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles);
-        if (result) {
-            displayDownloadLink();
-        }
+
+    var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray);
+    if (result) {
+        var comicAsStory = imageDescription(bgArtPartUrl, leftPartUrl, rightPartUrl, pArray);
+        displayDownloadLink(comicAsStory);
     }
 }
 

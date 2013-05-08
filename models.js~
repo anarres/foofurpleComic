@@ -1,3 +1,11 @@
+/*
+* models.js
+*
+* State of Foofurple Comics.
+*/
+
+
+
 /* Panel Objects */
 function Panel(selected, lBubbleMode, rBubbleMode) {
     this.selected = parseInt(selected);
@@ -34,9 +42,7 @@ function KittyComic() {
 
     this.delPanel = function() {
         var index = this.highlit-1;
-
         this.panelsArray = removeItemFromArray(this.panelsArray, index);
-
         if (this.highlit > this.panelsArray.length) {
             this.highlit = 1;
         }
