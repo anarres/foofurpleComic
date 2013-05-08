@@ -82,26 +82,34 @@ function selectKitty(num, imgUrl) {
     for ( var i=0; i<imgArray.length; i++ ) {
         (imgArray[i]).style.backgroundImage="url('images/clear.png')";
     }
+
     // Set kitty1url (global var) and Change src of all kitty1's
     if ( num === 1 ) {
         var images = getElementsByClassName(document, "kitty1");
         for (var j=0; j<images.length; j++) {   
             (images[j]).setAttribute("src", imgUrl);
         }
-        //document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
+        var imgID = imgUrl + "Left";
+        document.getElementById(imgID).style.backgroundImage="url('images/yellow.png')";
         theComic.leftKittyUrl = imgUrl;
     }
+
     // Do the same if kitty2
     else if ( num === 2) {
         var images2 = getElementsByClassName(document, "kitty2");
         for (var k=0; k<images2.length; k++ ) {
             (images2[k]).setAttribute("src", imgUrl);
-        }  
-        //document.getElementById(imgUrl).style.backgroundImage="url('images/yellow.png')";
+        }
+        var imgID = imgUrl + "Right";
+        document.getElementById(imgID).style.backgroundImage="url('images/yellow.png')";
         theComic.rightKittyUrl = imgUrl;
     }
     updateMetadata();
 }
+
+
+
+
 
 function loadCharacters() {
 
@@ -114,6 +122,7 @@ function loadCharacters() {
         htmlLeft += images88[1].characters[i].left.url;
         htmlLeft += "' id='";
         htmlLeft += images88[1].characters[i].left.url;
+        htmlLeft += "Left";
         htmlLeft += "' class='imgChooser1 charImg' onclick=\"selectKitty(1, '";
         htmlLeft += images88[1].characters[i].left.url;
         htmlLeft += "')\">";
@@ -122,6 +131,7 @@ function loadCharacters() {
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "' id='";
         htmlRight += images88[1].characters[i].right.url;
+        htmlRight += "Right";
         htmlRight += "' class='imgChooser2 charImg' onclick=\"selectKitty(2, '";
         htmlRight += images88[1].characters[i].right.url;
         htmlRight += "')\">";
