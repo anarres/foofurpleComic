@@ -143,11 +143,11 @@ function loadCharacters() {
 
 function newPanel() {
     theComic.createPanel();
-    refreshDisplay(theComic);
+    refreshDisplay();
 }
 function deletePanel() {
     theComic.delPanel();
-    refreshDisplay(theComic);
+    refreshDisplay();
 }
 
 function panelClickFoo(panelID) {
@@ -383,7 +383,7 @@ function getDisplayStarted() {
     randomDefaultImages(theComic);
     theComic.createPanel();
     theComic.createPanel();
-    refreshDisplay(theComic);
+    refreshDisplay();
     return true;
 }
 

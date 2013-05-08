@@ -6,8 +6,6 @@
 * downloaded as dataurls.
 */
 
-
-
 //  d = default
 var dBgColor = "3496CF";
 var dBgArt = "images/backgroundArt/rainforest.png";
@@ -153,6 +151,7 @@ function dealWithLongChunk(chunk, charsPerLine) {
     }
     return lineArray;
 }
+
 
 // Returns an array of substrings, one per line
 function fooLinesArray(text) {
@@ -359,6 +358,16 @@ function setTextareaValue(tObj, text) {
     setTextareaHeight(tObj, h);
 }
 
+
+
+
+
+
+
+
+
+
+
 function displayPanel(theComic, pObj, pNum) {
     var container = document.getElementById("comicPanels");
 
@@ -433,7 +442,8 @@ function displayPanel(theComic, pObj, pNum) {
 }
 
 /* Uses all the data to dynamically redisplay everything */
-function refreshDisplay(theComic) {
+function refreshDisplay() {
+    var comicObj = theComic;
     var textareaId = "textarea1Panel1";
 
     // Clear the old stuf

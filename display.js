@@ -152,6 +152,7 @@ function dealWithLongChunk(chunk, charsPerLine) {
     return lineArray;
 }
 
+
 // Returns an array of substrings, one per line
 function fooLinesArray(text) {
     var stringArray = [];                          // stringArray will hold substrings, one per line
@@ -357,7 +358,17 @@ function setTextareaValue(tObj, text) {
     setTextareaHeight(tObj, h);
 }
 
-function displayPanel(theComic, pObj, pNum) {
+
+
+
+
+
+
+
+
+
+
+function displayPanel(comicObj, pObj, pNum) {
     var container = document.getElementById("comicPanels");
 
     // Background art
@@ -367,12 +378,12 @@ function displayPanel(theComic, pObj, pNum) {
     panelDiv.setAttribute("class","backgroundArt");
 
     // Highlight selected panel
-    if (parseInt(pNum) == theComic.highlit) {
+    if (parseInt(pNum) == comicObj.highlit) {
         panelDiv.style.borderTop = "10px solid #ffc405";
     }
 
-    setBgColor(panelDiv, theComic.bgColor);
-    setBgImage(panelDiv, theComic.bgArt);
+    setBgColor(panelDiv, comicObj.bgColor);
+    setBgImage(panelDiv, comicObj.bgArt);
 
     // Speech bubble images
     var lBubble = document.createElement("img");
@@ -419,27 +430,28 @@ function displayPanel(theComic, pObj, pNum) {
     // Kitties
     var kitty1 = document.createElement("img");
     kitty1.setAttribute("class", "kitty1");
-    kitty1.setAttribute("src", theComic.leftKittyUrl);
+    kitty1.setAttribute("src", comicObj.leftKittyUrl);
     panelDiv.appendChild(kitty1);
 
     var kitty2 = document.createElement("img");
     kitty2.setAttribute("class", "kitty2");
-    kitty2.setAttribute("src", theComic.rightKittyUrl);
+    kitty2.setAttribute("src", comicObj.rightKittyUrl);
     panelDiv.appendChild(kitty2);
 
     container.appendChild(panelDiv);
 }
 
 /* Uses all the data to dynamically redisplay everything */
-function refreshDisplay(theComic) {
+function refreshDisplay() {
+    var comicObj = theComic;
     var textareaId = "textarea1Panel1";
 
     // Clear the old stuf
     document.getElementById("comicPanels").innerHTML = "";
 
     // Display the panels
-    var pArray = theComic.panelsArray;
+    var pArray = comicObj.panelsArray;
     for (var i=0; i<pArray.length; i++) {
-        displayPanel(theComic, pArray[i], i+1);
+        displayPanel(comicObj, pArray[i], i+1);
     }
 }
