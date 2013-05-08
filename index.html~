@@ -112,13 +112,10 @@
 <div id="imagesMetadata"></div> <!--#imagesMetadata-->
 
 
-
 <div id="downloadDiv" tabindex="4" class="popupDiv">
-
     <div class="close" onclick="document.getElementById('downloadDiv').style.visibility='hidden'">
         <img src="images/close_icon.png" alt="close">
     </div>
-
     <p>
         <a id="downloadLink">
             Right-click to download your image
@@ -129,7 +126,6 @@
 
     <!-- Hacky way to get the div to expand to its max width -->
     <span style="visibility:hidden">
-        0000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000000000000
     </span>
