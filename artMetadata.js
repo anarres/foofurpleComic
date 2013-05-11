@@ -382,6 +382,31 @@ var images88 = [
             "license_short":"Public domain",
             "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
             },
+
+            { 
+            "url":"images/backgroundArt/simple.png",
+            "title": "Simple background",
+            "description": "a blank background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
+            { 
+            "url":"images/backgroundArt/simple4.png",
+            "title": "Simple background",
+            "description": "a blank background",
+            "artist":"anarres",
+            "artist_website":"http://foofurple.com/",
+            "license":"Public domain",
+            "license_short":"Public domain",
+            "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+            },
+
+
             { 
             "url":"images/backgroundArt/partTone5.png",
             "title": "Part-tone background 5",
