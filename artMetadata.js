@@ -440,7 +440,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left_kitty.png",
+                "url":"images/kitties/yurikeCuteCatLeft.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -451,7 +451,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right_kitty.png",
+                "url":"images/kitties/yurikeCuteCatRight.png",
                 "title": "Kitty",
                 "description": "a cute cat",
                 "artist":"yurike11",
@@ -464,7 +464,7 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/left_fox.png",
+                "url":"images/kitties/yurikeCuteFoxLeft.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -475,7 +475,7 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/right_fox.png",
+                "url":"images/kitties/yurikeCuteFoxRight.png",
                 "title": "Fox",
                 "description": "a cute fox",
                 "artist":"yurike11",
@@ -488,9 +488,9 @@ var images88 = [
             {
             "left":
                 { 
-                "url":"images/kitties/bug.png",
-                "title": "Ladybug",
-                "description": "a cute ladybug",
+                "url":"images/kitties/yurikeCuteSealLeft.png",
+                "title": "Seal",
+                "description": "a cute seal",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
@@ -499,9 +499,9 @@ var images88 = [
                 },
             "right":
                 { 
-                "url":"images/kitties/bug.png",
-                "title": "Ladybug",
-                "description": "a cute ladybug",
+                "url":"images/kitties/yurikeCuteSealRight.png",
+                "title": "Seal",
+                "description": "a cute seal",
                 "artist":"yurike11",
                 "artist_website":"yurike11.deviantart.com",
                 "license":"Creative Commons (Attribution 3.0 Unported)",
