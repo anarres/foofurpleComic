@@ -1183,6 +1183,31 @@ var images88 = [
                 "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
                 }
             },
+
+            {
+            "left":
+                { 
+                "url":"images/kitties/blankFace.png",
+                "title": "Cartoon figure",
+                "description": "a simple cartoon person",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                },
+            "right":
+                { 
+                "url":"images/kitties/blankFace.png",
+                "title": "Cartoon figure",
+                "description": "a simple cartoon person",
+                "artist":"anarres",
+                "artist_website":"",
+                "license":"Public domain",
+                "license_short":"Public domain",
+                "license_url":"http://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            },
             {
             "left":
                 { 
