@@ -1809,6 +1809,9 @@ function getPrintRightMetadata(url) {
     return output;
 }
 
+
+
+
 function getBgDesc(url) {
     if ( url === "" ) {
         return "";

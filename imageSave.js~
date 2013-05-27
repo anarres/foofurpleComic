@@ -4,7 +4,6 @@
 * Contains the functions needed to convert Foofurple comics to a
 * canvas image, then allow that image to be downloaded as a dataurl.
 * Also provides an image description.
-*
 */
 
 
@@ -27,25 +26,26 @@ function imageDescription(bgArtPartUrl, leftChar, rightChar, pArray) {
     return d;
 }
 
+function getComicAttribution() {
+    var mData =  "CREDITS: ";
+    mData += getPrintBgMetadata(theComic.bgArt);
+    mData += getPrintLeftMetadata(theComic.leftKittyUrl);
+    mData += getPrintRightMetadata(theComic.rightKittyUrl);
+    mData += "Mashed-up at foofurple.com/comic/. ";
+    return mData;
+}
+
 // Create a canvas version of the comic
-function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray) {
+function panelsToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray, comicAttribution) {
 
     var numPanels = pArray.length;
     var canvas = document.getElementById('myCanvas');
     var cHeight = getCanvasHeight(numPanels);
     var cWidth = getCanvasWidth(numPanels);         // Does not incluce space for metadata
-
-    // Get metadata
-    var mData =  "CREDITS: ";
-    mData += getPrintBgMetadata(theComic.bgArt);
-    mData += getPrintLeftMetadata(theComic.leftKittyUrl);
-    mData += getPrintRightMetadata(theComic.rightKittyUrl);
-    mData += "Mashed-up at foofurple.com/comic/.  ";
-
     var maxLineLengthz = numPanels * 55;
     var maxNumLinesz = 8;
 
-    var mArray = generalLinesArray(mData, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata
+    var mArray = generalLinesArray(comicAttribution, maxLineLengthz, maxNumLinesz);       // Maximum 8 lines of metadata
     var metaDataHeight = 8 + mArray.length * 12;
 
     var metadataX0 = cWidth;
@@ -131,10 +131,16 @@ function panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, 
     return true;
 }
 
-function displayDownloadLink(comicAsStory) {
+function displayDownloadLink(comicAsStory, comicAttribution) {
+
     document.getElementById('downloadInfo').innerHTML = 
         "<p>Automatically generated image description:</p> <textarea>" + 
         comicAsStory + "</textarea>";
+
+    document.getElementById('downloadInfo').innerHTML += 
+        "<p>Automatically generated image credits / attribution:</p> <textarea>" + 
+        comicAttribution + "</textarea>";
+
     var dataUrl = document.getElementById("myCanvas").toDataURL();
     document.getElementById('downloadDiv').style.visibility = "visible";
     document.getElementById("downloadLink").setAttribute('href', dataUrl);
@@ -143,7 +149,7 @@ function displayDownloadLink(comicAsStory) {
 
 function downloadImage() {
 
-    // Global variables make javascript run slow
+    // Global variables make javascript run slow, so copy them to locals
     var leftBubbles = [];
     var rightBubbles = [];
     var numPanels = theComic.numPanels();
@@ -180,7 +186,6 @@ function downloadImage() {
     // Prepare images
     var kitty1Array = getElementsByClassName(document, 'kitty1');
     var leftChar = kitty1Array[0];
-
     var kitty2Array = getElementsByClassName(document, 'kitty2');
     var rightChar = kitty2Array[0];
 
@@ -190,10 +195,11 @@ function downloadImage() {
         bgImage.src = theComic.bgArt;
     }
 
-    var result = panelToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray);
+    var comicAttribution = getComicAttribution();
+    var result = panelsToCanvas(bgImage, leftChar, rightChar, leftBubbles, rightBubbles, pArray, comicAttribution);
     if (result) {
-        var comicAsStory = imageDescription(bgArtPartUrl, leftPartUrl, rightPartUrl, pArray);
-        displayDownloadLink(comicAsStory);
+        var comicAsStory =  imageDescription(bgArtPartUrl, leftPartUrl, rightPartUrl, pArray);
+        displayDownloadLink(comicAsStory, comicAttribution);
     }
 }
 

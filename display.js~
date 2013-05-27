@@ -48,7 +48,7 @@ var defaultImagesArray = [
 
 {'bgColor':'3496CF','bgArt':'images/backgroundArt/Farm-Landscape.jpg','left':'images/kitties/lemmling_Cartoon_cow.png', 'right':'images/kitties/lemmling_Cartoon_sheep.png'}, 
 
-{'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/left_kitty.png', 'right':'images/kitties/right_fox.png'},
+{'bgColor':'5acbed','bgArt':'images/backgroundArt/mochovka-cloudy.png','left':'images/kitties/yurikeCuteCatLeft.png', 'right':'images/kitties/yurikeCuteFoxRight.png'},
 
 {'bgColor':'5acbed','bgArt':'images/backgroundArt/landscape-netalloy.png','left':'images/kitties/StudioFibonacci_Cartoon_tyrannosaurus_rex.png', 'right':'images/kitties/right_foofurpleMonster.png'},
 

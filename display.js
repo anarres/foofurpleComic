@@ -54,7 +54,12 @@ var defaultImagesArray = [
 
 {'bgColor':'DADE6A', 'bgArt':'images/backgroundArt/partTone6.png','left':'images/kitties/pink_shirt.png', 'right':'images/kitties/headphones.png'},
 
-{'bgColor':'42B0B8', 'bgArt':'images/backgroundArt/partTone7.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
+
+
+{'bgColor':'D98D36', 'bgArt':'images/backgroundArt/simple.png','left':'images/kitties/critter6.png', 'right':'images/kitties/critter.png'},
+
+
+
 
 {'bgColor':'CFDBAD','bgArt':'images/backgroundArt/ufo-invasion.png','left':'images/kitties/daft2.png', 'right':'images/kitties/daft1.png'}
 

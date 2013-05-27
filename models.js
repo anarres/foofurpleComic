@@ -39,7 +39,6 @@ function KittyComic() {
         this.panelsArray.push( newPanelObj );
         return newPanelObj;
     }
-
     this.delPanel = function() {
         var index = this.highlit-1;
         this.panelsArray = removeItemFromArray(this.panelsArray, index);
@@ -47,16 +46,13 @@ function KittyComic() {
             this.highlit = 1;
         }
     }
-
     this.numPanels = function() {
         return this.panelsArray.length;
     }
-
     this.setText = function(index, lr, text) {
         if (lr == 0) { this.panelsArray[index].ltext = text; }
         else { this.panelsArray[index].rtext = text; }
     }
-
     this.setHighlight = function(num) {
         this.highlit = parseInt(num);
     }

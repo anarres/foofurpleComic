@@ -5,7 +5,6 @@
 */
 
 
-
 function updateMetadata() {
     var bg = getBgMetadata(theComic.bgArt);
     var left = getLeftMetadata(theComic.leftKittyUrl);
@@ -231,7 +230,6 @@ function changePanelBGColor() {
 function addNewImage() {
     var myObj = document.getElementById('addNewImage');
     myObj.style.visibility = "visible";
-
     myObj.focus();
 }
 
