@@ -381,6 +381,14 @@ function getDisplayStarted() {
     randomDefaultImages(theComic);
     theComic.createPanel();
     theComic.createPanel();
+
+    theComic.setText(0, 0, "Hi! Click and type right here to make me say something different.");
+    theComic.setText(0, 1, "Use the orange buttons at the top to add or remove comic panels, change the word bubbles, or change the characters and the background.");
+
+    theComic.setText(1, 0, "When you're done, click the yellow folder with the blue arrow to save your comic as a .png image.");
+
+    theComic.setText(1, 1, "Have fun!");
+
     refreshDisplay();
     return true;
 }

@@ -80,18 +80,6 @@ button {
 label {
     cursor: pointer;
 }
-
-
-/* About page */
-
-#about li {
-    padding: 8px 0px;
-    padding-left: 20px;
-}
-#about h2, #about h3 {
-    padding-top: 25px;
-}
-
  
 /* Control size of images */
 img.charImg {
@@ -111,6 +99,7 @@ div#controls {
 div.buttonFoo {
     text-align: left;
     background-color:#f6320b;
+background-color: #f57e35;
     border: 1px solid #cccccc;
     margin: 10px 3px;
     margin-bottom: 0px;
