@@ -1,5 +1,4 @@
 div#controls {
-border: 1px solid red;
     margin: 10px 0px;
 }
 
@@ -28,7 +27,7 @@ div.colorWidget {
 div.colorWidget input {
     color: #000;
     border: 2px solid #000;
-    padding: 8px;
+    //padding: 8px;
     margin: 3px;
     height: 30px;
     text-align: center;

@@ -87,3 +87,6 @@ html {
     margin-bottom: 60px;
 }
 
+canvas {
+    visibility: hidden;
+}
