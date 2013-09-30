@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="47.625"
+   id="svg1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="folderDownload.svg"
+   sodipodi:version="0.32"
+   version="1.0"
+   width="58.050415"
+   x="0"
+   y="0">
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:cx="-23.291373"
+     inkscape:cy="19.409061"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="1124"
+     inkscape:window-width="1920"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:zoom="4"
+     pagecolor="#ffffff"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs3">
+    <linearGradient
+       id="linearGradient900">
+      <stop
+         id="stop901"
+         offset="0"
+         style="stop-color:#000;stop-opacity:1;" />
+      <stop
+         id="stop902"
+         offset="1"
+         style="stop-color:#fff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient903"
+       xlink:href="#linearGradient900" />
+    <linearGradient
+       id="linearGradient904"
+       xlink:href="#linearGradient900" />
+    <linearGradient
+       id="linearGradient905"
+       xlink:href="#linearGradient900" />
+    <linearGradient
+       id="linearGradient906"
+       xlink:href="#linearGradient900" />
+    <linearGradient
+       id="linearGradient907"
+       xlink:href="#linearGradient900" />
+  </defs>
+  <path
+     inkscape:connector-curvature="0"
+     d="m 2.6770951,1.5491775 c -0.5507451,0 -1.0138458,0.442502 -1.0138458,0.96875 l 0,4.8749995 c -0.0012,0.02498 -0.032705,0.03722 -0.032705,0.0625 l 0,37 c 0,0.883796 0.7430048,1.59375 1.6679399,1.59375 l 39.0167108,0 c 0.924934,-10e-7 1.66794,-0.709956 1.66794,-1.59375 l 0,-37 c 0,-0.883794 -0.743005,-1.59375 -1.66794,-1.59375 l -15.403915,0 0,-3.3437495 c 0,-0.526247 -0.463101,-0.96875 -1.013846,-0.96875 l -23.2203392,0 z"
+     id="path938"
+     style="font-size:12px;fill:#ffc536;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.19690776000000021;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+  <rect
+     height="33.655827"
+     id="rect922"
+     rx="1.6695577"
+     sodipodi:fill-cmyk="(0 0 0 0.5)"
+     sodipodi:stroke-cmyk="(0 0 0 0.8)"
+     style="font-size:12px;fill:#ffc536;fill-opacity:1;fill-rule:evenodd;stroke:#090000;stroke-width:3.31970000000000010;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+     transform="matrix(1,0,-0.37409411,0.92739075,0,0)"
+     width="42.36063"
+     x="20.390217"
+     y="16.061069" />
+  <metadata
+     id="metadata4219">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>folder download</dc:title>
+        <dc:date>2011-01-31T01:00:20</dc:date>
+        <dc:description>Originally uploaded by Danny Allen for OCAL 0.18 - this is one icon from the flat theme</dc:description>
+        <dc:source>http://openclipart.org/detail/110977/folder-download-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>flat</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>theme</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

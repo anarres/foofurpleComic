@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #222;
+}
+
+
+/* TYPOGRAPHY */
+
+h1,h2,h3,h4,h5,h6 { 
+    font-weight: normal;
+    text-align: left;
+}
+h1 {
+    font-size: 2em;
+    padding: 5px 0px;
+}
+h2,h3,h4,h5,h6 {
+    font-size: 1.4em;
+    padding: 10px 0px;
+}
+p {
+    padding: 5px 0px;
+}
+li {
+    padding: 5px 0px;
+    line-height: 1.4em;
+    margin-left: 30px;
+}
+a {
+    color: #1900b2;
+    text-decoration: none;
+    font-weight: regular;
+}
+a:hover {
+    color: #006abc;
+}
+a.current {
+    color: #6c6552;
+    cursor: text;
+}
+input, textarea, button {
+    font-size: 1em;
+    padding: 2px 5px;
+    border: 2px solid #888;
+    border-radius: 3px;
+}
+button {
+    background-color: #f7f5dd;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #fff;
+}
+
+/* BOXES / page layout */
+
+html {
+    width: 100%;
+}
+#container {
+    width: 940px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+#innerContainer {
+    margin: 0px 10px;
+}
+
+/* Every child of the container has a max-width equal to the 
+    width of its parent container.  */
+
+#container * {
+    max-width: 100%;
+}
+#header {
+    clear: both;
+}
+#footer {
+    clear: both;
+    width: 100%;
+    padding-top: 5px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+

@@ -1,0 +1,67 @@
+
+/* White toggleDivs for choosing kitties or background art */
+
+div.toggleDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95%;
+    max-height: 60%;
+    background-color: #ffffff;
+    background-image:url('../images/checks.svg');
+    z-index: 10;
+    visibility: hidden;
+    overflow: scroll;
+    padding-bottom: 20px;
+    box-shadow: 1px 1px 3px #92865f;
+}
+div.toggleDiv img {
+    cursor: pointer;
+    background-image:url('../images/clear.png');
+}
+div#chooseKitty h3 {
+    font-size: 2em;
+}
+div#chooseKitty img {
+    width: 70px;
+    height: 70px;
+    padding: 3px;
+    margin: 0px;
+}
+#kittyLeft {
+    width:45%;
+    float:left;
+}
+#kittyRight {
+    width:50%;
+    float:left;
+    border-left:3px dashed blue;
+}
+div#chooseBackgroundImage img {
+    width: 120px;
+    height: 80px;
+    padding: 5px;
+}
+div#removeBackgroundArt {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+div#removeBackgroundArt a {
+    background-color: #ffffff;
+    display: block;
+    padding: 2px;
+    color: #f6320b;
+    text-align:center;
+    text-decoration: none;
+    border: 2px solid #f6320b;
+    border-radius: 5px;
+}
+div#removeBackgroundArt a:hover {
+    background-color:yellow;
+    text-decoration: none;
+}
+.highlight {
+    background-color: yellow;
+}
+
+

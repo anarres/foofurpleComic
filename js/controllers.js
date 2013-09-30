@@ -1,0 +1,404 @@
+/*
+* controllers.js
+* 
+* Controls workflow for Foofurple Comics.
+*/
+
+
+function updateMetadata() {
+    var bg = getBgMetadata(theComic.bgArt);
+    var left = getLeftMetadata(theComic.leftKittyUrl);
+    var right = getRightMetadata(theComic.rightKittyUrl);
+    var html = "<h3>Images credits:</h3>";
+    document.getElementById('imagesMetadata').innerHTML = html + bg + left + right;
+}
+
+function chooseKitty() {
+    var myObj = document.getElementById("chooseKitty");
+    if ( myObj.style.visibility === "visible" ) {
+        myObj.style.visibility = "hidden";
+    }
+    else {
+        myObj.style.visibility = "visible";
+        myObj.focus();
+    }
+}
+function chooseBackgroundImage() {
+    var myObj = document.getElementById("chooseBackgroundImage");
+    if ( myObj.style.visibility === "visible" ) {
+        myObj.style.visibility = "hidden";
+    }
+    else {
+        myObj.style.visibility = "visible";
+        myObj.focus();
+    }
+}
+
+function loadBgImages() {
+    var html = "<div id=\"removeBackgroundArt\"     onClick=\"selectBackgroundArt('')\" >       <a>Remove background art</a>     </div>";
+
+    for( var i=0; i<images88[0].bg.length; i++ ) {
+        html += "<img src='";
+        html += images88[0].bg[i].url;
+        html += "' id='";
+        html += images88[0].bg[i].url;
+        html += "' class='backgroundChooser' onClick=\"selectBackgroundArt('";
+        html += images88[0].bg[i].url;
+        html += "')\">";
+    }
+    document.getElementById("chooseBackgroundImage").innerHTML = html;
+}
+
+function selectBackgroundArt(url) {
+
+    // Un-highlight previously selected image
+    var imgArray = getElementsByClassName(document, 'backgroundChooser');
+
+    for ( var i=0; i<imgArray.length; i++ ) {
+        (imgArray[i]).style.backgroundImage="url('images/clear.png')";
+    }
+    // Hightlight newly selected image
+    if (url !== "") {
+        document.getElementById(url).style.backgroundImage="url('images/yellow.png')";
+    }
+
+    // Get all divs of class backgroundArt and give them this bg image
+    var divs = getElementsByClassName(document, "backgroundArt");
+    for (var j=0; j<divs.length; j++) {
+        var myObj = divs[j];
+        var myCSS = "url('" + url + "')";
+        myObj.style.backgroundImage = myCSS;
+    }
+    theComic.bgArt = url;
+    updateMetadata();
+}
+
+function selectKitty(num, imgUrl) {
+    var myClassName = "imgChooser" + num;
+
+    // Remove bg color from previously selected image
+    var imgArray = getElementsByClassName(document, myClassName);
+    for ( var i=0; i<imgArray.length; i++ ) {
+        (imgArray[i]).style.backgroundImage="url('images/clear.png')";
+    }
+
+    // Set kitty1url (global var) and Change src of all kitty1's
+    if ( num === 1 ) {
+        var images = getElementsByClassName(document, "kitty1");
+        for (var j=0; j<images.length; j++) {   
+            (images[j]).setAttribute("src", imgUrl);
+        }
+        var imgID = imgUrl + "Left";
+        document.getElementById(imgID).style.backgroundImage="url('images/yellow.png')";
+        theComic.leftKittyUrl = imgUrl;
+    }
+
+    // Do the same if kitty2
+    else if ( num === 2) {
+        var images2 = getElementsByClassName(document, "kitty2");
+        for (var k=0; k<images2.length; k++ ) {
+            (images2[k]).setAttribute("src", imgUrl);
+        }
+        var imgID = imgUrl + "Right";
+        document.getElementById(imgID).style.backgroundImage="url('images/yellow.png')";
+        theComic.rightKittyUrl = imgUrl;
+    }
+    updateMetadata();
+}
+
+
+
+
+
+function loadCharacters() {
+
+    // Load the character images
+    var htmlLeft = "<h3>Left character:</h3>";
+    var htmlRight = "<h3>Right character:</h3>";
+
+    for( var i=0; i<images88[1].characters.length; i++ ) {
+        htmlLeft += "<img src='";
+        htmlLeft += images88[1].characters[i].left.url;
+        htmlLeft += "' id='";
+        htmlLeft += images88[1].characters[i].left.url;
+        htmlLeft += "Left";
+        htmlLeft += "' class='imgChooser1 charImg' onclick=\"selectKitty(1, '";
+        htmlLeft += images88[1].characters[i].left.url;
+        htmlLeft += "')\">";
+
+        htmlRight += "<img src='";
+        htmlRight += images88[1].characters[i].right.url;
+        htmlRight += "' id='";
+        htmlRight += images88[1].characters[i].right.url;
+        htmlRight += "Right";
+        htmlRight += "' class='imgChooser2 charImg' onclick=\"selectKitty(2, '";
+        htmlRight += images88[1].characters[i].right.url;
+        htmlRight += "')\">";
+    }
+
+    document.getElementById("kittyLeft").innerHTML = htmlLeft;
+    document.getElementById("kittyRight").innerHTML = htmlRight;
+}
+
+function newPanel() {
+    theComic.createPanel();
+    refreshDisplay();
+}
+function deletePanel() {
+    theComic.delPanel();
+    refreshDisplay();
+}
+
+function panelClickFoo(panelID) {
+
+    // Remove class highlit from all panels
+    var divsArray = getElementsByClassName(document, 'backgroundArt');
+
+    for (var i=0; i<divsArray.length; i++) {
+        divsArray[i].style.borderTop = "10px solid #bbbbbb";
+    }
+    var myDiv = document.getElementById(panelID);
+    myDiv.style.borderTop = "10px solid #ffc405";
+
+    theComic.setHighlight(panelID.slice(5));
+}
+
+function textareaClick(pNum, leftOrRight) {
+    var lr = parseInt(leftOrRight);
+    var index = parseInt(pNum) - 1;
+
+    // Model
+    theComic.setBubbleFocus(index, lr);
+
+    // Display - textarea
+    var foo = lr + 1
+    var tID = "textarea" + foo + "Panel" + pNum;
+    var tObj = document.getElementById(tID);
+    tObj.style.height = "160px";
+
+    // Display - bubble image
+    var imgID = "leftBubble" + pNum;
+    var bMode = theComic.panelsArray[index].lBubbleMode;
+    if (lr == 1) {
+        imgID = "rightBubble" + pNum;
+        bMode = theComic.panelsArray[index].rBubbleMode;
+    }
+    var imgObj = document.getElementById(imgID);
+    var panelObj = theComic.panelsArray[index];
+    setBubbleImageMax(imgObj, lr, bMode);
+}
+
+function textareaBlur(pNum, leftOrRight) {
+    var lr = parseInt(leftOrRight);
+    var index = parseInt(pNum) - 1;    
+    var myId = "textarea1Panel" + pNum;
+    if (lr == 1) {
+        myId = "textarea2Panel" + pNum;
+    }
+    var text = document.getElementById(myId).value;
+
+    // Write the text to the model
+    theComic.setText(index, lr, text);
+
+    // Display bubble image
+    var imgID = "leftBubble" + pNum;
+    var bMode = theComic.panelsArray[index].lBubbleMode;
+    if (lr == 1) {
+        imgID = "rightBubble" + pNum;
+        bMode = theComic.panelsArray[index].rBubbleMode;
+    }
+    var imgObj = document.getElementById(imgID);
+    setBubbleImageUrl(imgObj, lr, text, bMode); // 0 is a fudge
+
+    // Display - textarea
+    var foo = lr + 1;
+    var tID = "textarea" + foo + "Panel" + pNum;
+    var tObj = document.getElementById(tID);
+    setTextareaValue(tObj, text);
+}
+
+function changePanelBGColor() {
+    var hexValue = "#" + document.getElementById('jscolor').value;    
+    var divs = getElementsByClassName(document, 'backgroundArt');
+    for (var i=0; i<divs.length; i++) {
+        divs[i].style.backgroundColor = hexValue;
+    }
+    // Save the new value to the models
+    theComic.setBgColor(document.getElementById("jscolor").value);
+}
+
+function addNewImage() {
+    var myObj = document.getElementById('addNewImage');
+    myObj.style.visibility = "visible";
+    myObj.focus();
+}
+
+function bmCycle(bm) {
+    if (bm==0) {
+        return 1;
+    }
+    else if (bm==1) {
+        return 2;
+    }
+    else {
+        return 0;
+    }
+}
+
+function toggleBubble(n) {
+
+    var pNum = parseInt(theComic.highlit);
+    var pObj = theComic.panelsArray[pNum-1];
+
+    if (n==1) {
+        var bm = pObj.lBubbleMode;
+        var newMode = bmCycle(bm);
+        var text = pObj.ltext;
+
+        // Model
+        pObj.lBubbleMode = newMode;
+
+        // Display
+        var myId = "leftBubble" + theComic.highlit;
+        imgObj = document.getElementById(myId);
+        setBubbleImageUrl(imgObj, 0, text, newMode);
+    }
+    else {
+        var bm = pObj.rBubbleMode;
+        var newMode = bmCycle(bm);
+        var text = pObj.rtext;
+
+        // Model
+        pObj.rBubbleMode = newMode;
+
+        // Display
+        var myId = "rightBubble" + theComic.highlit;
+        imgObj = document.getElementById(myId);
+        setBubbleImageUrl(imgObj, 1, text, newMode);
+    }
+}
+
+
+// FIXME put this somewhere else
+// randomInt(0,10) would give numbers from 0 to 9.
+function randomInt(lowestInt, highestInt) {
+    lowestInt = parseInt(lowestInt);
+    highestInt = parseInt(highestInt);
+    var randomFraction = Math.random();
+    var multiplier = highestInt - lowestInt;
+    var output = Math.floor(randomFraction*multiplier) + lowestInt;
+    return output;
+}
+
+function randomDefaultImages(theComic) {
+    var x = randomInt(0, defaultImagesArray.length);
+    theComic.bgColor = defaultImagesArray[x]['bgColor'];
+    theComic.bgArt = defaultImagesArray[x]['bgArt'];
+    theComic.leftKittyUrl = defaultImagesArray[x]['left'];
+    theComic.rightKittyUrl = defaultImagesArray[x]['right'];
+}
+
+
+function localImageUpload(imgObjSrc) {
+
+    if (document.getElementById('newBgUrl').checked) {
+        var myObj = {"url":imgObjSrc,
+            "title": "Image uploaded by user",
+            "description": "Image uploaded by user",
+            "artist":"unknown",
+            "artist_website":"",
+            "license":"unknown",
+            "license_short":"unknown",
+            "license_url":"unknown"
+            }
+        // Add to the metadata
+        images88[0]["bg"].push(myObj);
+
+        // Reload bg images
+        loadBgImages();
+
+        // Set new image
+        selectBackgroundArt(imgObjSrc);
+    }
+
+    else {
+        var myObj = {
+            "left":
+                { 
+                "url":imgObjSrc,
+                "title": "Image uploaded by user",
+                "description": "Image uploaded by user",
+                "artist":"unknown",
+                "artist_website":"",
+                "license":"unknown",
+                "license_short":"unknown",
+                "license_url":"unknown"
+                },
+            "right":
+                { 
+                "url":imgObjSrc,
+                "title": "Image uploaded by user",
+                "description": "Image uploaded by user",
+                "artist":"unknown",
+                "artist_website":"",
+                "license":"unknown",
+                "license_short":"unknown",
+                "license_url":"unknown"
+                }
+            };
+
+        // Add to the metadata
+        images88[1]["characters"].push(myObj);
+
+        // Reload character images
+        loadCharacters();
+
+        // Set new image
+        selectKitty(1, imgObjSrc);
+        selectKitty(2, imgObjSrc);
+    }
+    document.getElementById("addNewImage").style.visibility = 'hidden';
+}
+
+function addListeners() {
+    var myObj = document.getElementById('fooFile');
+
+    myObj.addEventListener("change", function(e) {
+
+        var file = myObj.files[0];
+
+        var reader = new FileReader();  
+        reader.onload = function(e) {
+            localImageUpload(e.target.result);
+        }
+        reader.readAsDataURL(file);
+    }, false);
+}
+
+
+function getDisplayStarted() {
+    theComic = new KittyComic();
+    randomDefaultImages(theComic);
+    theComic.createPanel();
+    theComic.createPanel();
+
+    theComic.setText(0, 0, "Hi! Click and type right here to make me say something different.");
+    theComic.setText(0, 1, "Use the orange buttons at the top to add or remove comic panels, change the word bubbles, or change the characters and the background.");
+
+    theComic.setText(1, 0, "When you're done, click the yellow folder with the blue arrow to save your comic as a .png image.");
+
+    theComic.setText(1, 1, "Have fun!");
+
+    refreshDisplay();
+    return true;
+}
+
+function getStarted() {
+    if (getDisplayStarted()) {
+        loadBgImages();
+        loadCharacters();
+        updateMetadata();
+        document.getElementById('jscolor').value = theComic.bgColor;
+        addListeners();
+    }
+}

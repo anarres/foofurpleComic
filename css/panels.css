@@ -1,0 +1,64 @@
+/* Comic panels */
+
+#comicPanels {
+    min-height: 300px;
+    min-width: 400px;
+    margin: 25px 0px;
+    background-image:url('../images/load-grey.gif');
+    background-repeat: no-repeat;
+
+}
+
+div.backgroundArt {
+    width:400px;
+    height:300px;
+    border: 1px solid #000;
+    border-top: 10px solid #aaa;
+    z-index: 1;
+    float: left;
+    margin: 10px;
+    margin-left: 0px;
+    position: relative;
+    background-size:400px 300px;
+    background-repeat:no-repeat;
+}
+div.backgroundArt img {
+    z-index: 2;
+}
+img.kitty1, img.kitty2 {
+    width: 100px;
+    height: 100px;
+}
+.leftBubbleImage {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.rightBubbleImage {
+    position: absolute;
+    top: 5px;
+    left: 210px;
+}
+.textarea1, .textarea2 {
+    z-index: 3;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    background-color: transparent;
+    overflow: hidden;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+}
+.kitty1 {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+.kitty2 {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+

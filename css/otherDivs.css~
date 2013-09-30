@@ -1,0 +1,71 @@
+
+
+/* Various other divs */
+
+.popupDiv {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95%;
+    max-height: 60%;
+    background-color: #ffffff;
+
+
+
+
+    position: fixed;
+    top: 10px;
+    z-index: 99;
+    visibility: hidden;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 12px solid #BFB5A6;
+    box-shadow: 1px 1px 3px #92865f;
+    overflow: auto;
+}
+
+a#downloadLink {
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 0px;
+}
+
+#downloadDiv textarea {
+    border: 2px solid #aaa;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    font-size: 0.8em;
+}
+
+
+/* Metadata */
+
+div#imagesMetadata {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    clear: both;
+    max-width: 820px;
+}
+
+.close {
+    float: right;
+    margin: 5px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: -5px;
+    left: 15px;
+}
+.close:hover {
+    background-color: #dddddd;
+}
+.little {
+    font-size: 0.9em;
+}
+

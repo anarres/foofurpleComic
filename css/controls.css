@@ -1,0 +1,35 @@
+div#controls {
+    margin: 10px 0px;
+}
+
+div.buttonFoo {
+    background-color: #f7ed8b;
+    padding: 3px 5px;
+    margin: 2px;
+    float: left;
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 56px;
+}
+div.buttonFoo:hover {
+    background-color: #feed0b;
+}
+div.buttonFoo embed {
+    cursor: pointer;
+}
+
+/* Color widget */
+
+div.colorWidget {
+    background-image:url("../images/rainbow.svg");
+}
+div.colorWidget input {
+    color: #000;
+    border: 2px solid #000;
+    padding: 8px;
+    margin: 3px;
+    height: 30px;
+    text-align: center;
+    cursor: text;
+}
